@@ -1,4 +1,4 @@
 // CUSTOM JS ADD
 // FOR JOESNELL THEME
 // ++++++++++++++++++++++++++++++++++++++++++
-!function(e){e(".nav-collapse").find("ul").addClass("nav");e(".main-navigation").find("ul").addClass("masthead-links")}(window.jQuery);
+!function(e){e(".nav-collapse").find("ul").addClass("nav");e(".main-navigation").find("ul").addClass("masthead-links");e(".landingmenu").find("a").addClass("btn btn-large btn-inverse landing-button");e(".portfolioimg").find("img").addClass("thumbnail");e(".btn-about a").prepend('<p class="btn-icon"><i class="icon-user"></i></p>');e(".btn-work a").prepend('<p class="btn-icon"><i class="icon-briefcase"></i></p>');e(".btn-blog a").prepend('<p class="btn-icon"><i class="icon-pencil"></i></p>');e(".btn-contact a").prepend('<p class="btn-icon"><i class="icon-comment"></i></p>');e("body").scrollTop(1);e(".portfolio").equalizer({columns:"> li",min:300,overflow:"overflowed"})}(window.jQuery);

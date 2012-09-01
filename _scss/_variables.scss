@@ -21,39 +21,45 @@ $white:                 #fff !default;
 // Accent colors
 // -------------------------
 $blue:                  #049cdb !default;
+$joeBlue:               #00B4FF !default;
+$joeBlueLight:          #e6f2f4 !default;
 $blueDark:              #0064cd !default;
 $green:                 #46a546 !default;
 $red:                   #9d261d !default;
 $yellow:                #ffc40d !default;
 $orange:                #f89406 !default;
+$joeorange:             #ff8800 !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
 
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        $white !default;
+$landingBackground:     $grayLighter !default;
+$bodyBackground:        $joeBlueLight !default;
 $textColor:             $grayDark !default;
 
 
 // Links
 // -------------------------
-$linkColor:             #08c !default;
+$linkColor:             $joeorange !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
 // Typography
 // -------------------------
-$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$sansFontFamily:        "dejarip",sans-serif, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
-$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          14px !default;
 $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        20px !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
+$navFontSize:           3em !default;
+
+$headingsFontFamily:    "kaffeesatz",Arial, sans-serif !default; // replaces BS default
 $headingsFontWeight:    bold !default;    // instead of browser default, bold
 $headingsColor:         inherit !default; // empty to use BS default, $textColor
 
@@ -133,9 +139,8 @@ $zindexModal:             1050 !default;
 
 // Sprite icons path
 // -------------------------
-$iconSpritePath:          "../img/glyphicons-halflings.png" !default;
-$iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png" !default;
-
+$iconSpritePath:          "/wp-content/themes/joesnellpdx_theme/_img/glyphicons-halflings.png" !default;
+$iconWhiteSpritePath:     "/wp-content/themes/joesnellpdx_theme/_img/glyphicons-halflings-white.png" !default;
 
 // Input placeholder text color
 // -------------------------
@@ -156,9 +161,10 @@ $wellBackground:                  #f5f5f5 !default;
 // -------------------------
 $navbarCollapseWidth:             979px !default;
 
-$navbarHeight:                    40px !default;
-$navbarBackgroundHighlight:       #ffffff !default;
-$navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
+$navbarHeight:                    80px !default;
+$navbarBaseHeight:                40px !default;
+$navbarBackground:                $joeorange !default;
+$navbarBackgroundHighlight:       $joeorange !default;
 $navbarBorder:                    darken($navbarBackground, 12%) !default;
 
 $navbarText:                      $gray !default;

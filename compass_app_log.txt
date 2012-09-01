@@ -939,3 +939,14 @@ Load paths:
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/zurb-foundation-3.0.9/scss
   Compass::SpriteImporter)
 2012-08-30 17:42:58 identical _css/bootstrap.css 
+2012-08-31 18:20:58     error _scss/bootstrap.scss (Line 35 of _scss/_navbar.scss: Undefined variable: "$navbarBaseHeight".)
+2012-08-31 18:20:59 overwrite _css/bootstrap.css 
+2012-08-31 18:20:59 identical _css/responsive.css 
+2012-08-31 21:39:02     error _scss/bootstrap.scss (Line 528 of _scss/_navbar.scss: Invalid CSS after "}": expected "}", was "")
+2012-08-31 21:39:02 overwrite _css/bootstrap.css 
+2012-08-31 21:40:16     error _scss/bootstrap.scss (Line 549 of _scss/_navbar.scss: Invalid CSS after "}": expected "}", was "")
+2012-08-31 21:40:16 overwrite _css/bootstrap.css 
+2012-08-31 21:43:52     error _scss/bootstrap.scss (Line 579 of _scss/_navbar.scss: Invalid CSS after "}": expected "}", was "")
+2012-08-31 21:43:52 overwrite _css/bootstrap.css 
+2012-08-31 21:48:58 overwrite _css/bootstrap.css 
+2012-08-31 21:57:19 identical _css/bootstrap.css 
