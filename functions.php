@@ -1,20 +1,20 @@
 <?php
 /**
- * Boot_s functions and definitions
+ * Joe_Snell_PDX functions and definitions
  *
- * @package Boot_s
- * @since Boot_s 1.0
+ * @package Joe_Snell_PDX
+ * @since Joe_Snell_PDX 1.0
  */
 
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
 if ( ! isset( $content_width ) )
 	$content_width = 640; /* pixels */
 
-if ( ! function_exists( 'Boot_s_setup' ) ):
+if ( ! function_exists( 'Joe_Snell_PDX_setup' ) ):
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -22,9 +22,9 @@ if ( ! function_exists( 'Boot_s_setup' ) ):
  * before the init hook. The init hook is too late for some features, such as indicating
  * support post thumbnails.
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
-function Boot_s_setup() {
+function Joe_Snell_PDX_setup() {
 
 	/**
 	 * Custom template tags for this theme.
@@ -44,10 +44,10 @@ function Boot_s_setup() {
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on Boot_s, use a find and replace
-	 * to change 'Boot_s' to the name of your theme in all the template files
+	 * If you're building a theme based on Joe_Snell_PDX, use a find and replace
+	 * to change 'Joe_Snell_PDX' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'Boot_s', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'Joe_Snell_PDX', get_template_directory() . '/languages' );
 
 	/**
 	 * Add default posts and comments RSS feed links to head
@@ -63,9 +63,9 @@ function Boot_s_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-			'primary' => __( 'Primary Menu', 'Boot_s' ),
-			'secondary' => __( 'Secondary Menu', 'Boot_s' ),
-			'landing' => __( 'Landing Menu', 'Boot_s' ),
+			'primary' => __( 'Primary Menu', 'Joe_Snell_PDX' ),
+			'secondary' => __( 'Secondary Menu', 'Joe_Snell_PDX' ),
+			'landing' => __( 'Landing Menu', 'Joe_Snell_PDX' ),
 		) );
 
 	/**
@@ -73,17 +73,17 @@ function Boot_s_setup() {
 	 */
 	add_theme_support( 'post-formats', array( 'aside', ) );
 }
-endif; // Boot_s_setup
-add_action( 'after_setup_theme', 'Boot_s_setup' );
+endif; // Joe_Snell_PDX_setup
+add_action( 'after_setup_theme', 'Joe_Snell_PDX_setup' );
 
 /**
  * Register widgetized area and update sidebar with default widgets
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
-function Boot_s_widgets_init() {
+function Joe_Snell_PDX_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Sidebar', 'Boot_s' ),
+		'name' => __( 'Sidebar', 'Joe_Snell_PDX' ),
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
@@ -91,12 +91,12 @@ function Boot_s_widgets_init() {
 		'after_title' => '</h1>',
 	) );
 }
-add_action( 'widgets_init', 'Boot_s_widgets_init' );
+add_action( 'widgets_init', 'Joe_Snell_PDX_widgets_init' );
 
 /**
  * Enqueue scripts and styles
  */
-function Boot_s_scripts() {
+function Joe_Snell_PDX_scripts() {
 	global $post;
 
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
@@ -154,7 +154,7 @@ function Boot_s_scripts() {
 		wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'Boot_s_scripts' );
+add_action( 'wp_enqueue_scripts', 'Joe_Snell_PDX_scripts' );
 
 /**
  * Implement the Custom Header feature

@@ -296,7 +296,7 @@
 2012-08-22 15:57:15 identical _css/responsive.css 
 2012-08-22 15:59:00     error _scss/bootstrap.scss (Line 33: File to import not found or unreadable: font-awesome.scss.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -758,7 +758,7 @@ Load paths:
 2012-08-30 16:20:51 overwrite _css/responsive.css 
 2012-08-30 16:27:52     error _scss/bootstrap.scss (Line 30: File to import not found or unreadable: font-awesome.scss.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -774,7 +774,7 @@ Load paths:
 2012-08-30 16:30:24 overwrite _css/bootstrap.css 
 2012-08-30 16:30:35     error _scss/bootstrap.scss (Line 25 of _scss/_font-awesome.scss: File to import not found or unreadable: file:///Macintosh HD/Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/JoeSnellPDX_Theme/_scss/compass/css3/font-face.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -791,7 +791,7 @@ Load paths:
 2012-08-30 16:31:36 identical _css/bootstrap.css 
 2012-08-30 17:42:57     error _scss/bootstrap.scss (Line 25: File to import not found or unreadable: code.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -806,7 +806,7 @@ Load paths:
 2012-08-30 17:42:57 overwrite _css/bootstrap.css 
 2012-08-30 17:42:57     error _scss/bootstrap.scss (Line 25: File to import not found or unreadable: code.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -821,7 +821,7 @@ Load paths:
 2012-08-30 17:42:57 identical _css/bootstrap.css 
 2012-08-30 17:42:57     error _scss/bootstrap.scss (Line 25: File to import not found or unreadable: code.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -836,7 +836,7 @@ Load paths:
 2012-08-30 17:42:57 identical _css/bootstrap.css 
 2012-08-30 17:42:57     error _scss/bootstrap.scss (Line 25: File to import not found or unreadable: code.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -851,7 +851,7 @@ Load paths:
 2012-08-30 17:42:57 identical _css/bootstrap.css 
 2012-08-30 17:42:57     error _scss/bootstrap.scss (Line 25: File to import not found or unreadable: code.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -866,7 +866,7 @@ Load paths:
 2012-08-30 17:42:57 identical _css/bootstrap.css 
 2012-08-30 17:42:58     error _scss/bootstrap.scss (Line 25: File to import not found or unreadable: code.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -881,7 +881,7 @@ Load paths:
 2012-08-30 17:42:58 identical _css/bootstrap.css 
 2012-08-30 17:42:58     error _scss/bootstrap.scss (Line 25: File to import not found or unreadable: code.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -896,7 +896,7 @@ Load paths:
 2012-08-30 17:42:58 identical _css/bootstrap.css 
 2012-08-30 17:42:58     error _scss/bootstrap.scss (Line 25: File to import not found or unreadable: code.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -911,7 +911,7 @@ Load paths:
 2012-08-30 17:42:58 identical _css/bootstrap.css 
 2012-08-30 17:42:58     error _scss/bootstrap.scss (Line 25: File to import not found or unreadable: code.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
@@ -926,7 +926,7 @@ Load paths:
 2012-08-30 17:42:58 identical _css/bootstrap.css 
 2012-08-30 17:42:58     error _scss/bootstrap.scss (Line 25: File to import not found or unreadable: code.
 Load paths:
-  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Boot_s/_scss
+  /Users/joesnellpdx/Desktop/Sites/htdocs2/wp-content/themes/Joe_Snell_PDX/_scss
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
   /Users/joesnellpdx/Downloads/compass_app/compass.app/Contents/Resources/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets

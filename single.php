@@ -2,8 +2,8 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package Boot_s
- * @since Boot_s 1.0
+ * @package Joe_Snell_PDX
+ * @since Joe_Snell_PDX 1.0
  */
 
 get_header(); ?>
@@ -13,11 +13,11 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php Boot_s_content_nav( 'nav-above' ); ?>
+				<?php Joe_Snell_PDX_content_nav( 'nav-above' ); ?>
 
 				<?php get_template_part( 'content', 'single' ); ?>
 
-				<?php Boot_s_content_nav( 'nav-below' ); ?>
+				<?php Joe_Snell_PDX_content_nav( 'nav-below' ); ?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template

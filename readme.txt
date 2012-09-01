@@ -1,4 +1,4 @@
-Boot_s
+Joe_Snell_PDX
 ======
 
 Wordpress Theme. Fusion of Twitter Bootstrap and _s from Automattic using SASS(.scss).
@@ -14,7 +14,7 @@ I will using this theme as a foundation to fork individual projects. Stay tuned!
 Thank you for checking it out!
 
 ======
-Boot_s
+Joe_Snell_PDX
 ======
 
 Wordpress Theme for personal site. Fusion of Twitter Bootstrap and _s from Automattic.

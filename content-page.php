@@ -2,8 +2,8 @@
 /**
  * The template used for displaying page content in page.php
  *
- * @package Boot_s
- * @since Boot_s 1.0
+ * @package Joe_Snell_PDX
+ * @since Joe_Snell_PDX 1.0
  */
 ?>
 
@@ -14,7 +14,7 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'Boot_s' ), 'after' => '</div>' ) ); ?>
-		<?php edit_post_link( __( 'Edit', 'Boot_s' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'Joe_Snell_PDX' ), 'after' => '</div>' ) ); ?>
+		<?php edit_post_link( __( 'Edit', 'Joe_Snell_PDX' ), '<span class="edit-link">', '</span>' ); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

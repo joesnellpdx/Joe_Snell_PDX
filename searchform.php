@@ -1,13 +1,13 @@
 <?php
 /**
- * The template for displaying search forms in Boot_s
+ * The template for displaying search forms in Joe_Snell_PDX
  *
- * @package Boot_s
- * @since Boot_s 1.0
+ * @package Joe_Snell_PDX
+ * @since Joe_Snell_PDX 1.0
  */
 ?>
 	<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-		<label for="s" class="assistive-text"><?php _e( 'Search', 'Boot_s' ); ?></label>
-		<input type="text" class="field" name="s" id="s" placeholder="<?php esc_attr_e( 'Search &hellip;', 'Boot_s' ); ?>" />
-		<input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'Boot_s' ); ?>" />
+		<label for="s" class="assistive-text"><?php _e( 'Search', 'Joe_Snell_PDX' ); ?></label>
+		<input type="text" class="field" name="s" id="s" placeholder="<?php esc_attr_e( 'Search &hellip;', 'Joe_Snell_PDX' ); ?>" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'Joe_Snell_PDX' ); ?>" />
 	</form>

@@ -4,17 +4,17 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package Boot_s
- * @since Boot_s 1.0
+ * @package Joe_Snell_PDX
+ * @since Joe_Snell_PDX 1.0
  */
 
-if ( ! function_exists( 'Boot_s_content_nav' ) ):
+if ( ! function_exists( 'Joe_Snell_PDX_content_nav' ) ):
 /**
  * Display navigation to next/previous pages when applicable
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
-function Boot_s_content_nav( $nav_id ) {
+function Joe_Snell_PDX_content_nav( $nav_id ) {
 	global $wp_query;
 
 	$nav_class = 'site-navigation paging-navigation';
@@ -23,21 +23,21 @@ function Boot_s_content_nav( $nav_id ) {
 
 	?>
 	<nav role="navigation" id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
-		<h1 class="assistive-text"><?php _e( 'Post navigation', 'Boot_s' ); ?></h1>
+		<h1 class="assistive-text"><?php _e( 'Post navigation', 'Joe_Snell_PDX' ); ?></h1>
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'Boot_s' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'Boot_s' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'Joe_Snell_PDX' ) . '</span> %title' ); ?>
+		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'Joe_Snell_PDX' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'Boot_s' ) ); ?></div>
+		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'Joe_Snell_PDX' ) ); ?></div>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'Boot_s' ) ); ?></div>
+		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'Joe_Snell_PDX' ) ); ?></div>
 		<?php endif; ?>
 
 	<?php endif; ?>
@@ -45,24 +45,24 @@ function Boot_s_content_nav( $nav_id ) {
 	</nav><!-- #<?php echo $nav_id; ?> -->
 	<?php
 }
-endif; // Boot_s_content_nav
+endif; // Joe_Snell_PDX_content_nav
 
-if ( ! function_exists( 'Boot_s_comment' ) ) :
+if ( ! function_exists( 'Joe_Snell_PDX_comment' ) ) :
 /**
  * Template for comments and pingbacks.
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
-function Boot_s_comment( $comment, $args, $depth ) {
+function Joe_Snell_PDX_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
 		case 'pingback' :
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:', 'Boot_s' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'Boot_s' ), ' ' ); ?></p>
+		<p><?php _e( 'Pingback:', 'Joe_Snell_PDX' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'Joe_Snell_PDX' ), ' ' ); ?></p>
 	<?php
 			break;
 		default :
@@ -72,10 +72,10 @@ function Boot_s_comment( $comment, $args, $depth ) {
 			<footer>
 				<div class="comment-author vcard">
 					<?php echo get_avatar( $comment, 40 ); ?>
-					<?php printf( __( '%s <span class="says">says:</span>', 'Boot_s' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+					<?php printf( __( '%s <span class="says">says:</span>', 'Joe_Snell_PDX' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 				</div><!-- .comment-author .vcard -->
 				<?php if ( $comment->comment_approved == '0' ) : ?>
-					<em><?php _e( 'Your comment is awaiting moderation.', 'Boot_s' ); ?></em>
+					<em><?php _e( 'Your comment is awaiting moderation.', 'Joe_Snell_PDX' ); ?></em>
 					<br />
 				<?php endif; ?>
 
@@ -83,9 +83,9 @@ function Boot_s_comment( $comment, $args, $depth ) {
 					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
 					<?php
 						/* translators: 1: date, 2: time */
-						printf( __( '%1$s at %2$s', 'Boot_s' ), get_comment_date(), get_comment_time() ); ?>
+						printf( __( '%1$s at %2$s', 'Joe_Snell_PDX' ), get_comment_date(), get_comment_time() ); ?>
 					</time></a>
-					<?php edit_comment_link( __( '(Edit)', 'Boot_s' ), ' ' );
+					<?php edit_comment_link( __( '(Edit)', 'Joe_Snell_PDX' ), ' ' );
 					?>
 				</div><!-- .comment-meta .commentmetadata -->
 			</footer>
@@ -101,22 +101,22 @@ function Boot_s_comment( $comment, $args, $depth ) {
 			break;
 	endswitch;
 }
-endif; // ends check for Boot_s_comment()
+endif; // ends check for Joe_Snell_PDX_comment()
 
-if ( ! function_exists( 'Boot_s_posted_on' ) ) :
+if ( ! function_exists( 'Joe_Snell_PDX_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
-function Boot_s_posted_on() {
-	printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'Boot_s' ),
+function Joe_Snell_PDX_posted_on() {
+	printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'Joe_Snell_PDX' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),
 		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		esc_attr( sprintf( __( 'View all posts by %s', 'Boot_s' ), get_the_author() ) ),
+		esc_attr( sprintf( __( 'View all posts by %s', 'Joe_Snell_PDX' ), get_the_author() ) ),
 		esc_html( get_the_author() )
 	);
 }
@@ -125,9 +125,9 @@ endif;
 /**
  * Returns true if a blog has more than 1 category
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
-function Boot_s_categorized_blog() {
+function Joe_Snell_PDX_categorized_blog() {
 	if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
 		// Create an array of all the categories that are attached to posts
 		$all_the_cool_cats = get_categories( array(
@@ -141,22 +141,22 @@ function Boot_s_categorized_blog() {
 	}
 
 	if ( '1' != $all_the_cool_cats ) {
-		// This blog has more than 1 category so Boot_s_categorized_blog should return true
+		// This blog has more than 1 category so Joe_Snell_PDX_categorized_blog should return true
 		return true;
 	} else {
-		// This blog has only 1 category so Boot_s_categorized_blog should return false
+		// This blog has only 1 category so Joe_Snell_PDX_categorized_blog should return false
 		return false;
 	}
 }
 
 /**
- * Flush out the transients used in Boot_s_categorized_blog
+ * Flush out the transients used in Joe_Snell_PDX_categorized_blog
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
-function Boot_s_category_transient_flusher() {
+function Joe_Snell_PDX_category_transient_flusher() {
 	// Like, beat it. Dig?
 	delete_transient( 'all_the_cool_cats' );
 }
-add_action( 'edit_category', 'Boot_s_category_transient_flusher' );
-add_action( 'save_post', 'Boot_s_category_transient_flusher' );
+add_action( 'edit_category', 'Joe_Snell_PDX_category_transient_flusher' );
+add_action( 'save_post', 'Joe_Snell_PDX_category_transient_flusher' );

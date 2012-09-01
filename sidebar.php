@@ -2,8 +2,8 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package Boot_s
- * @since Boot_s 1.0
+ * @package Joe_Snell_PDX
+ * @since Joe_Snell_PDX 1.0
  */
 ?>
 		<div id="secondary" class="widget-area span4" role="complementary">
@@ -15,14 +15,14 @@
 				</aside>
 
 				<aside id="archives" class="widget">
-					<h1 class="widget-title"><?php _e( 'Archives', 'Boot_s' ); ?></h1>
+					<h1 class="widget-title"><?php _e( 'Archives', 'Joe_Snell_PDX' ); ?></h1>
 					<ul>
 						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 					</ul>
 				</aside>
 
 				<aside id="meta" class="widget">
-					<h1 class="widget-title"><?php _e( 'Meta', 'Boot_s' ); ?></h1>
+					<h1 class="widget-title"><?php _e( 'Meta', 'Joe_Snell_PDX' ); ?></h1>
 					<ul>
 						<?php wp_register(); ?>
 						<li><?php wp_loginout(); ?></li>

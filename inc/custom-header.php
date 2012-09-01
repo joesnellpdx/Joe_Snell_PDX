@@ -13,8 +13,8 @@
 	<?php } // if ( ! empty( $header_image ) ) ?>
 
  *
- * @package Boot_s
- * @since Boot_s 1.0
+ * @package Joe_Snell_PDX
+ * @since Joe_Snell_PDX 1.0
  */
 
 /**
@@ -25,25 +25,25 @@
  * Use feature detection of wp_get_theme() which was introduced
  * in WordPress 3.4.
  *
- * @uses Boot_s_header_style()
- * @uses Boot_s_admin_header_style()
- * @uses Boot_s_admin_header_image()
+ * @uses Joe_Snell_PDX_header_style()
+ * @uses Joe_Snell_PDX_admin_header_style()
+ * @uses Joe_Snell_PDX_admin_header_image()
  *
- * @package Boot_s
+ * @package Joe_Snell_PDX
  */
-function Boot_s_custom_header_setup() {
+function Joe_Snell_PDX_custom_header_setup() {
 	$args = array(
 		'default-image'          => '',
 		'default-text-color'     => '000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'Boot_s_header_style',
-		'admin-head-callback'    => 'Boot_s_admin_header_style',
-		'admin-preview-callback' => 'Boot_s_admin_header_image',
+		'wp-head-callback'       => 'Joe_Snell_PDX_header_style',
+		'admin-head-callback'    => 'Joe_Snell_PDX_admin_header_style',
+		'admin-preview-callback' => 'Joe_Snell_PDX_admin_header_image',
 	);
 
-	$args = apply_filters( 'Boot_s_custom_header_args', $args );
+	$args = apply_filters( 'Joe_Snell_PDX_custom_header_args', $args );
 
 	if ( function_exists( 'wp_get_theme' ) ) {
 		add_theme_support( 'custom-header', $args );
@@ -56,7 +56,7 @@ function Boot_s_custom_header_setup() {
 		add_custom_image_header( $args['wp-head-callback'], $args['admin-head-callback'], $args['admin-preview-callback'] );
 	}
 }
-add_action( 'after_setup_theme', 'Boot_s_custom_header_setup' );
+add_action( 'after_setup_theme', 'Joe_Snell_PDX_custom_header_setup' );
 
 /**
  * Shiv for get_custom_header().
@@ -68,8 +68,8 @@ add_action( 'after_setup_theme', 'Boot_s_custom_header_setup' );
  *
  * @return stdClass All properties represent attributes of the curent header image.
  *
- * @package Boot_s
- * @since Boot_s 1.1
+ * @package Joe_Snell_PDX
+ * @since Joe_Snell_PDX 1.1
  */
 
 if ( ! function_exists( 'get_custom_header' ) ) {
@@ -83,15 +83,15 @@ if ( ! function_exists( 'get_custom_header' ) ) {
 	}
 }
 
-if ( ! function_exists( 'Boot_s_header_style' ) ) :
+if ( ! function_exists( 'Joe_Snell_PDX_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see Boot_s_custom_header_setup().
+ * @see Joe_Snell_PDX_custom_header_setup().
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
-function Boot_s_header_style() {
+function Joe_Snell_PDX_header_style() {
 
 	// If no custom options for text are set, let's bail
 	// get_header_textcolor() options: HEADER_TEXTCOLOR is default, hide text (returns 'blank') or any hex value
@@ -122,17 +122,17 @@ function Boot_s_header_style() {
 	</style>
 	<?php
 }
-endif; // Boot_s_header_style
+endif; // Joe_Snell_PDX_header_style
 
-if ( ! function_exists( 'Boot_s_admin_header_style' ) ) :
+if ( ! function_exists( 'Joe_Snell_PDX_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see Boot_s_custom_header_setup().
+ * @see Joe_Snell_PDX_custom_header_setup().
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
-function Boot_s_admin_header_style() {
+function Joe_Snell_PDX_admin_header_style() {
 ?>
 	<style type="text/css">
 	.appearance_page_custom-header #headimg {
@@ -152,17 +152,17 @@ function Boot_s_admin_header_style() {
 	</style>
 <?php
 }
-endif; // Boot_s_admin_header_style
+endif; // Joe_Snell_PDX_admin_header_style
 
-if ( ! function_exists( 'Boot_s_admin_header_image' ) ) :
+if ( ! function_exists( 'Joe_Snell_PDX_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see Boot_s_custom_header_setup().
+ * @see Joe_Snell_PDX_custom_header_setup().
  *
- * @since Boot_s 1.0
+ * @since Joe_Snell_PDX 1.0
  */
-function Boot_s_admin_header_image() { ?>
+function Joe_Snell_PDX_admin_header_image() { ?>
 	<div id="headimg">
 		<?php
 		if ( 'blank' == get_header_textcolor() || '' == get_header_textcolor() )
@@ -178,4 +178,4 @@ function Boot_s_admin_header_image() { ?>
 		<?php endif; ?>
 	</div>
 <?php }
-endif; // Boot_s_admin_header_image
+endif; // Joe_Snell_PDX_admin_header_image
