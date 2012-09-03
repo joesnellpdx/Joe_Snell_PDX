@@ -51,52 +51,43 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     
     <?php wp_head(); ?>
+    
+<script type="text/javascript" src="http://use.typekit.com/jrw3qjl.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 </head>
 
 <body data-spy="scroll" <?php body_class(); ?>>
 
+<header>
+
 	<!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top base">
       <div class="navbar-inner">
         <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            
+            <i class="icon-hand-up navbtn"></i> 
+            
           </button>
-          <a class="brand" href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
-          <div class="nav-collapse collapse">
-            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-          </div>
+          <hgroup>
+			<div class="logo-head-base">
+            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
+            </div> <!-- .logo-head -->
+            <h1 class="brand-base"><?php wp_title( " " ); ?></h1>
+		</hgroup>
+        <div class="nav-collapse collapse">
+            <div class="basemenu">
+                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            <div>
         </div>
-      </div>
+        </div> <!-- END container -->
+      </div> <!-- END inner -->
     </div> <!-- END NAVBAR -->
 
 
-<div id="page" class="hfeed site">
-	<?php do_action( 'before' ); ?>
-<header id="masthead" class="site-header" role="banner">
-		<div class="container">
-        <hgroup>
-        	
-			<?php $header_image = get_header_image();
-			if ( ! empty( $header_image ) ) { ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
-		
-        		</a>
-			<?php } // if ( ! empty( $header_image ) ) ?>
-			<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
-        </div>
 
-		<nav role="navigation" class="site-navigation main-navigation">
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- .site-navigation .main-navigation -->
 	</header><!-- #masthead .site-header -->
 
 	<div id="main" class="container">

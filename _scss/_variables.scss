@@ -167,14 +167,16 @@ $navbarBackground:                $joeorange !default;
 $navbarBackgroundHighlight:       $joeorange !default;
 $navbarBorder:                    darken($navbarBackground, 12%) !default;
 
-$navbarText:                      $gray !default;
-$navbarLinkColor:                 $gray !default;
-$navbarLinkColorHover:            $grayDark !default;
-$navbarLinkColorActive:           $gray !default;
+$navbarText:                      $grayLight !default;
+$navbarLinkColor:                 $white !default;
+$navbarLinkColorHover:            $white !default;
+$navbarLinkColorActive:           $navbarLinkColorHover !default;
 $navbarLinkBackgroundHover:       transparent !default;
-$navbarLinkBackgroundActive:      darken($navbarBackground, 5.25%) !default;
+$navbarLinkBackgroundActive:      $navbarBackground !default;
 
 $navbarBrandColor:                $navbarLinkColor !default;
+
+$elementHeight:					  $navbarHeight !default;
 
 // Inverted navbar
 $navbarInverseBackground:                #111111 !default;

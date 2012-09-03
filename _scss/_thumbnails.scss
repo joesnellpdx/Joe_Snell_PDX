@@ -28,15 +28,17 @@
   display: block;
   padding: 4px;
   line-height: $baseLineHeight;
-  border: 1px solid #ddd;
+  background-color: $white;
+  border: 1px solid $white;
   @include border-radius(4px);
-  @include box-shadow(0 1px 3px rgba(0,0,0,.055));
+  @include box-shadow(-1px 1px 2px rgba(0,0,0,.25));
   @include transition(all .2s ease-in-out);
 }
 // Add a hover state for linked versions only
 a.thumbnail:hover {
   border-color: $linkColor;
   @include box-shadow(0 1px 4px rgba(0,105,214,.25));
+  text-decoration: none;
 }
 
 // Images and captions
@@ -46,7 +48,21 @@ a.thumbnail:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.thumbnail .caption {
-  padding: 9px;
-  color: $gray;
+.thumbnail .caption,
+.portfolioimg h2 {
+  	padding: 9px;
+  	font-family: $baseFontFamily;
+	font-size: $baseFontSize;
+	color: $joeorange;
+	font-weight: normal;
+	line-height: $baseLineHeight;
+	padding-top: 8px;
+	margin: 0 0 $baseFontSize 0;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-decoration: blink;
 }
+.thumbnails a:hover {
+	text-decoration: none;
+}
+
+

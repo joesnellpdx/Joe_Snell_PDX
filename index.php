@@ -19,8 +19,6 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-				<?php Joe_Snell_PDX_content_nav( 'nav-above' ); ?>
-
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -34,7 +32,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php Joe_Snell_PDX_content_nav( 'nav-below' ); ?>
+			
 
 			<?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
 
@@ -45,5 +43,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary .site-content -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
