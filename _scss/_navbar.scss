@@ -347,7 +347,7 @@
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0;
+  
 }
 .navbar .nav.pull-right {
   float: right; // redeclare due to specificity
@@ -372,7 +372,7 @@
 	display: block;
     font-size: 1.2em;
 	line-height: 1em;
-    padding: 0 0 10px 0;
+    padding: 10px 0;
     margin: 0px;
 	@include box-sizing(border-box);
 	float:left;
@@ -419,7 +419,7 @@
   margin: 0px;
 }
 .navbar .nav .dropdown-toggle .caret {
-  margin-top: 8px;
+  
 }
 
 // Hover
