@@ -15,7 +15,7 @@ get_header(); ?>
                 <div class="contact-form">
                 	<div class="contact-form">
                         <form action="/scripts/contact.php" method="post">
-                        <h3>Contact Us</h3>
+                        <h3>Contact Me</h3>
                           <fieldset>
                           <div>
                             <label for="name">Your Name</label>

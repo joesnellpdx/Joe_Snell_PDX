@@ -30,5 +30,16 @@
   #masthead .btn {
     font-size: 24px;
   }
+  
+  .landingmenu {
+	  float: left;
+	  width: 33.333333%;
+  }
+  .navbar .landingmenu .nav > li, 
+  .navbar .landingmenu .menu > li {
+	  width: 100%;
+  }
+
+
 
 }

@@ -17,14 +17,72 @@
 	
 	$('body').scrollTop(1);
 	
-	$('.portfolio').equalizer(
-	{
-			columns : '> li',
-			min: 300,
-			overflow: 'overflowed'
+	//$('.portfolio').equalizer(
+	//{
+		//	columns : '> li',
+			//min: 300,
+			//overflow: 'overflowed'
 			
-			});
+			//});
 //$('.content-wrap').equalizer({ min: 200 });
+	$("#insertContent").hide();
+
+	if (document.documentElement.clientWidth < 766) {
+		$("#insertContent").hide();
+	}
+	
+	if (document.documentElement.clientWidth > 767) {
+		
+		$(".btn-about").click(function(event) {
+				event.preventDefault();
+				$('#insertContent').fadeOut('fast',function() {
+					$('#insertContent').load('about-me #main', function () {
+						$('#insertContent').addClass('insertCont');
+						$('#insertContent').hide().fadeIn('normal');
+					});
+				});
+		});
+		
+		$(".btn-blog").click(function(event) {
+				event.preventDefault();
+				$('#insertContent').fadeOut('fast',function() {
+					$('#insertContent').load('blog #main', function () {
+						$('#insertContent').addClass('insertCont');
+						$('#insertContent').hide().fadeIn('normal');
+					});
+				});
+		});
+		
+		$(".btn-work").click(function(event) {
+				event.preventDefault();
+				$('#insertContent').fadeOut('fast',function() {
+					$('#insertContent').load('work #main', function () {
+						$('#insertContent').addClass('insertCont');
+						$('#insertContent').hide().fadeIn('normal');
+					});
+				});
+		});
+		
+		$(".btn-contact").click(function(event) {
+				event.preventDefault();
+				$("#insertContent").fadeOut('fast',function() {
+					$('#insertContent').load('contact #main', function () {
+						$('#insertContent').addClass('insertCont');
+						$('#insertContent').hide().fadeIn('normal');
+					});
+				});
+		});
+		
+		
+		//$('.btn-about').click(function() {
+			//alert("Handler for .click() called.");
+		
+			//$('#insertContent').load('about-me .entry-content');
+		//}); //click
+		//$('.btn-blog a').click(function() {
+			//$('#insertContent').load('blog .entry-content');
+		//}); //click
+	}// end media 768
 
 }
 (window.jQuery)

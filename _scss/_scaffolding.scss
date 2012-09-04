@@ -25,6 +25,19 @@ body {
   clear: both;
 }
 
+#insertContent #main {
+	width:100%;
+	
+}
+.insertCont {
+	width: 62%;
+	float: left;
+	background: $joeBlueLight;
+	padding: 2%;
+	margin: 0 2% 2% 2%;
+	@include box-sizing(border-box);
+}
+
 
 
 // Links
