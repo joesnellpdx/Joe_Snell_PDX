@@ -19,8 +19,7 @@
 	  margin:0 auto;
 	  clear: both;
   }
-  #ajaxMenu {
-	  xxwidth: 25%;
+  #sidebar {
 	  float: left;
 	  @include box-sizing(border-box);
 	  
@@ -60,25 +59,28 @@
   float: none;
   // Vertically center the text given $navbarHeight
   $elementHeight: 20px;
-  padding: 0px;
+  padding: 10px;
   line-height: 19px;
-  color: $joeorange;
+  color: $grayDark;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  text-shadow: none;
   width: 100%;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: auto;
   text-align: left;
+  @include border-radius(0px);
+  @include box-shadow(none);
+  border: 0px;
 }
 
 .landingmenu i,
 .navbar i,
 .basemenu i {
 font-size: 1em;
-color: $joeorange;
-text-shadow: 1px 1px #555,-1px -1px black;
+color: $grayDark;
+text-shadow: none;
 float:left;
-padding: 0px;
+padding: 0px 20px 0px 5px;
 }
 
   // end menu adjust
@@ -102,6 +104,9 @@ padding: 0px;
   .basemenu {
 	  float: left;
 	  width: 20%;
+	  padding: 2%;
+		margin: 0 2% 2% 2%;
+		@include box-sizing(border-box);
   }
   .navbar .landingmenu .nav > li, 
   .navbar .landingmenu .menu > li,
@@ -111,11 +116,11 @@ padding: 0px;
 	  
   }
 
+
   .thumbnails {
 	  margin: 0px;
   }
   #content {
-	xxwidth: 50%;
 	float: left;
 	background: $white;
 	padding: 2%;

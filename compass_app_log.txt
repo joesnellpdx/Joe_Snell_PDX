@@ -1182,3 +1182,16 @@ Load paths:
 2012-09-04 15:45:47 overwrite _css/responsive.css 
 2012-09-04 15:59:50 overwrite _css/responsive.css 
 2012-09-04 16:50:56 overwrite _css/responsive.css 
+2012-09-04 17:42:57     error _scss/responsive.scss (Line 65 of _scss/_responsive-980px-min.scss: Invalid CSS after "  color: ": expected expression (e.g. 1px, bold), was "$$grayDark;")
+2012-09-04 17:42:58 overwrite _css/responsive.css 
+2012-09-04 17:43:31 identical _css/responsive.css 
+2012-09-04 17:44:05 identical _css/responsive.css 
+2012-09-04 17:46:32 identical _css/responsive.css 
+2012-09-04 17:46:57 identical _css/responsive.css 
+2012-09-04 17:48:38 identical _css/responsive.css 
+2012-09-04 17:49:01 identical _css/responsive.css 
+2012-09-04 17:54:05 identical _css/responsive.css 
+2012-09-04 18:00:40 identical _css/bootstrap.css 
+2012-09-04 18:01:22 identical _css/responsive.css 
+2012-09-04 18:01:34 identical _css/bootstrap.css 
+2012-09-04 18:01:46 identical _css/bootstrap.css 
