@@ -177,6 +177,7 @@
   }
   	.navbar-fixed-top, .navbar-fixed-bottom {
 		position: absolute;
+		z-index: -1000;
 	}
   .navbar-inner,
   .base .navbar-inner,
