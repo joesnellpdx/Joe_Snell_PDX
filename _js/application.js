@@ -6,12 +6,12 @@
 	
 	$('body').scrollTop(1);
 	$('#sidebar').hide();
-	$(window).bind('resize', function() {
-		location.reload();
+	var resizeTimer;
+	$(window).resize(function() {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(location.reload(), 300);
 	});
-	
-	
-	
+
 	
 	//$(".nav-collapse").find("#menu-primary-navigation").addClass("nav");
 	$(".main-navigation").find("ul").addClass("masthead-links");
@@ -98,6 +98,32 @@
 	if (document.documentElement.clientWidth > 980) {
 		$('#content').removeClass('span8').addClass('span6');
 		$('#sidebar').show('normal');
+		$('.menu li').hover(
+			
+				function() {
+					$(this).find('i').animate({
+						opacity: 1
+					}, 500 );
+				}, // end 1st hover function
+				function() {
+					$(this).find('i').animate({
+						opacity: 0
+					}, 500 );
+				} // end 2nd hover function
+				
+			);// end hover
+		/*$('.nav-collapse li').hover(
+			
+				function() {
+					$(this).find('i').css('color','blue' );
+				}, // end 1st hover function
+				function() {
+					$(this).find('i').css('color','green' );
+				} // end 2nd hover function
+				
+			);// end hover */
+			
+			
 	}
 
 }

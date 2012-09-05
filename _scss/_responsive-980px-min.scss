@@ -5,85 +5,20 @@
 
 @media (min-width: 980px) {
   
+	
 	.landingbody,
 	body {
 	  background: $white;
   }
   
-  #menu-primary-navigation {
-	margin: .5em auto;
-	width: 98%;
-  }
-  .basemenu {
-	  max-width: 400px;
-	  margin:0 auto;
-	  clear: both;
-  }
+   
   #sidebar {
 	  float: left;
 	  @include box-sizing(border-box);
 	  
   }
   
-  .basemenu .btn {
-	padding:0px;
-	margin:0px;
-	height: auto;
-  }
-  .basemenu p,
-  .landingmenu p {
-	  float: none;
-	  margin: 0px;
-  }
-  
-.navbar .basemenu  .nav > li,
-.navbar .basemenu  .menu > li,
-.navbar .landingmenu .nav > li,
-.navbar .landingmenu .menu > li {
-	display: block;
-    font-size: 1.2em;
-	line-height: 1em;
-    margin: 1%;
-	@include box-sizing(border-box);
-	float:left;
-	height: auto;
-	width: 100%;
-	border: none;
-	padding:0px;
-}
 
-.navbar .basemenu > li > a,
-.navbar .basemenu .menu > li > a,
-.navbar .landingmenu > li > a,
-.navbar .landingmenu .menu > li > a {
-  float: none;
-  // Vertically center the text given $navbarHeight
-  $elementHeight: 20px;
-  padding: 10px;
-  line-height: 19px;
-  color: $grayDark;
-  text-decoration: none;
-  text-shadow: none;
-  width: 100%;
-  font-size: 22px;
-  font-weight: auto;
-  text-align: left;
-  @include border-radius(0px);
-  @include box-shadow(none);
-  border: 0px;
-}
-
-.landingmenu i,
-.navbar i,
-.basemenu i {
-font-size: 1em;
-color: $grayDark;
-text-shadow: none;
-float:left;
-padding: 0px 20px 0px 5px;
-}
-
-  // end menu adjust
   
   #masthead {
 	padding: 	40px 20px;
@@ -100,22 +35,6 @@ padding: 0px 20px 0px 5px;
     font-size: 24px;
   }
   
-  .landingmenu,
-  .basemenu {
-	  float: left;
-	  width: 20%;
-	  padding: 2%;
-		margin: 0 2% 2% 2%;
-		@include box-sizing(border-box);
-  }
-  .navbar .landingmenu .nav > li, 
-  .navbar .landingmenu .menu > li,
-  .navbar .basemenu .nav > li, 
-  .navbar .basemenu .menu > li {
-	  width: 100%;
-	  
-  }
-
 
   .thumbnails {
 	  margin: 0px;
@@ -123,18 +42,12 @@ padding: 0px 20px 0px 5px;
   #content {
 	float: left;
 	background: $white;
-	padding: 2%;
-	margin: 0 2% 2% 2%;
+	padding: 0 2% 2% 0%;
+	margin: 0 2% 2% 0%;
 	@include box-sizing(border-box);
   }
-  .landingbody #content {
-	  display: none;
-  }
-  .btn-inverse,
-  .btn-inverse:hover,
-  .btn-inverse:active {
-	  background: $white;
-	  
+  .container {
+	  padding: 80px 0px 0px 20%;
   }
   
 
