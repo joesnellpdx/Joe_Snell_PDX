@@ -4,7 +4,15 @@
 
 !function ($) {
 	
-	$(".nav-collapse").find("ul").addClass("nav");
+	$('body').scrollTop(1);
+	$('#sidebar').hide();
+	$(window).bind('resize', function() {
+		location.reload();
+	});
+	
+	
+	
+	
 	//$(".nav-collapse").find("#menu-primary-navigation").addClass("nav");
 	$(".main-navigation").find("ul").addClass("masthead-links");
 	$(".landingmenu").find("a").addClass("btn btn-large btn-inverse landing-button");
@@ -15,7 +23,7 @@
 	$('.btn-contact a').prepend('<p class="btn-icon"><i class="icon-comment"></i></p>');
 	//$(".landingmenu").find( "ul" ).css('margin', '0px');
 	
-	$('body').scrollTop(1);
+
 	
 	//$('.portfolio').equalizer(
 	//{
@@ -25,15 +33,19 @@
 			
 			//});
 //$('.content-wrap').equalizer({ min: 200 });
-	$("#insertContent").hide();
+	// $("#insertContent").hide();
 
 	if (document.documentElement.clientWidth < 766) {
 		$("#insertContent").hide();
+		$(".basemenu").find("a").removeClass("btn btn-large btn-inverse landing-button");
+		$(".nav-collapse").find("ul").addClass("nav");
 	}
 	
 	if (document.documentElement.clientWidth > 767) {
+		$(".basemenu").find("a").addClass("btn btn-large btn-inverse landing-button");
+		$(".nav-collapse").find("ul").removeClass("nav");
 		
-		$(".btn-about").click(function(event) {
+		/* $(".btn-about").click(function(event) {
 				event.preventDefault();
 				$('#insertContent').fadeOut('fast',function() {
 					$('#insertContent').load('about-me #main', function () {
@@ -81,8 +93,12 @@
 		//}); //click
 		//$('.btn-blog a').click(function() {
 			//$('#insertContent').load('blog .entry-content');
-		//}); //click
-	}// end media 768
+		//}); //click */
+	} //end media 768
+	if (document.documentElement.clientWidth > 980) {
+		$('#content').removeClass('span8').addClass('span6');
+		$('#sidebar').show('normal');
+	}
 
 }
 (window.jQuery)

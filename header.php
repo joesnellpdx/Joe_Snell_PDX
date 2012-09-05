@@ -65,7 +65,7 @@
     ================================================== -->
     <div class="navbar navbar-fixed-top base">
       <div class="navbar-inner">
-        <div class="container">
+        
           <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             
             <i class="icon-hand-up navbtn"></i> 
@@ -73,7 +73,7 @@
           </button>
           <hgroup>
 			<div class="logo-head-base">
-            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
+            	<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
             </div> <!-- .logo-head -->
             <h1 class="brand-base"><?php wp_title( " " ); ?></h1>
 		</hgroup>
@@ -82,7 +82,7 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             <div>
         </div>
-        </div> <!-- END container -->
+        
       </div> <!-- END inner -->
     </div> <!-- END NAVBAR -->
 

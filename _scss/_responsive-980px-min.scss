@@ -3,23 +3,11 @@
 // --------------------------------------------------
 
 
-@media (min-width: 768px) and (max-width: 979px) {
-
-  // Fixed grid
-  @include grid-core($gridColumnWidth768, $gridGutterWidth768);
-
-  // Fluid grid
-  @include grid-fluid($fluidGridColumnWidth768, $fluidGridGutterWidth768);
-
-  // Input grid
-  @include grid-input($gridColumnWidth768, $gridGutterWidth768);
-
-  // No need to reset .thumbnails here since it's the same $gridGutterWidth
+@media (min-width: 980px) {
   
-  // adjust base menu to match landingmenu
-  
+	.landingbody,
 	body {
-	  background: url(../_img/bg.gif);
+	  background: $white;
   }
   
   #menu-primary-navigation {
@@ -31,34 +19,48 @@
 	  margin:0 auto;
 	  clear: both;
   }
+  #ajaxMenu {
+	  xxwidth: 25%;
+	  float: left;
+	  @include box-sizing(border-box);
+	  
+  }
   
   .basemenu .btn {
 	padding:0px;
 	margin:0px;
+	height: auto;
   }
-  .basemenu p {
+  .basemenu p,
+  .landingmenu p {
 	  float: none;
+	  margin: 0px;
   }
   
 .navbar .basemenu  .nav > li,
-.navbar .basemenu  .menu > li {
+.navbar .basemenu  .menu > li,
+.navbar .landingmenu .nav > li,
+.navbar .landingmenu .menu > li {
 	display: block;
     font-size: 1.2em;
 	line-height: 1em;
     margin: 1%;
 	@include box-sizing(border-box);
 	float:left;
-	height: 140px;
+	height: auto;
 	width: 100%;
 	border: none;
+	padding:0px;
 }
 
 .navbar .basemenu > li > a,
-.navbar .basemenu .menu > li > a {
+.navbar .basemenu .menu > li > a,
+.navbar .landingmenu > li > a,
+.navbar .landingmenu .menu > li > a {
   float: none;
   // Vertically center the text given $navbarHeight
   $elementHeight: 20px;
-  padding: (($navbarHeight - $elementHeight) / 2 - 1) 10px (($navbarHeight - $elementHeight) / 2 + 1);
+  padding: 0px;
   line-height: 19px;
   color: $joeorange;
   text-decoration: none;
@@ -66,13 +68,16 @@
   width: 100%;
   font-size: 16px;
   font-weight: auto;
+  text-align: left;
 }
 
+.landingmenu i,
+.navbar i,
 .basemenu i {
-font-size: 2.2em;
-color: #D6D6D6;
+font-size: 1em;
+color: $joeorange;
 text-shadow: 1px 1px #555,-1px -1px black;
-display: inline;
+float:left;
 padding: 0px;
 }
 
@@ -96,22 +101,23 @@ padding: 0px;
   .landingmenu,
   .basemenu {
 	  float: left;
-	  width: 33.333333%;
+	  width: 20%;
   }
   .navbar .landingmenu .nav > li, 
   .navbar .landingmenu .menu > li,
   .navbar .basemenu .nav > li, 
   .navbar .basemenu .menu > li {
 	  width: 100%;
+	  
   }
 
   .thumbnails {
 	  margin: 0px;
   }
   #content {
-	width: 62%;
+	xxwidth: 50%;
 	float: left;
-	background: $joeBlueLight;
+	background: $white;
 	padding: 2%;
 	margin: 0 2% 2% 2%;
 	@include box-sizing(border-box);
@@ -119,6 +125,13 @@ padding: 0px;
   .landingbody #content {
 	  display: none;
   }
+  .btn-inverse,
+  .btn-inverse:hover,
+  .btn-inverse:active {
+	  background: $white;
+	  
+  }
+  
 
 
 }

@@ -5,7 +5,8 @@
 
 // TABLETS AND BELOW
 // -----------------
-@media (max-width: $navbarCollapseWidth) {
+/* @media (max-width: $navbarCollapseWidth) { */
+@media all {
 
   // UNFIX THE TOPBAR
   // ----------------
@@ -150,6 +151,17 @@
   }
 
 
+}
+@media (min-width: 768px)  {
+	.nav-collapse,
+	.nav-collapse.collapse {
+		overflow: visible;
+		height: auto;
+	}
+	  // Navbar button
+  .navbar .btn-navbar {
+    display: none;
+  }
 }
 
 

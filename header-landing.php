@@ -70,14 +70,14 @@
 			<div class="logo-head">
                 <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
          	</div> <!-- .logo-head -->
-                <h1 class="brand"><?php bloginfo( 'name' ); ?></br>
-                <span class="sub-head"><?php bloginfo( 'description' ); ?></span></h1>
-                
+          	<h1 class="brand"><?php bloginfo( 'name' ); ?></br>
+          	<span class="sub-head"><?php bloginfo( 'description' ); ?></span></h1>
+          	</hgroup>   
     		<div class="landingmenu">
 					<?php wp_nav_menu( array( 'theme_location' => 'landing' ) ); ?>
             </div>
             
-		</hgroup>
+		
        
         </div>  <!-- .inner -->
         </div>  <!-- navbar -->
