@@ -1274,3 +1274,23 @@ Load paths:
 2012-09-05 14:08:49 overwrite _css/responsive.css 
 2012-09-05 14:09:26 overwrite _css/responsive.css 
 2012-09-05 14:11:07 identical _css/responsive.css 
+2012-09-06 10:10:46 identical _css/bootstrap.css 
+2012-09-06 10:11:35 identical _css/bootstrap.css 
+2012-09-06 10:12:26 overwrite _css/bootstrap.css 
+2012-09-06 10:12:30 identical _css/bootstrap.css 
+2012-09-06 10:18:43 identical _css/bootstrap.css 
+2012-09-06 10:19:51 overwrite _css/bootstrap.css 
+2012-09-06 10:20:27 identical _css/bootstrap.css 
+2012-09-06 10:20:31 identical _css/bootstrap.css 
+2012-09-06 10:20:45 identical _css/bootstrap.css 
+2012-09-06 10:22:35     error _scss/bootstrap.scss (Line 27 of _scss/_font-awesome.scss: Invalid CSS after "*": expected "{", was "$fontAwesomePat...")
+2012-09-06 10:22:35 overwrite _css/bootstrap.css 
+2012-09-06 10:22:44 overwrite _css/bootstrap.css 
+2012-09-06 10:23:18 identical _css/bootstrap.css 
+2012-09-06 10:24:07 identical _css/bootstrap.css 
+2012-09-06 10:26:03 overwrite _css/bootstrap.css 
+2012-09-06 10:28:32 overwrite _css/bootstrap.css 
+2012-09-06 10:29:23 overwrite _css/bootstrap.css 
+2012-09-06 10:43:59 overwrite _css/bootstrap.css 
+2012-09-06 10:54:24    create _css/bootstrap.css 
+2012-09-06 10:54:24 identical _css/responsive.css 

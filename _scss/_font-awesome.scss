@@ -24,7 +24,9 @@
 	
 @import "compass/css3/font-face";
 
-$fontAwesomePath: "/wp-content/themes/boot_s/_font/fontawesome-webfont" !default;
+
+/*$fontAwesomePath: "/wp-content/themesjoesnellpdx-joe_snell_pdx-06968d3/_font/fontawesome-webfont" !default;*/
+$fontAwesomePath: "fontawesome-webfont" !default;
 
 @include font-face(
     'FontAwesome',

@@ -9,7 +9,7 @@
 	var resizeTimer;
 	$(window).resize(function() {
 		clearTimeout(resizeTimer);
-		resizeTimer = setTimeout(location.reload(), 300);
+		resizeTimer = setTimeout(location.reload(), 500);
 	});
 
 	

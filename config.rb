@@ -4,6 +4,7 @@
 http_path = "/"
 css_dir = "_css"
 sass_dir = "_scss"
+fonts_dir = "_font"
 images_dir = "_img"
 javascripts_dir = "_js"
 
