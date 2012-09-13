@@ -59,6 +59,7 @@
 
 <body data-spy="scroll" <?php body_class(); ?>>
 
+<div id="main" class="container">
 <header>
 
 	<!-- Navbar
@@ -75,7 +76,9 @@
 			<div class="logo-head-base">
             	<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
             </div> <!-- .logo-head -->
-            <h1 class="brand-base"><?php wp_title( " " ); ?></h1>
+            <div class="brand-text span10 offset2">
+            	<h1 class="brand-base"><?php wp_title( " " ); ?></h1>
+            </div>
 		</hgroup>
         <div class="nav-collapse collapse">
             <div class="basemenu">
@@ -90,5 +93,5 @@
 
 	</header><!-- #masthead .site-header -->
 
-	<div id="main" class="container">
+
    

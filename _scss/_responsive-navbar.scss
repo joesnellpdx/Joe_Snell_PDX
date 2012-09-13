@@ -176,8 +176,7 @@
     overflow: visible !important;
   }
   	.navbar-fixed-top, .navbar-fixed-bottom {
-		position: absolute;
-		z-index: -1000;
+		
 	}
   .navbar-inner,
   .base .navbar-inner,
@@ -269,9 +268,15 @@ padding: 0px 10px 0px 0px;
   .basemenu {
 	  float: left;
 	  width: 20%;
-	  padding: 2%;
-		margin: 0 2% 2% 2%;
-		@include box-sizing(border-box);
+	@include box-sizing(border-box);
+	padding: 70px 2% 2% 4%;
+  }
+  
+  .landingmenu {
+	  padding: 70px 2% 2% 4%;
+  }
+  .basemenu {
+	  padding: 80px 2% 2% 4%;
   }
 
   .navbar .landingmenu .nav > li, 
@@ -293,6 +298,7 @@ padding: 0px 10px 0px 0px;
 	  height: auto;
 	  padding: 2% 4% 0% 4%;
 	  float: left;
+	  position: absolute;
   }
 
 
@@ -302,7 +308,17 @@ padding: 0px 10px 0px 0px;
 	  margin: 0;
 	  color: $joeorange;
 	  font-size: $navFontSize; 
-	  line-height: auto;
+  }
+  .navbar .brand-base {
+	  line-height: $navbarBaseHeight;
   }
 
+}
+@media (min-width: 1200px) {
+	  .landingmenu {
+	  padding: 100px 2% 2% 4%;
+  }
+  .basemenu {
+	  padding: 110px 2% 2% 4%;
+  }
 }

@@ -1338,3 +1338,18 @@ Load paths:
 2012-09-10 18:28:58 overwrite _css/responsive.css 
 2012-09-10 18:38:19 overwrite _css/responsive.css 
 2012-09-10 18:59:18 overwrite _css/responsive.css 
+2012-09-13 10:59:02 identical _css/responsive.css 
+2012-09-13 11:07:06 overwrite _css/responsive.css 
+2012-09-13 11:10:24 overwrite _css/responsive.css 
+2012-09-13 11:12:03 overwrite _css/responsive.css 
+2012-09-13 11:22:30     error _scss/responsive.scss (Line 8 of _scss/_responsive-utilities.scss: Invalid CSS after "// Clearing floats": expected selector or at-rule, was "}")
+2012-09-13 11:22:30 overwrite _css/responsive.css 
+2012-09-13 11:22:54 identical _css/responsive.css 
+2012-09-13 11:55:27 identical _css/responsive.css 
+2012-09-13 15:23:37 overwrite _css/responsive.css 
+2012-09-13 15:28:01 identical _css/responsive.css 
+2012-09-13 15:28:24 identical _css/responsive.css 
+2012-09-13 15:29:01 overwrite _css/responsive.css 
+2012-09-13 15:29:32 identical _css/responsive.css 
+2012-09-13 15:31:02 identical _css/responsive.css 
+2012-09-13 15:31:50 identical _css/responsive.css 

@@ -6,8 +6,8 @@ Template Name: joesnell-portfolio
 get_header('portfolio'); ?>
 
 
-		<div id="primary" class="site-content">
-			<div id="content" role="main">
+		<div id="primary" class="site-content row-fluid">
+			<div id="content" role="main" class="span8">
             	<div id="portfolio" class="content-wrap">
                 		<ul class="thumbnails">
 					
@@ -22,10 +22,11 @@ get_header('portfolio'); ?>
 
 
 			</div><!-- #content -->
-		</div><!-- #primary .site-content -->
-        <div id="sidebar" class="span3">
+             <div id="sidebar" class="span3">
             	<?php get_sidebar(); ?>
          	</div>
+		</div><!-- #primary .site-content -->
+       
 
 
-<?php get_footer(landing); ?>
+<?php get_footer(); ?>

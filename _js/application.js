@@ -70,6 +70,7 @@ function resizeHandler(){
 	} //end media 768
 	if (document.documentElement.clientWidth < 980) {
 		$('#content').removeClass('span6').addClass('span8');
+		$('.brand-text').removeClass('span10').removeClass('offset2');
 		$('#sidebar').hide();
 		$('.menu li').hover(
 			
@@ -100,6 +101,7 @@ function resizeHandler(){
 	}
 	if (document.documentElement.clientWidth > 980) {
 		$('#content').removeClass('span8').addClass('span6');
+		$('.brand-text').addClass('span10').addClass('offset2');
 		$('#sidebar').show('normal');
 		$('.menu li').hover(
 			
