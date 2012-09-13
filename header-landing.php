@@ -77,7 +77,8 @@
           	<span class="sub-head"><?php bloginfo( 'description' ); ?></span></h1>
             </div>
        	</hgroup>   
-    		<div class="nav-collapse collapse"><div class="landingmenu">
+    		
+            <div class="landingmenu">
 					<?php wp_nav_menu( array( 'theme_location' => 'landing' ) ); ?>
             </div>
             

@@ -117,7 +117,7 @@ padding: 0px;
 	float: left;
 	background: $joeBlueLight;
 	padding: 2%;
-	margin: 0 2% 2% 2%;
+	margin: $baseLineHeight 2% 2% 2%;
 	@include box-sizing(border-box);
   }
   .landingbody #content {

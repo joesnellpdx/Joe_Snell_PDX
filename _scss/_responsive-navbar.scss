@@ -20,7 +20,7 @@
     position: relative;
   }
   .navbar-fixed-top {
-    margin-bottom: $baseLineHeight;
+    xxmargin-bottom: $baseLineHeight;
   }
   .navbar-fixed-bottom {
     margin-top: $baseLineHeight;
@@ -228,7 +228,6 @@
 .navbar .landingmenu .menu > li > a {
   float: none;
   // Vertically center the text given $navbarHeight
-  $elementHeight: 20px;
   padding: 10px;
   line-height: 19px;
   color: $grayDark;
