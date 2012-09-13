@@ -19,6 +19,9 @@ get_header('child'); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
+            <div id="sidebar" class="span3">
+            	<?php get_sidebar(); ?>
+         	</div>
 		</div><!-- #primary .site-content -->
 
 

@@ -17,7 +17,7 @@
   // Unfix the navbars
   .navbar-fixed-top,
   .navbar-fixed-bottom {
-    position: static;
+    position: relative;
   }
   .navbar-fixed-top {
     margin-bottom: $baseLineHeight;
@@ -184,7 +184,10 @@
   .navbar-fixed-top .navbar-inner,
    .navbar-static-top .navbar-inner {
 	  background: $white;
+	  background-color: $white;
 	  @include box-shadow(none);
+	  @include gradient-vertical($white, $white);
+	  height: auto;
   }
   #menu-landing-menu,
    #menu-primary-navigation {
@@ -295,7 +298,6 @@ padding: 0px 10px 0px 0px;
 
   .navbar .brand-base,
   .navbar .brand {
-	  color: $grayDark;
 	  padding: 3% 0;
 	  margin: 0;
 	  color: $joeorange;

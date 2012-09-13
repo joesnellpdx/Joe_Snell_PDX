@@ -8,6 +8,7 @@ get_header(); ?>
 
 		<div id="primary" class="site-content row-fluid">
 			<div id="content" role="main" class="span8">
+            
 
 				<?php while ( have_posts() ) : the_post(); ?>
 

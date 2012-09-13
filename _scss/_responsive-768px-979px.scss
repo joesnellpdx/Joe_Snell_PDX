@@ -20,12 +20,15 @@
   
 	body,
 	.landingbody {
-	  background: url(../_img/bg.gif);
+	  background: transparent url(../_img/bg.gif);
   }
   
   #menu-primary-navigation {
 	margin: .5em auto;
 	width: 98%;
+  }
+  #main {
+	  margin-left: 33.33%;
   }
   .basemenu {
 	  max-width: 400px;

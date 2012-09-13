@@ -15,7 +15,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  <!-- END ADD -->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta charset="<?php bloginfo( 'charset' ); ?>" >
 
 <title><?php
 	/*

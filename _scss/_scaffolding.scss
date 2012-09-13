@@ -20,9 +20,11 @@ body {
 }
 
 .landingmenu {
-  max-width: 400px;
-  margin: 0 auto;
-  clear: both;
+	  max-width: 400px;
+	  margin: 0 auto;
+	  clear: both;
+	  position: relative;
+	  width:96%;
 }
 
 #insertContent #main {

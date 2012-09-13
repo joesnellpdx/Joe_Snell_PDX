@@ -14,11 +14,10 @@
 
 get_header(); ?>
 
+		<div id="primary" class="site-content">
+			<div id="content" role="main">
 
-		<div id="primary" class="site-content row-fluid">
-			<div id="content" role="main" class="span8">
-
-				<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -40,11 +39,8 @@ get_header(); ?>
 				<?php get_template_part( 'no-results', 'index' ); ?>
 
 			<?php endif; ?>
+
 			</div><!-- #content -->
-            <div id="sidebar" class="span3">
-            	<?php get_sidebar(); ?>
-         	</div>
-            
 		</div><!-- #primary .site-content -->
 
 

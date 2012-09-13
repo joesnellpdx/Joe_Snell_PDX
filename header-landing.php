@@ -11,7 +11,7 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="Joe_Snell_PDX Wordpress Theme: Fusion of _s and Twitter Bootstrap">
     <meta name="author" content="Joe Snell">
     <title><?php
@@ -45,11 +45,11 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="_ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="wp-content/themes/Joe_Snell_PDX/_ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="wp-content/themes/Joe_Snell_PDX/_ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="wp-content/themes/Joe_Snell_PDX/_ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="wp-content/themes/Joe_Snell_PDX/_ico/apple-touch-icon-57-precomposed.png">
     
     <?php wp_head(); ?>
     

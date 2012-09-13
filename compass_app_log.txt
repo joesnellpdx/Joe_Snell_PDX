@@ -1294,3 +1294,47 @@ Load paths:
 2012-09-06 10:43:59 overwrite _css/bootstrap.css 
 2012-09-06 10:54:24    create _css/bootstrap.css 
 2012-09-06 10:54:24 identical _css/responsive.css 
+2012-09-06 11:06:23 overwrite _css/bootstrap.css 
+2012-09-06 11:06:44 overwrite _css/bootstrap.css 
+2012-09-06 11:07:52 identical _css/bootstrap.css 
+2012-09-10 12:32:37 overwrite _css/bootstrap.css 
+2012-09-10 12:32:38 overwrite _css/responsive.css 
+2012-09-10 13:55:00 overwrite _css/responsive.css 
+2012-09-10 14:06:39     error _scss/responsive.scss (Line 415 of _scss/_mixins.scss: "none" is not a color for `mix')
+2012-09-10 14:06:39 overwrite _css/responsive.css 
+2012-09-10 14:07:12     error _scss/responsive.scss (Line 190 of _scss/_responsive-navbar.scss: Invalid CSS after "...-reset-filter()": expected "{", was "}")
+2012-09-10 14:07:12 overwrite _css/responsive.css 
+2012-09-10 14:07:17     error _scss/responsive.scss (Line 189 of _scss/_responsive-navbar.scss: Invalid CSS after "...-reset-filter()": expected "{", was ";")
+2012-09-10 14:07:17 overwrite _css/responsive.css 
+2012-09-10 14:12:17     error _scss/responsive.scss (Line 415 of _scss/_mixins.scss: (#fff #fff) is not a color for `mix')
+2012-09-10 14:12:18 overwrite _css/responsive.css 
+2012-09-10 14:17:55 overwrite _css/responsive.css 
+2012-09-10 14:24:34 identical _css/bootstrap.css 
+2012-09-10 14:25:03 identical _css/bootstrap.css 
+2012-09-10 14:25:15 identical _css/bootstrap.css 
+2012-09-10 14:25:29 identical _css/bootstrap.css 
+2012-09-10 14:45:27 identical _css/bootstrap.css 
+2012-09-10 14:48:32 overwrite _css/bootstrap.css 
+2012-09-10 14:49:34 overwrite _css/bootstrap.css 
+2012-09-10 14:49:46 overwrite _css/bootstrap.css 
+2012-09-10 14:52:38 identical _css/bootstrap.css 
+2012-09-10 14:53:36 overwrite _css/bootstrap.css 
+2012-09-10 15:14:02 identical _css/bootstrap.css 
+2012-09-10 15:14:50 identical _css/bootstrap.css 
+2012-09-10 15:16:18 overwrite _css/bootstrap.css 
+2012-09-10 15:23:28 overwrite _css/responsive.css 
+2012-09-10 17:24:10 overwrite _css/responsive.css 
+2012-09-10 17:40:05 overwrite _css/responsive.css 
+2012-09-10 17:41:24 overwrite _css/responsive.css 
+2012-09-10 17:43:21 identical _css/responsive.css 
+2012-09-10 17:43:33 overwrite _css/responsive.css 
+2012-09-10 17:51:37 overwrite _css/responsive.css 
+2012-09-10 18:12:04 overwrite _css/responsive.css 
+2012-09-10 18:13:57 overwrite _css/responsive.css 
+2012-09-10 18:20:55 overwrite _css/responsive.css 
+2012-09-10 18:22:15 overwrite _css/responsive.css 
+2012-09-10 18:25:33 identical _css/responsive.css 
+2012-09-10 18:25:41 overwrite _css/responsive.css 
+2012-09-10 18:28:58 overwrite _css/responsive.css 
+2012-09-10 18:38:19 overwrite _css/responsive.css 
+2012-09-10 18:59:18 overwrite _css/responsive.css 
