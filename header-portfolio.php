@@ -28,14 +28,13 @@
 	// Add the blog name.
 	bloginfo( 'name' );?></title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/_ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/_ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/_ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/_ico/apple-touch-icon-57-precomposed.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/wp-content/themes/Joe_Snell_PDX/_ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/wp-content/themes/Joe_Snell_PDX/_ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/wp-content/themes/Joe_Snell_PDX/_ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/wp-content/themes/Joe_Snell_PDX/_ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/wp-content/themes/Joe_Snell_PDX/_ico/apple-touch-icon-57-precomposed.png">
     
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
