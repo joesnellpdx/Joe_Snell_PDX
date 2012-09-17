@@ -5,10 +5,9 @@ Template Name: joesnell-child
 
 get_header('child'); ?>
 
-	<hr class="soften">
 
-		<div id="primary" class="site-content">
-			<div id="content" role="main">
+		<div id="primary" class="site-content row-fluid">
+			<div id="content" role="main" class="span8">
 
 				<?php while ( have_posts() ) : the_post(); ?>
 

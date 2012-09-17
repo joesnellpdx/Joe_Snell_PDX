@@ -87,7 +87,7 @@
             <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
             </div> <!-- .logo-head -->
             <div class="brand-text span10 offset2">
-             	<h2 class="brand-base">Blog</h2>
+             	<h2 class="brand-base">Work</h2>
           	</div>
 		</hgroup>
         <div class="nav-collapse collapse">

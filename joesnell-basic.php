@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: joesnell-basic
+Template Name: joesnell-basic: the primary page template
 */
 
 get_header(); ?>

@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The Template for displaying all single posts not including 'portfolio'.
@@ -6,16 +5,8 @@
  * @package Joe_Snell_PDX
  * @since Joe_Snell_PDX 1.0
  */
- 
- 
-$post = $wp_query->post;
-if ( in_category(portfolio) ) {
-get_header('childportfolio'); // use header-videos.php
 
-} else {
-get_header('child'); // use default header.php
-}
- ?>
+get_header('child'); ?>
 
 		<div id="primary" class="site-content row-fluid">
 			<div id="content" role="main" class="span8">
