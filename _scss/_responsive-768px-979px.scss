@@ -24,7 +24,7 @@
   }
   
   #menu-primary-navigation {
-	margin: .5em auto;
+	margin: 1em auto;
 	width: 98%;
   }
   #main {
@@ -42,6 +42,7 @@
   }
   .basemenu p {
 	  float: none;
+	  padding-bottom: 10px;
   }
   
 .navbar .basemenu  .nav > li,
@@ -68,13 +69,17 @@
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
   width: 100%;
-  font-size: 16px;
   font-weight: auto;
+}
+.navbar .landingmenu > li > a,
+.navbar .landingmenu .menu > li > a,
+.navbar .basemenu > li > a,
+.navbar .basemenu .menu > li > a {
+	font-size: 18px;	
 }
 
 .basemenu i {
 font-size: 2.2em;
-color: #D6D6D6;
 text-shadow: 1px 1px #555,-1px -1px black;
 display: inline;
 padding: 0px;
@@ -107,6 +112,7 @@ padding: 0px;
   .navbar .basemenu .nav > li, 
   .navbar .basemenu .menu > li {
 	  width: 100%;
+	  padding: 0px;
   }
 
   .thumbnails {

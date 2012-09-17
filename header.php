@@ -70,7 +70,7 @@
         
           <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             
-            <i class="icon-hand-up navbtn"></i> 
+            <i class="icon-reorder navbtn"></i> 
             
           </button>
           <hgroup>

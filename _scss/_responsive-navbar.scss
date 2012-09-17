@@ -71,7 +71,7 @@
     padding: 9px 15px;
     font-weight: bold;
     color: $navbarLinkColor;
-    @include border-radius(3px);
+    @include border-radius(none);
   }
   // Buttons
   .nav-collapse .btn {
@@ -162,6 +162,7 @@
   .navbar .btn-navbar {
     display: none;
   }
+  
 }
 
 
@@ -219,7 +220,8 @@
 	height: auto;
 	width: 100%;
 	border: none;
-	padding:0px;
+	width: 100%;
+	padding: 5px 0px;
 }
 
 .navbar .basemenu > li > a,
@@ -278,13 +280,7 @@ padding: 0px 10px 0px 0px;
 	  padding: 80px 2% 2% 4%;
   }
 
-  .navbar .landingmenu .nav > li, 
-  .navbar .landingmenu .menu > li,
-  .navbar .basemenu .nav > li, 
-  .navbar .basemenu .menu > li {
-	  width: 100%;
-	  
-  }
+
    .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
     padding: 0px;
