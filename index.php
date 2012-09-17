@@ -19,8 +19,11 @@ get_header(); ?>
 			<div id="content" role="main" class="span8">
 
 				<?php if ( have_posts() ) : ?>
-
-				<?php /* Start the Loop */ ?>
+                
+				<?php if ( is_home() ) {
+					query_posts('category_name=blog');
+					}
+					?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php
