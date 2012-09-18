@@ -1417,3 +1417,21 @@ Load paths:
 2012-09-18 12:10:59 overwrite _css/bootstrap.css 
 2012-09-18 12:12:38 identical _css/bootstrap.css 
 2012-09-18 12:14:31 overwrite _css/bootstrap.css 
+2012-09-18 12:18:10     error _scss/bootstrap.scss (Line 150 of _scss/_type.scss: Undefined variable: "$greyLight".)
+2012-09-18 12:18:10 overwrite _css/bootstrap.css 
+2012-09-18 12:18:29 identical _css/bootstrap.css 
+2012-09-18 12:18:40 identical _css/bootstrap.css 
+2012-09-18 12:23:01 overwrite _css/bootstrap.css 
+2012-09-18 12:24:18 overwrite _css/bootstrap.css 
+2012-09-18 12:25:04 overwrite _css/bootstrap.css 
+2012-09-18 12:26:42 identical _css/bootstrap.css 
+2012-09-18 12:30:48 overwrite _css/bootstrap.css 
+2012-09-18 12:39:46 overwrite _css/bootstrap.css 
+2012-09-18 12:40:33 overwrite _css/bootstrap.css 
+2012-09-18 12:41:48 overwrite _css/bootstrap.css 
+2012-09-18 12:43:14 identical _css/bootstrap.css 
+2012-09-18 12:45:08 identical _css/bootstrap.css 
+2012-09-18 12:46:35 identical _css/responsive.css 
+2012-09-18 12:48:15     error _scss/responsive.scss (Line 27 of _scss/_responsive-980px-min.scss: Invalid CSS after "  }": expected ")", was "#masthead {")
+2012-09-18 12:48:15 overwrite _css/responsive.css 
+2012-09-18 12:48:31 overwrite _css/responsive.css 
