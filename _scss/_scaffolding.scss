@@ -39,6 +39,17 @@ body {
 	margin: 0 2% 2% 2%;
 	@include box-sizing(border-box);
 }
+.contact-intro {
+	padding-bottom: 2em;
+}
+.contact-intro p:nth-of-type(1) {
+	padding-top: 2em;
+}
+
+.contact-form input[type="text"],
+.contact-form input {
+	max-width: 90%;
+}
 
 
 
@@ -53,6 +64,24 @@ a:hover {
   color: $linkColorHover;
   text-decoration: underline;
 }
+
+  .quick-links {
+	  text-align: center;
+	  font-size: 30px; 
+	  line-height: 40px;
+	  padding-top: 10px;
+	  width: 100%;
+  }
+  .quick-links a {
+	  padding:10px;
+	  text-decoration: none;
+	  color: $grayDark;
+	  @include transition(color .5s ease);
+  }
+   .quick-links a:hover {
+	   color: $joeorange;
+	   @include transition(color .5s ease);
+   }
 
 
 // Images

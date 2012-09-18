@@ -151,6 +151,8 @@ function resizeHandler(){
 	$('.btn-work a').prepend('<p class="btn-icon"><i class="icon-briefcase"></i></p>');
 	$('.btn-blog a').prepend('<p class="btn-icon"><i class="icon-pencil"></i></p>');
 	$('.btn-contact a').prepend('<p class="btn-icon"><i class="icon-comment"></i></p>');
+	$('.contact-intro').prepend('<div class="quick-links"><a href="mailto:joesnellpdx@gmail.com"><i class="icon-envelope"></i></a><a href="https://twitter.com/joesnellpdx" target="_blank"><i class="icon-twitter"></i></a><a href="http://www.linkedin.com/in/joesnellpdx" target="_blank"><i class="icon-linkedin"></i></a><a href="tel:+15037011968"><i class="icon-phone"></i></a></div>');
+	
 	//$(".landingmenu").find( "ul" ).css('margin', '0px');
 	
 
