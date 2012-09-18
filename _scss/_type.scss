@@ -144,6 +144,40 @@ dd {
 	padding: 0 10px;
 	color: rgba(255, 255, 255, .25);
 }
+ul.chirp {
+padding: 0;
+margin: 0;
+}
+ul.chirp li {
+position: relative;
+list-style: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+padding: 10px 30px 10px 80px;
+}
+ul.chirp li img {
+position: absolute;
+left: 30px;
+top: 10px;
+margin-right: 10px;
+width: 40px;
+height: 40px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border: none;
+}
+/*.chirp {
+	padding: 5px;
+}
+.chirp li {
+	list-style-type: none;
+}
+.chirp img {
+	float: left;
+	margin: 0 5px 5px 0;
+	width: 20%;
+	
+} */
 
 // MISC
 // ----
