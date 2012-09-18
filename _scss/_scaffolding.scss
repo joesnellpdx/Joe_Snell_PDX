@@ -75,3 +75,7 @@ a:hover {
 .img-circle {
   @include border-radius(500px);
 }
+.category-portfolio img {
+	padding-top:2em;
+}
+
