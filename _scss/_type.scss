@@ -157,6 +157,7 @@ padding: 10px 10px 10px 60px;
 
   display: inline-block;
   @include ie7-inline-block();
+
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   vertical-align: middle;
@@ -182,6 +183,9 @@ height: 40px;
 -moz-border-radius: 5px;
 border-radius: 5px;
 border: none;
+}
+ul.chirp li a {
+	@include hyphens();
 }
 /*.chirp {
 	padding: 5px;
