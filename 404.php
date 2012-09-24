@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying 404 pages (Not Found).
+ * The template for displaying 404 pages (Not Found). 
  *
  * @package Joe_Snell_PDX
  * @since Joe_Snell_PDX 1.0

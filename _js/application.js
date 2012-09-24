@@ -140,7 +140,7 @@ function resizeHandler(){
 	$(window).resize(function() {
 		clearTimeout(resizeTimer);
 		resizeTimer = setTimeout(resizeHandler(), 1000);
-	}); 
+	});
 
 	
 	//$(".nav-collapse").find("#menu-primary-navigation").addClass("nav");

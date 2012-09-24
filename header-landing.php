@@ -14,7 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="Joe_Snell_PDX Wordpress Theme: Fusion of _s and Twitter Bootstrap">
     <meta name="author" content="Joe Snell">
-    <title><?php
+    <title>
+
+        <?php
         /*
          * Print the <title> tag based on what is being viewed.
          */
@@ -34,7 +36,9 @@
         if ( $paged >= 2 || $page >= 2 )
             echo ' | ' . sprintf( __( 'Page %s', 'Joe_Snell_PDX' ), max( $paged, $page ) );
     
-        ?></title>
+        ?>
+
+    </title>
         
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
