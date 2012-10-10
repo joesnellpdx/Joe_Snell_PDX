@@ -1,6 +1,4 @@
 Joe_Snell_PDX
 =============
 
-My personal website theme from <a href="https://github.com/joesnellpdx/Boot_s">Boot_s</a>
-
-Boot_s is a fusion of Twitter Bootstrap and _s from Automattic.
+This is my personal wordpress theme.  It is continually in flux.
