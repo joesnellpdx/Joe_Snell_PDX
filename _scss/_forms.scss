@@ -54,7 +54,7 @@ textarea {
 // Identify controls by their labels
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: .312em;
 }
 
 // Form controls
@@ -80,8 +80,8 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: $baseLineHeight;
-  padding: 4px 6px;
-  margin-bottom: 9px;
+  padding: .25em .375em;
+  margin-bottom: .562em;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   color: $gray;
@@ -92,7 +92,7 @@ input[type="color"],
 // Declare width for legacy (can't be on input[type=*] selectors or it's too specific)
 input,
 textarea {
-  width: 210px;
+  width: 13.125em;
 }
 // Reset height since textareas have rows
 textarea {
@@ -133,9 +133,9 @@ input[type="color"],
 // Position radios and checkboxes better
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: .25em 0 0;
   *margin-top: 0; /* IE7 */
-  margin-top: 1px \9; /* IE8-9 */
+  margin-top: .0625em \9; /* IE8-9 */
   line-height: normal;
   cursor: pointer;
 }
@@ -154,14 +154,14 @@ input[type="checkbox"] {
 // Set the height of select and file controls to match text inputs
 select,
 input[type="file"] {
-  height: 30px; /* In IE7, the height of the select element cannot be changed by height, only font-size */
-  *margin-top: 4px; /* For IE7, add top margin to align select with labels */
-  line-height: 30px;
+  height: 1.875em; /* In IE7, the height of the select element cannot be changed by height, only font-size */
+  *margin-top: .25em; /* For IE7, add top margin to align select with labels */
+  line-height: 1.875em;
 }
 
 // Make select elements obey height by applying a border
 select {
-  width: 220px; // default input width + 10px of padding that doesn't get applied
+  width: 13.75em; // default input width + 10px of padding that doesn't get applied
   border: 1px solid #bbb;
   background-color: $inputBackground; // Chrome on Linux and Mobile Safari need background-color
 }
@@ -223,19 +223,19 @@ textarea {
 // Indent the labels to position radios/checkboxes as hanging
 .radio,
 .checkbox {
-  min-height: 18px; // clear the floating input if there is no label text
-  padding-left: 18px;
+  min-height: 1.125em; // clear the floating input if there is no label text
+  padding-left: 1.125em;
 }
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
   float: left;
-  margin-left: -18px;
+  margin-left: -1.125em;
 }
 
 // Move the options list down to align with labels
 .controls > .radio:first-child,
 .controls > .checkbox:first-child {
-  padding-top: 5px; // has to be padding because margin collaspes
+  padding-top: .312em; // has to be padding because margin collaspes
 }
 
 // Radios and checkboxes on same line
@@ -243,13 +243,13 @@ textarea {
 .radio.inline,
 .checkbox.inline {
   display: inline-block;
-  padding-top: 5px;
+  padding-top: .312em;
   margin-bottom: 0;
   vertical-align: middle;
 }
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
-  margin-left: 10px; // space out consecutive inline controls
+  margin-left: .625em; // space out consecutive inline controls
 }
 
 
@@ -258,12 +258,12 @@ textarea {
 // -----------
 
 // General classes for quick sizes
-.input-mini       { width: 60px; }
-.input-small      { width: 90px; }
-.input-medium     { width: 150px; }
-.input-large      { width: 210px; }
-.input-xlarge     { width: 270px; }
-.input-xxlarge    { width: 530px; }
+.input-mini       { width: 3.75em; }
+.input-small      { width: 6em; }
+.input-medium     { width: 10em; }
+.input-large      { width: 13em; }
+.input-xlarge     { width: 17em; }
+.input-xxlarge    { width: 32em; }
 
 // Grid style input sizes
 input[class*="span"],
@@ -360,7 +360,7 @@ select:focus:required:invalid {
   border-color: #ee5f5b;
   &:focus {
     border-color: darken(#ee5f5b, 10%);
-    @include box-shadow(0 0 6px lighten(#ee5f5b, 20%));
+    @include box-shadow(0 0 .375em lighten(#ee5f5b, 20%));
   }
 }
 
@@ -370,7 +370,7 @@ select:focus:required:invalid {
 // ------------
 
 .form-actions {
-  padding: ($baseLineHeight - 1) 20px $baseLineHeight;
+  padding: ($baseLineHeight - 1) 1.25em $baseLineHeight;
   margin-top: $baseLineHeight;
   margin-bottom: $baseLineHeight;
   background-color: $formActionsBackground;
@@ -397,7 +397,7 @@ select:focus:required:invalid {
   display: inline-block;
   @include ie7-inline-block();
   vertical-align: middle;
-  padding-left: 5px;
+  padding-left: .312em;
 }
 
 
@@ -408,7 +408,7 @@ select:focus:required:invalid {
 // Allow us to put symbols and text within the input field for a cleaner look
 .input-append,
 .input-prepend {
-  margin-bottom: 5px;
+  margin-bottom: .312em;
   font-size: 0;
   white-space: nowrap; // Prevent span and input from separating
 
@@ -430,8 +430,8 @@ select:focus:required:invalid {
     display: inline-block;
     width: auto;
     height: $baseLineHeight;
-    min-width: 16px;
-    padding: 4px 5px;
+    min-width: 1em;
+    padding: .25em .312em;
     font-size: $baseFontSize;
     font-weight: normal;
     line-height: $baseLineHeight;
@@ -442,7 +442,7 @@ select:focus:required:invalid {
   }
   .add-on,
   .btn {
-    margin-left: -1px;
+    margin-left: -.0625em;
     vertical-align: top;
     @include border-radius(0);
   }
@@ -454,7 +454,7 @@ select:focus:required:invalid {
 .input-prepend {
   .add-on,
   .btn {
-    margin-right: -1px;
+    margin-right: -.0625em;
   }
   .add-on:first-child,
   .btn:first-child {
@@ -481,7 +481,7 @@ select:focus:required:invalid {
   }
   .add-on:first-child,
   .btn:first-child {
-    margin-right: -1px;
+    margin-right: -.0625em;
     @include border-radius($inputBorderRadius 0 0 $inputBorderRadius);
   }
   .add-on:last-child,
@@ -497,12 +497,12 @@ select:focus:required:invalid {
 // -----------
 
 input.search-query {
-  padding-right: 14px;
-  padding-right: 4px \9;
-  padding-left: 14px;
-  padding-left: 4px \9; /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  padding-right: .875em;
+  padding-right: .25em \9;
+  padding-left: .875em;
+  padding-left: .25em \9; /* IE7-8 doesn't have border-radius, so don't indent the padding */
   margin-bottom: 0; // Remove the default margin on all inputs
-  @include border-radius(15px);
+  @include border-radius(.937em);
 }
 
 /* Allow for input prepend/append in search forms */
@@ -511,16 +511,16 @@ input.search-query {
   @include border-radius(0); // Override due to specificity
 }
 .form-search .input-append .search-query {
-  @include border-radius(14px 0 0 14px);
+  @include border-radius(.875em 0 0 .875em);
 }
 .form-search .input-append .btn {
-  @include border-radius(0 14px 14px 0);
+  @include border-radius(0 .875em .875em 0);
 }
 .form-search .input-prepend .search-query {
-  @include border-radius(0 14px 14px 0);
+  @include border-radius(0 .875em .875em 0);
 }
 .form-search .input-prepend .btn {
-  @include border-radius(14px 0 0 14px);
+  @include border-radius(.875em 0 0 .875em);
 }
 
 
@@ -580,7 +580,7 @@ input.search-query {
 .form-inline .radio input[type="radio"],
 .form-inline .checkbox input[type="checkbox"] {
   float: left;
-  margin-right: 3px;
+  margin-right: .187em;
   margin-left: 0;
 }
 
@@ -608,8 +608,8 @@ legend + .control-group {
   // Float the labels left
   .control-label {
     float: left;
-    width: 140px;
-    padding-top: 5px;
+    width: .875em;
+    padding-top: .312em;
     text-align: right;
   }
   // Move over all input controls and content
@@ -617,11 +617,11 @@ legend + .control-group {
     // Super jank IE7 fix to ensure the inputs in .input-append and input-prepend
     // don't inherit the margin of the parent, in this case .controls
     *display: inline-block;
-    *padding-left: 20px;
-    margin-left: 160px;
+    *padding-left: 1.25em;
+    margin-left: 10em;
     *margin-left: 0;
     &:first-child {
-      *padding-left: 160px;
+      *padding-left: 10em;
     }
   }
   // Remove bottom margin on block level help text since that's accounted for on .control-group
@@ -631,6 +631,6 @@ legend + .control-group {
   }
   // Move over buttons in .form-actions to align with .controls
   .form-actions {
-    padding-left: 160px;
+    padding-left: 10em;
   }
 }

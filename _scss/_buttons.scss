@@ -11,7 +11,7 @@
 .pushbutton-wide {
   display: inline-block;
   @include ie7-inline-block();
-  padding: .25em .875em; // 4px/16px = .25em | 14px/16px = .875em
+  padding: .25em .875em; 
   margin-bottom: 0; // For input.btn
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
@@ -23,7 +23,7 @@
   border: 1px solid $btnBorder;
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
   border-bottom-color: darken($btnBorder, 10%);
-  @include border-radius(.25em); // 4px/16px = .25em
+  @include border-radius(.25em); 
   @include ie7-restore-left-whitespace(); // Give IE7 some love
   @include box-shadow(#{inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)});
 
@@ -33,7 +33,7 @@
     text-decoration: none;
     background-color: darken($white, 10%);
     *background-color: darken($white, 15%); /* Buttons in IE7 don't get borders, so darken on hover */
-    background-position: 0 -.937em; // 15px/15px = .937em
+    background-position: 0 -.937em; 
 
     // transition is only when going to hover, otherwise the background
     // behind the gradient (there for IE<=9 fallback) gets mismatched
@@ -74,20 +74,20 @@
 
 // Large
 .btn-large {
-  padding: .562em .875em; // 9px/16px = .562em | 14px/16px = .875em
-  font-size: $baseFontSize + .125em; // 2px/16px = .125em
+  padding: .562em .875em; 
+  font-size: $baseFontSize + .125em; 
   line-height: normal;
-  @include border-radius(.312em); // 5px/16px = .312em
+  @include border-radius(.312em); 
 }
 .btn-large [class^="icon-"] {
-  margin-top: .125em; // 2px/16px = .125em 
+  margin-top: .125em; 
 }
 
 // Small
 .btn-small {
-  padding: .187em .562em; // 3px/16px = .187em | 9px/16px = .562em
-  font-size: $baseFontSize - .125em; // 2px/16px = .125em
-  line-height: $baseLineHeight - .125em; // 2px/16px = .125em
+  padding: .187em .562em; 
+  font-size: $baseFontSize - .125em; 
+  line-height: $baseLineHeight - .125em; 
 }
 .btn-small [class^="icon-"] {
   margin-top: 0em;
@@ -95,9 +95,9 @@
 
 // Mini
 .btn-mini {
-  padding: .125em .375em; // 2px/16px = .125em | 6px/16px = .375em
-  font-size: $baseFontSize - .187em; // 3px/16px = .187em
-  line-height: $baseLineHeight - .25em; // 4px/16px = .25em
+  padding: .125em .375em; 
+  font-size: $baseFontSize - .187em; 
+  line-height: $baseLineHeight - .25em; 
 }
 
 // Block button

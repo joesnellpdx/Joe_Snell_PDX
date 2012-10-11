@@ -24,7 +24,7 @@
 	  width: 100%;
   }
   .basemenu {
-	  max-width: 25em; // 400px/16px = 25em
+	  max-width: 25em; 
 	  margin:0 auto;
 	  clear: both;
   }
@@ -35,7 +35,7 @@
   }
   .basemenu p {
 	  float: none;
-	  padding-bottom: .625em; // 10px/16px = .625em
+	  padding-bottom: .625em; 
   }
   
   .navbar .basemenu  .nav > li,
@@ -46,7 +46,7 @@
       margin: 1%;
   	@include box-sizing(border-box);
   	float:left;
-  	height: 8.75em; // 140px/16px = 8.75em
+  	height: 8.75em; 
   	width: 100%;
   	border: none;
   }
@@ -55,9 +55,9 @@
   .navbar .basemenu .menu > li > a {
     float: none;
     // Vertically center the text given $navbarHeight
-    $elementHeight: 1.25em; // 20px/16px = 1.25em
+    $elementHeight: 1.25em; 
     padding: (($navbarHeight - $elementHeight) / 2 - 1) .625em (($navbarHeight - $elementHeight) / 2 + 1);  // 10px/16px = 
-    line-height: 1.187em; // 19px/16px = 1.187em
+    line-height: 1.187em; 
     color: $joeorange;
     text-decoration: none;
     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
@@ -68,7 +68,7 @@
   .navbar .landingmenu .menu > li > a,
   .navbar .basemenu > li > a,
   .navbar .basemenu .menu > li > a {
-  	font-size: 1.125em;	// 18px/16px = 1.125em
+  	font-size: 1.125em;	
   }
 
   .basemenu i {

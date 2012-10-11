@@ -24,11 +24,9 @@
   width:$navbarHeight;
   float:right;
 }
-.brand-text {
 
-}
 .brand-text h1 {
-  font-size:1em; 
+  font-size:2em; 
   margin:0;
   line-height:1em;
 }
@@ -42,7 +40,7 @@ a.menu-link{
   color:$white;
   background-color:$black;
   height:100%;
-  width:40em; // 65px/16px = 40em
+  width:40em; 
   padding: 1em;
   float:left;
   @include box-sizing(border-box);

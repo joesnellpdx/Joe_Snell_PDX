@@ -26,18 +26,18 @@
 // The actual thumbnail (can be `a` or `div`)
 .thumbnail {
   display: block;
-  padding: 4px;
+  padding: .25em;
   line-height: $baseLineHeight;
   background-color: $white;
   border: 1px solid $white;
-  @include border-radius(4px);
+  @include border-radius(.25em);
   @include box-shadow(-1px 1px 2px rgba(0,0,0,.25));
   @include transition(all .2s ease-in-out);
 }
 // Add a hover state for linked versions only
 a.thumbnail:hover {
   border-color: $linkColor;
-  @include box-shadow(0 1px 4px rgba(0,105,214,.25));
+  @include box-shadow(0 1px .25em rgba(0,105,214,.25));
   text-decoration: none;
 }
 
@@ -50,13 +50,13 @@ a.thumbnail:hover {
 }
 .thumbnail .caption,
 .portfolioimg h2 {
-  	padding: 9px;
+  	padding: .562em;
   	font-family: $baseFontFamily;
 	font-size: $baseFontSize;
 	color: $joeorange;
 	font-weight: normal;
 	line-height: $baseLineHeight;
-	padding-top: 8px;
+	padding-top: .25em;
 	margin: 0 0 $baseFontSize 0;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	text-decoration: blink;
@@ -66,7 +66,7 @@ a.thumbnail:hover {
 }
 .selfPortrait {
 	width: 33.33333333%;
-	max-width: 400px;
+	max-width: 25em;
 	float: right;
 }
 .portfolioimg img {
