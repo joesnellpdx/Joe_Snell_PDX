@@ -12,19 +12,11 @@ body {
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   color: $textColor;
-  background-color: $bodyBackground;
+  background: transparent url(../_img/bg.gif) repeat scroll;
 }
  
 #portfolio {
 	width: 100%;
-}
-
-.landingmenu {
-	  max-width: 400px;
-	  margin: 0 auto;
-	  clear: both;
-	  position: relative;
-	  width:96%;
 }
 
 #insertContent #main {
@@ -64,23 +56,23 @@ a:hover {
   text-decoration: underline;
 }
 
-  .quick-links {
-	  text-align: center;
-	  font-size: 30px; 
-	  line-height: 40px;
-	  padding-top: 10px;
-	  width: 100%;
-  }
-  .quick-links a {
-	  padding:10px;
-	  text-decoration: none;
-	  color: $grayDark;
-	  @include transition(color .5s ease);
-  }
-   .quick-links a:hover {
-	   color: $joeorange;
-	   @include transition(color .5s ease);
-   }
+.quick-links {
+  text-align: center;
+  font-size: 1.875em; 		// 30px/16px = 1.875em
+  line-height: 2.5em;		// 40px/16px = 2.5em
+  padding-top: .625em;		// 10px/16px = .625em
+  width: 100%;
+}
+.quick-links a {
+  padding:.625em;				// 10px/16px = .625em
+  text-decoration: none;
+  color: $grayDark;
+  @include transition(color .5s ease);
+}
+.quick-links a:hover {
+   color: $joeorange;
+   @include transition(color .5s ease);
+}
 
 
 // Images
@@ -101,7 +93,7 @@ a:hover {
 }
 
 .img-circle {
-  @include border-radius(500px);
+  @include border-radius(31.25em); // 500px/16px = 31.25em
 }
 .category-portfolio img {
 	padding-top:2em;

@@ -1531,3 +1531,82 @@ Load paths:
 2012-09-21 14:24:17 identical _css/bootstrap.css 
 2012-09-21 14:25:12 overwrite _css/bootstrap.css 
 2012-09-21 14:26:26 identical _css/bootstrap.css 
+2012-10-10 13:48:12 identical _css/bootstrap.css 
+2012-10-10 13:48:15    create _css/main.css 
+2012-10-10 13:52:56 overwrite _css/main.css 
+2012-10-10 13:53:50 identical _css/main.css 
+2012-10-10 13:54:34 identical _css/main.css 
+2012-10-10 13:55:26 identical _css/main.css 
+2012-10-10 14:03:54 identical _css/main.css 
+2012-10-10 14:37:06     error _scss/main.scss (Line 629 of _scss/_navbar.scss: Undefined variable: "$mainAccent".)
+2012-10-10 14:37:06 overwrite _css/main.css 
+2012-10-10 14:37:52 overwrite _css/main.css 
+2012-10-10 14:42:50 overwrite _css/responsive.css 
+2012-10-10 14:50:44 overwrite _css/main.css 
+2012-10-10 14:52:04 identical _css/main.css 
+2012-10-10 14:52:24 overwrite _css/responsive.css 
+2012-10-10 14:53:30 identical _css/main.css 
+2012-10-10 14:54:20 identical _css/main.css 
+2012-10-10 14:54:44 identical _css/main.css 
+2012-10-10 14:55:25 identical _css/main.css 
+2012-10-10 14:56:07 overwrite _css/main.css 
+2012-10-10 14:56:22 overwrite _css/main.css 
+2012-10-10 14:59:57 overwrite _css/main.css 
+2012-10-10 16:26:43 overwrite _css/main.css 
+2012-10-10 16:27:49 identical _css/main.css 
+2012-10-10 16:35:14 identical _css/main.css 
+2012-10-10 16:38:31 overwrite _css/main.css 
+2012-10-10 16:39:03 identical _css/main.css 
+2012-10-10 16:39:48 identical _css/main.css 
+2012-10-10 16:41:44 identical _css/main.css 
+2012-10-10 16:42:46 identical _css/main.css 
+2012-10-10 16:42:58 identical _css/main.css 
+2012-10-10 16:44:46 identical _css/main.css 
+2012-10-10 16:45:49 identical _css/main.css 
+2012-10-10 16:47:22 overwrite _css/main.css 
+2012-10-10 16:47:32 identical _css/main.css 
+2012-10-10 16:55:04 overwrite _css/responsive.css 
+2012-10-10 16:55:27 overwrite _css/responsive.css 
+2012-10-10 16:57:16 overwrite _css/main.css 
+2012-10-10 16:57:34 identical _css/main.css 
+2012-10-10 17:00:40 overwrite _css/main.css 
+2012-10-10 17:01:51 overwrite _css/main.css 
+2012-10-10 18:18:19 overwrite _css/main.css 
+2012-10-10 18:20:17 overwrite _css/main.css 
+2012-10-10 18:20:20 identical _css/main.css 
+2012-10-10 18:20:22 identical _css/main.css 
+2012-10-10 18:22:01 identical _css/main.css 
+2012-10-10 18:26:00 identical _css/responsive.css 
+2012-10-10 18:32:13 identical _css/main.css 
+2012-10-10 18:34:37 identical _css/main.css 
+2012-10-10 18:36:35 overwrite _css/main.css 
+2012-10-10 18:36:53 overwrite _css/main.css 
+2012-10-10 18:42:38 identical _css/main.css 
+2012-10-10 18:45:15 overwrite _css/main.css 
+2012-10-10 19:56:46 overwrite _css/main.css 
+2012-10-10 19:57:12 identical _css/main.css 
+2012-10-10 19:58:40     error _scss/main.scss (Line 78 of _scss/_buttons.scss: Incompatible units: 'px' and 'em'.)
+2012-10-10 19:58:40 overwrite _css/main.css 
+2012-10-10 20:08:13     error _scss/main.scss (Line 606 of _scss/_mixins.scss: Incompatible units: 'px' and ''.)
+2012-10-10 20:08:13 overwrite _css/main.css 
+2012-10-10 20:09:35     error _scss/main.scss (Line 635 of _scss/_mixins.scss: Incompatible units: 'px' and ''.)
+2012-10-10 20:09:35 overwrite _css/main.css 
+2012-10-10 20:11:45     error _scss/main.scss (Line 645 of _scss/_mixins.scss: Incompatible units: 'px' and ''.)
+2012-10-10 20:11:45 overwrite _css/main.css 
+2012-10-10 20:12:10     error _scss/main.scss (Line 78 of _scss/_buttons.scss: Incompatible units: 'px' and 'em'.)
+2012-10-10 20:12:10 overwrite _css/main.css 
+2012-10-10 20:18:35     error _scss/main.scss (Line 99 of _scss/_buttons.scss: Incompatible units: 'px' and 'em'.)
+2012-10-10 20:18:35 overwrite _css/main.css 
+2012-10-10 20:24:33 overwrite _css/main.css 
+2012-10-10 20:29:45 overwrite _css/main.css 
+2012-10-10 20:31:50 overwrite _css/main.css 
+2012-10-10 20:41:51 identical _css/main.css 
+2012-10-10 20:47:11     error _scss/responsive.scss (Line 59 of _scss/_responsive-768px-979px.scss: Incompatible units: 'px' and 'em'.)
+2012-10-10 20:47:11 overwrite _css/responsive.css 
+2012-10-10 20:49:15 overwrite _css/responsive.css 
+2012-10-10 20:52:14 overwrite _css/main.css 
+2012-10-10 20:54:53 identical _css/main.css 
+2012-10-10 20:56:19 identical _css/main.css 
+2012-10-10 20:57:59 identical _css/main.css 
+2012-10-10 21:09:14 overwrite _css/main.css 
+2012-10-10 21:18:33 overwrite _css/main.css 

@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 48em) and (max-width: 61em) { // 768px/16px = 48em - 979px/16px = 61em
 
   // Fixed grid
   @include grid-core($gridColumnWidth768, $gridGutterWidth768);
@@ -15,14 +15,7 @@
   @include grid-input($gridColumnWidth768, $gridGutterWidth768);
 
   // No need to reset .thumbnails here since it's the same $gridGutterWidth
-  
-  // adjust base menu to match landingmenu
-  
-	body,
-	.landingbody {
-	  background: transparent url(../_img/bg.gif);
-  }
-  
+   
   #menu-primary-navigation {
 	margin: 1em auto;
 	width: 98%;
@@ -31,7 +24,7 @@
 	  width: 100%;
   }
   .basemenu {
-	  max-width: 400px;
+	  max-width: 25em; // 400px/16px = 25em
 	  margin:0 auto;
 	  clear: both;
   }
@@ -42,92 +35,77 @@
   }
   .basemenu p {
 	  float: none;
-	  padding-bottom: 10px;
+	  padding-bottom: .625em; // 10px/16px = .625em
   }
   
-.navbar .basemenu  .nav > li,
-.navbar .basemenu  .menu > li {
-	display: block;
-    font-size: 1.2em;
-	line-height: 1em;
-    margin: 1%;
-	@include box-sizing(border-box);
-	float:left;
-	height: 140px;
-	width: 100%;
-	border: none;
-}
-
-.navbar .basemenu > li > a,
-.navbar .basemenu .menu > li > a {
-  float: none;
-  // Vertically center the text given $navbarHeight
-  $elementHeight: 20px;
-  padding: (($navbarHeight - $elementHeight) / 2 - 1) 10px (($navbarHeight - $elementHeight) / 2 + 1);
-  line-height: 19px;
-  color: $joeorange;
-  text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-  width: 100%;
-  font-weight: auto;
-}
-.navbar .landingmenu > li > a,
-.navbar .landingmenu .menu > li > a,
-.navbar .basemenu > li > a,
-.navbar .basemenu .menu > li > a {
-	font-size: 18px;	
-}
-
-.basemenu i {
-font-size: 2.2em;
-text-shadow: 1px 1px #555,-1px -1px black;
-display: inline;
-padding: 0px;
-}
-
-  // end menu adjust
-  
-  #masthead {
-	padding: 	40px 20px;
-    margin-top:   -20px; /* Offset bottom margin on .navbar */
-    margin-right: -20px;
-    margin-left:  -20px;
-	  
+  .navbar .basemenu  .nav > li,
+  .navbar .basemenu  .menu > li {
+  	display: block;
+      font-size: 1.2em;
+  	line-height: 1em;
+      margin: 1%;
+  	@include box-sizing(border-box);
+  	float:left;
+  	height: 8.75em; // 140px/16px = 8.75em
+  	width: 100%;
+  	border: none;
   }
-  #masthead h1 {
-    font-size: 90px;
+
+  .navbar .basemenu > li > a,
+  .navbar .basemenu .menu > li > a {
+    float: none;
+    // Vertically center the text given $navbarHeight
+    $elementHeight: 1.25em; // 20px/16px = 1.25em
+    padding: (($navbarHeight - $elementHeight) / 2 - 1) .625em (($navbarHeight - $elementHeight) / 2 + 1);  // 10px/16px = 
+    line-height: 1.187em; // 19px/16px = 1.187em
+    color: $joeorange;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    width: 100%;
+    font-weight: auto;
   }
-  #masthead p,
-  #masthead .btn {
-    font-size: 24px;
+  .navbar .landingmenu > li > a,
+  .navbar .landingmenu .menu > li > a,
+  .navbar .basemenu > li > a,
+  .navbar .basemenu .menu > li > a {
+  	font-size: 1.125em;	// 18px/16px = 1.125em
   }
-  
+
+  .basemenu i {
+  font-size: 2.2em;
+  text-shadow: 1px 1px #555,-1px -1px black;
+  display: inline;
+  padding: 0px;
+  }
+
+
+    
   .landingmenu,
   .basemenu {
-	  float: left;
-	  width: 33.333333%;
+    float: left;
+    width: 33.333333%;
   }
   .navbar .landingmenu .nav > li, 
   .navbar .landingmenu .menu > li,
   .navbar .basemenu .nav > li, 
   .navbar .basemenu .menu > li {
-	  width: 100%;
-	  padding: 0px;
+    width: 100%;
+    padding: 0px;
   }
 
   .thumbnails {
-	  margin: 0px;
+    margin: 0px;
   }
   #content {
-	width: 62%;
-	float: left;
-	background: $joeBlueLight;
-	padding: 2%;
-	margin: $baseLineHeight 2% 2% 2%;
-	@include box-sizing(border-box);
+  width: 62%;
+  float: left;
+  background: $joeBlueLight;
+  padding: 2%;
+  margin: $baseLineHeight 2% 2% 2%;
+  @include box-sizing(border-box);
   }
   .landingbody #content {
-	  display: none;
+    display: none;
   }
 
 

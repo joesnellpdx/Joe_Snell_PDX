@@ -4,6 +4,18 @@
 
 !function ($) {
 
+$('body').addClass('js');
+  var $menu = $('#menu'),
+    $menulink = $('.menu-link');
+    $containerfluid = $('.container-fluid');
+  
+$menulink.click(function() {
+  $menulink.toggleClass('active');
+  $menu.toggleClass('active');
+  $containerfluid.toggleClass('active');
+  return false;
+});
+
 
 
 function resizeHandler(){

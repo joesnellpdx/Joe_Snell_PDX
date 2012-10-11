@@ -11,7 +11,7 @@ p {
 }
 .lead {
   margin-bottom: $baseLineHeight;
-  font-size: 20px;
+  font-size: 1.25em; // 20px/16px = 1.25em
   font-weight: 200;
   line-height: $baseLineHeight * 1.5;
 }
@@ -53,35 +53,20 @@ h1, h2, h3, h4, h5, h6 {
     color: $grayLight;
   }
 }
-h1 { font-size: 36px; line-height: 40px; }
-h2 { font-size: 30px; line-height: 40px; }
-h3 { font-size: 24px; line-height: 40px; }
-h4 { font-size: 18px; line-height: 20px; }
-h5 { font-size: 14px; line-height: 20px; }
-h6 { font-size: 12px; line-height: 20px; }
+h1 { font-size: 2.25em; line-height: 3.15em; }
+h2 { font-size: 1.875em; line-height: 2.625em; }
+h3 { font-size: 1.5em; line-height: 2.1em; } 
+h4 { font-size: 1.125em; line-height: 1.6em; }  
+h5 { font-size: 1em;  line-height: 1.4em; }
+h6 { font-size: .875em; line-height: 1.25em; } // 14px/16px = .875em | 20px/16px = 1.25em
 
-h1 small { font-size: 24px; }
-h2 small { font-size: 18px; }
-h3 small { font-size: 14px; }
-h4 small { font-size: 14px; }
-
-.masthead h1,
-.site-title {
-	font-size: 120px;
-	line-height: 1;
-	letter-spacing: -2px;
-}
-
+h1 small { font-size: 1.5em; }
+h2 small { font-size: 1.125em; }
+h3 small { font-size: 1em; }
+h4 small { font-size: 1em; }
 
 // Page header
 // -------------------------
-
-.page-header {
-  padding-bottom: ($baseLineHeight / 2) - 1;
-  margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
-  border-bottom: 1px solid $grayLighter;
-}
-
 
 
 // Lists
@@ -90,7 +75,7 @@ h4 small { font-size: 14px; }
 // Unordered and Ordered lists
 ul, ol {
   padding: 0;
-  margin: 0 0 $baseLineHeight / 2 25px;
+  margin: 0 0 $baseLineHeight / 2 1.56em; 
 }
 ul ul,
 ul ol,
@@ -125,24 +110,14 @@ dd {
 .dl-horizontal {
   dt {
     float: left;
-    width: 120px;
+    width: 7.5em;
     clear: left;
     text-align: right;
     @include text-overflow();
   }
   dd {
-    margin-left: 130px;
+    margin-left: 8.125em;
   }
-}
-
-.masthead-links {
-	margin: 0;
-	list-style: none;
-}
-.masthead-links li {
-	display: inline;
-	padding: 0 10px;
-	color: rgba(255, 255, 255, .25);
 }
 
 ul.chirp,
@@ -176,36 +151,36 @@ ul.content-link-list li.special-link {
 	@include buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
 }
 ul.chirp li {
-	padding: 10px 10px 10px 60px;
+	padding: .625em .625em .625em 3.75em;
 }
 ul.content-link-list li {
 	padding: 0px;
-	min-height: 70px;
+	min-height: 4.37em;
 }
 ul.chirp li:first-child,
 ul.content-link-list li:first-child {
-	@include border-radius(4px 4px 0px 0px);
+	@include border-radius(.25em .25em 0px 0px);
 }
 ul.chirp li:last-child,
 ul.content-link-list li:last-child {
-	@include border-radius(0px 0px 4px 4px);
+	@include border-radius(0px 0px .25em .25em);
 }
 ul.chirp li img {
 position: absolute;
-left: 10px;
-top: 10px;
-margin-right: 10px;
-width: 40px;
-height: 40px;
-@include border-radius(5px);
+left: .625em;
+top: .625em;
+margin-right: .625em;
+width: 2.5em;
+height: 2.5em;
+@include border-radius(.312em);
 border: none;
 }
 
 ul.content-link-list li i {
 	position: absolute;
-	left: 10px;
+	left: .625em;
 	top: 35%;
-	margin-right: 10px;
+	margin-right: .625em;
 	font-size: 2.2em;
 	color: #272727;
 	text-shadow: 1px 1px #555,-1px -1px black;
@@ -223,33 +198,15 @@ ul.content-link-list a {
 }
 ul.content-link-list a {
 	display: block;
-	padding: 20px 20px 20px 60px;
+	padding: 1.25em 1.25em 1.25em 1.25em;
 	height: 100%;
 }
 ul.content-link-list li.special-link a {
 	color: white;
 }
-/*.chirp {
-	padding: 5px;
-}
-.chirp li {
-	list-style-type: none;
-}
-.chirp img {
-	float: left;
-	margin: 0 5px 5px 0;
-	width: 20%;
-	
-} */
 
 // MISC
 // ----
-
-.masthead p {
-  font-size: 40px;
-  font-weight: 200;
-  line-height: 1.25;
-}
 
 // Horizontal rules
 hr {
@@ -271,12 +228,12 @@ abbr.initialism {
 
 // Blockquotes
 blockquote {
-  padding: 0 0 0 15px;
+  padding: 0 0 0 .937em;
   margin: 0 0 $baseLineHeight;
   border-left: 5px solid $grayLighter;
   p {
     margin-bottom: 0;
-    @include font-shorthand(16px,300,$baseLineHeight * 1.25);
+    @include font-shorthand(1em,300,$baseLineHeight * 1.25);
   }
   small {
     display: block;
@@ -290,7 +247,7 @@ blockquote {
   // Float right with text-align: right
   &.pull-right {
     float: right;
-    padding-right: 15px;
+    padding-right: .937em;
     padding-left: 0;
     border-right: 5px solid $grayLighter;
     border-left: 0;

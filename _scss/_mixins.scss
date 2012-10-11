@@ -149,7 +149,7 @@
 @mixin input-block-level {
   display: block;
   width: 100%;
-  min-height: 30px;                // Make inputs at least the height of their button counterpart
+  min-height: 1.875em;                // Make inputs at least the height of their button counterpart 30px/16px = 
   @include box-sizing(border-box); // Makes inputs behave like true block-level elements
 }
 
@@ -603,7 +603,7 @@
       @include input-block-level();
       float: left;
       margin-left: $fluidGridGutterWidth;
-      *margin-left: $fluidGridGutterWidth - (.5 / $gridRowWidth * 100px * 1%);
+      *margin-left: $fluidGridGutterWidth - (.5 / $gridRowWidth * 6.25em * 1%); // 100px/16px = 6.25em
     }
     [class*="span"]:first-child {
       margin-left: 0;
@@ -632,17 +632,17 @@
 
 @mixin grid-fluid-span($columns, $fluidGridColumnWidth, $fluidGridGutterWidth) {
   width: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1));
-  *width: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) - (.5 / $gridRowWidth * 100px * 1%);
+  *width: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) - (.5 / $gridRowWidth * 6.25em * 1%); // 100px/16px = 6.25em
 }
 
 @mixin grid-fluid-offset($columns, $fluidGridColumnWidth, $fluidGridGutterWidth) {
   margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) + ($fluidGridGutterWidth * 2);
-  *margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) - (.5 / $gridRowWidth * 100px * 1%) + ($fluidGridGutterWidth * 2) - (.5 / $gridRowWidth * 100px * 1%);
+  *margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) - (.5 / $gridRowWidth * 6.25em * 1%) + ($fluidGridGutterWidth * 2) - (.5 / $gridRowWidth * 6.25em * 1%); // 100px/16px = 6.25em
 }
 
 @mixin grid-fluid-offset-first-child($columns, $fluidGridColumnWidth, $fluidGridGutterWidth) {
   margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) + ($fluidGridGutterWidth);
-  *margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) - (.5 / $gridRowWidth * 100px * 1%) + $fluidGridGutterWidth - (.5 / $gridRowWidth * 100px * 1%);
+  *margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) - (.5 / $gridRowWidth * 6.25em * 1%) + $fluidGridGutterWidth - (.5 / $gridRowWidth * 6.25em * 1%); // 100px/16px = 6.25em
 }
 
 
