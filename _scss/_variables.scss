@@ -162,7 +162,7 @@ $wellBackground:                  #f5f5f5 !default;
 $navbarCollapseWidth:             61em !default;	// 979px/16px = 61em
 
 $navbarHeight:                    5em !default; 	// 80px/16px = 5em
-$navbarBaseHeight:                2.5em !default; 	// 40px/16px = 2.5em
+$navbarBaseHeight:                3.125em !default; 	// 40px/16px = 2.5em
 $navbarBackground:                $joeorange !default;
 $navbarBackgroundHighlight:       $joeorange !default;
 $navbarBorder:                    darken($navbarBackground, 12%) !default;
@@ -184,8 +184,8 @@ $navbarInverseBackgroundHighlight:       #222222 !default;
 $navbarInverseBorder:                    #252525 !default;
 
 $navbarInverseText:                      $grayLight !default;
-$navbarInverseLinkColor:                 $grayLight !default;
-$navbarInverseLinkColorHover:            $white !default;
+$navbarInverseLinkColor:                 $linkColor !default;
+$navbarInverseLinkColorHover:            darken($linkColor, 15%) !default;
 $navbarInverseLinkColorActive:           $navbarInverseLinkColorHover !default;
 $navbarInverseLinkBackgroundHover:       transparent !default;
 $navbarInverseLinkBackgroundActive:      $navbarInverseBackground !default;

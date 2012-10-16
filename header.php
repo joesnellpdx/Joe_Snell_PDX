@@ -67,23 +67,23 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-    <div id="main" class="container">
+    <div id="main" class="container-fluid">
         <div id="wrap" class="wrap">
             <header>
-                <div class="topbar">
-                    <a href="#menu" class="btn btn-navbar menu-link">
+                <div id="header" class="topbar-base">
+                    <a href="#menu" class="btn btn-inverse menu-link">
                         <i class="icon-reorder navbtn"></i> 
                     </a>
                     <hgroup>
                         <div class="logo-head-base">
                             <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
                         </div> <!-- .logo-head -->
-                        <div class="brand-text span10 offset2">
+                        <div class="brand-text">
                             <h1 class="brand-base"><?php wp_title( " " ); ?></h1>
                         </div>
                     </hgroup>
                 </div>
-                <nav id="menu" role="navigation" class="site-navigation main-navigation">
+                <nav id="menu" role="navigation" class="basemenu">
                     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
                 </nav>
             </header>

@@ -20,4 +20,3 @@ Template Name: joesnell-landing
 			
 		</div><!-- #primary .site-content -->
         
-       <?php get_footer(landing); ?>

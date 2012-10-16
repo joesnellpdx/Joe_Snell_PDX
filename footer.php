@@ -20,9 +20,13 @@
 
 			<?php wp_footer(); ?>
 
+
 		</div> <!-- #wrap -->
 
 	</div> <!-- #main .container -->
+				<div id="footer" class="bottombar">
+				<h2>testing</h2>
+			</div>
 
 </body>
 </html>

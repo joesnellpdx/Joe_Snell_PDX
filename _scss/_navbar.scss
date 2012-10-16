@@ -5,30 +5,99 @@
 
 // COMMON STYLES
 // -------------
-.topbar {
-  background:$joeorange;
-  float:right;
+.topbar,
+.topbar-base,
+.bottombar {
+  background-color:$joeorange;
   width:100%;
-  height:$navbarHeight; 
   @include box-sizing(border-box);
 }
-.landingmenu {
-  clear:both;
+.topbar {
+  height:$navbarHeight; 
 }
+.topbar-base,
+.bottombar {
+  height:$navbarBaseHeight;
+}
+.bottombar {
+  padding: ($navbarBaseHeight * .25);
+}
+
+
 
 // TYPE / IMG
 // -------------
 .logo-head img,
-.logo-head-base img{
+.logo-head-base img {
+  float:right;
+}
+.logo-head img {
   height:$navbarHeight;
   width:$navbarHeight;
-  float:right;
+}
+.logo-head-base img {
+  height:$navbarBaseHeight;
+  width:$navbarBaseHeight;
 }
 
 .brand-text h1 {
-  font-size:2em; 
+  color:$white;
+  font-weight:normal;
+}
+.brand-text .brand {
+  font-size:2.5em; 
+  line-height:.5;
   margin:0;
-  line-height:1em;
+  padding-top:.4em;
+  padding-left:5%;
+}
+.brand-text .brand-base {
+  font-size:2em;
+  line-height: .5em;
+  padding: .5em;
+  margin:0 0 0 1.8em;
+}
+.brand-text .sub-head {
+  font-size:.4em;
+}
+
+// LANDING BUTTONS
+// -------------------------
+
+.landingmenu {
+  clear:both;
+  @include box-sizing(border-box);
+  padding:.5em;
+}
+.landingmenu ul {
+  list-style-type:none;
+  margin:0;
+}
+.landingmenu li {
+  position:relative;
+  @include box-sizing(border-box);
+  float:left;
+  width:46%;
+  margin:2%;
+}
+.landingmenu li a {
+  text-align:center;
+  display:block;
+  padding:3.5em 0 1.5em 0;
+  color:$joeorange; 
+}
+.landingmenu li a:hover {
+  color:darken($linkColor, 15%);
+}
+.landingmenu [class^="icon-"]:before,
+.landingmenu [class*=" icon-"]:before {
+  position:absolute;
+  font-size:2em;
+  top:1em;
+  left:50%;
+  margin-left:-.4em;
+  color:$grayDark;
+  text-shadow:1px 1px $gray, -1px -1px $black;
 }
 
 
@@ -37,21 +106,35 @@
 
 a.menu-link{
   display: block;
-  color:$white;
-  background-color:$black;
-  height:100%;
-  width:40em; 
-  padding: 1em;
+  color:$grayLighter;
+  height:($navbarBaseHeight * .7);
+  width:($navbarBaseHeight * .7); 
   float:left;
+  margin:($navbarBaseHeight * .15);
+  padding:.3em 0;
+  text-align:center;
+  text-shadow:none;
   @include box-sizing(border-box);
 }
 a.menu-link:hover {
   text-decoration:none;
 }
+a.menu-link i {
+  font-size:1em;
+  line-height:1em;
+  text-shadow:none;
+}
 
 nav[role=navigation] {
+  background-color:$navbarInverseBackgroundHighlight;
   clear: both;
   @include transition(all 0.3s ease-out);
+  @include box-sizing(border-box);
+  max-height: 15em;
+  margin-top:0px;
+  width:100%;
+  padding-bottom:.0625em;
+  border-bottom:1px solid $grayDarker;
 }
 .js nav[role=navigation] {
   overflow: hidden;
@@ -59,25 +142,161 @@ nav[role=navigation] {
   margin-top:0px;
   float:left;
   width:100%;
+  padding:0;
+  border:none;
 }
 nav[role=navigation].active {
   max-height: 15em;
   margin-top:0px;
   width:100%;
-}
-.container-fluid.active {
-  margin-top:0px;
+  padding-bottom:.0625em;
+  border-bottom:1px solid $grayDarker;
+
 }
 nav[role=navigation] ul {
-  margin: 0;
-  padding: 0;
+  list-style-type:none;
   border-top: 1px solid #808080;
+  margin:0;
+}
+nav[role=navigation] li,
+.landingmenu li {
+  width:25%;
+  float:left;
+  @include box-sizing(border-box);
+  display: inline-block;
+  @include ie7-inline-block();
+  padding: .25em .875em; 
+  margin-bottom: 0; // For input.btn
+  padding: .562em .875em; 
+  font-size: $baseFontSize + .125em; 
+  line-height: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  @include buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75));
+  //border: 1px solid $btnBorder;
+  *border: 0; // Remove the border to prevent IE7's black border on input:focus
+  //border-bottom-color: darken($btnBorder, 10%);
+  //border-color: #c5c5c5;
+  //border-color: rgba(0,0,0,.15) rgba(0,0,0,.15) rgba(0,0,0,.25);
+  @include ie7-restore-left-whitespace(); // Give IE7 some love
+  @include box-shadow(#{inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)});
+  //border-right-color:$grayDarker;
+  //border-left-color:$gray;
+  //border-bottom: 1px solid #808080;
+  // Hover state
+  &:hover {
+    text-decoration: none;
+    background-color: darken($white, 10%);
+    *background-color: darken($white, 15%); /* Buttons in IE7 don't get borders, so darken on hover */
+    background-position: 0 -.937em; 
+
+    // transition is only when going to hover, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    @include transition(background-position .1s linear);
+  }
+
+  // Focus state for keyboard and accessibility
+  &:focus {
+    @include tab-focus();
+  }
+
+  // Active state
+  &.active,
+  &:active {
+    background-color: darken($white, 10%);
+    background-color: darken($white, 15%) \9;
+    background-image: none;
+    outline: 0;
+    @include box-shadow(#{inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)});
+  }
+
+  // Disabled state
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    background-color: darken($white, 10%);
+    background-image: none;
+    @include opacity(65);
+    @include box-shadow(none);
+  }
+}
+// reinstate backgrounds and details for effect
+nav[role=navigation] li,
+.landingmenu li {
+  @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
+}
+nav[role=navigation] li {
+  border-right: solid 1px $gray;
+  border-left:solid 1px $grayDark;
+}
+nav[role=navigation] ul:first-item {
+  border-left:none;
+}
+nav[role=navigation] ul:last-item {
+  border-right:none;
 }
 nav[role=navigation] li a {
+  display:block;
   color:$joeorange;
-  display: block;
-  padding: 0.8em;
-  border-bottom: 1px solid #808080;
+  padding: .25em 0 0 .2em;
+  border-bottom:none;
+  font-size:.8em;
 }
+nav[role=navigation] li a:hover {
+  text-decoration:none;
+}
+.basemenu [class^="icon-"]:before,
+.basemenu [class*=" icon-"]:before {
+  font-size:1.5em;
+  padding-top:.25em;
+  // left:50%;
+  // margin-left:-.4em;
+  color:$grayDark;
+  text-shadow:1px 1px $gray, -1px -1px $black;
+}
+
+// LANDING BUTTONS
+// -------------------------
+
+// .landingmenu li (button) defined above
+
+.landingmenu {
+  clear:both;
+  @include box-sizing(border-box);
+  padding:.5em;
+}
+.landingmenu ul {
+  list-style-type:none;
+  margin:0;
+}
+.landingmenu li {
+  position:relative;
+  @include box-sizing(border-box);
+  float:left;
+  width:46%;
+  margin:2%;
+}
+.landingmenu li a {
+  text-align:center;
+  display:block;
+  padding:3.5em 0 1.5em 0;
+  color:$joeorange; 
+}
+.landingmenu li a:hover {
+  color:darken($linkColor, 15%);
+  text-decoration:none;
+}
+.landingmenu [class^="icon-"]:before,
+.landingmenu [class*=" icon-"]:before {
+  position:absolute;
+  font-size:2em;
+  top:1em;
+  left:50%;
+  margin-left:-.4em;
+  color:$grayDark;
+  text-shadow:1px 1px $gray, -1px -1px $black;
+}
+
 
 

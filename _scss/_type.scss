@@ -41,7 +41,7 @@ cite {
 // -------------------------
 
 h1, h2, h3, h4, h5, h6 {
-  margin: ($baseLineHeight / 2) 0;
+  margin: 0;
   font-family: $headingsFontFamily;
   font-weight: $headingsFontWeight;
   line-height: 1;
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 h1 { font-size: 2.25em; line-height: 3.15em; }
-h2 { font-size: 1.875em; line-height: 2.625em; }
+h2 { font-size: 1.875em; line-height: 1em; font-weight:normal;}
 h3 { font-size: 1.5em; line-height: 2.1em; } 
 h4 { font-size: 1.125em; line-height: 1.6em; }  
 h5 { font-size: 1em;  line-height: 1.4em; }

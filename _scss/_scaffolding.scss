@@ -14,14 +14,16 @@ body {
   color: $textColor;
   background: transparent url(../_img/bg.gif) repeat scroll;
 }
- 
+
+#footer {
+  position:fixed;
+  bottom:0;
+}
+#primary {
+  background-color:$joeBlueLight;
+} 
 #portfolio {
 	width: 100%;
-}
-
-#insertContent #main {
-	width:100%;
-	
 }
 .insertCont {
 	width: 62%;

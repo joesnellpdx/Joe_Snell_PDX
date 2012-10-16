@@ -72,9 +72,9 @@
     <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
 
-<div id="main" class="container">
+<div id="main" class="container-fluid">
     <div id="wrap" class="wrap">
-        <div class="topbar">
+        <div id="header" class="topbar">
         	<header>
             
                 <!-- <div class="navbar navbar-fixed-top">
@@ -84,7 +84,7 @@
             			<div class="logo-head">
                             <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
                      	</div> <!-- .logo-head -->
-                        <div class="brand-text span10 offset2">
+                        <div class="brand-text">
                       		<h1 class="brand"><?php bloginfo( 'name' ); ?></br><span class="sub-head"><?php bloginfo( 'description' ); ?></span></h1>
                         </div>
                    	</hgroup>   

@@ -99,7 +99,7 @@ add_action( 'widgets_init', 'Joe_Snell_PDX_widgets_init' );
 function Joe_Snell_PDX_scripts() {
 	global $post;
 
-	wp_enqueue_style( 'style', get_stylesheet_uri() );
+	// wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 	// wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
 	
@@ -140,7 +140,7 @@ function Joe_Snell_PDX_scripts() {
 		
 		//wp_enqueue_script( 'bootstrap-affix', get_template_directory_uri() . '/_js/bootstrap-affix.js', array( 'jquery' ), '20120822', true  );
 		
-		wp_enqueue_script( 'application-js', get_template_directory_uri() . '/_js/application.js', array( 'jquery' ), '20120823', true  );
+		wp_enqueue_script( 'application-js', get_template_directory_uri() . '/_js/application-ck.js', array( 'jquery' ), '20120823', true  );
 		
 		wp_enqueue_script( 'chirp', get_template_directory_uri() . '/_js/chirp.min.js', array( 'jquery' ), '20120823'  );
 		

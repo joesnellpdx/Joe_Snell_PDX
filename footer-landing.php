@@ -9,17 +9,20 @@
  */
 ?>
 
+			<footer id="colophon" class="site-footer footer" role="contentinfo">
+					<!-- .site-info -->
+			</footer><!-- .site-footer .site-footer -->
+			</div><!-- #page .hfeed .site -->
 
-		<footer id="colophon" class="site-footer footer" role="contentinfo">
-				<!-- .site-info -->
-		</footer><!-- .site-footer .site-footer -->
-		</div><!-- #page .hfeed .site -->
-
-		<?php wp_footer(); ?>
-
+			<?php wp_footer(); ?>
+			
 		</div> <!--wrap -->
+		<div id="footer" class="bottombar">
+
+		</div>
 
 	</div> <!-- /container -->
+
 
 </body>
 </html>
