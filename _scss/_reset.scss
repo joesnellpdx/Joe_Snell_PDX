@@ -5,6 +5,14 @@
    ========================================================================== */
 
 /*
+ * CSS Device Adaptation for IE 10 Snap Mode
+ */
+
+@-ms-viewport{
+  width: device-width;
+}   
+
+/*
  * Corrects `block` display not defined in IE 8/9.
  */
 

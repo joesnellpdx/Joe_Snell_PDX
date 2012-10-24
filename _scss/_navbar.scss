@@ -24,7 +24,6 @@
 }
 
 
-
 // TYPE / IMG
 // -------------
 .logo-head img,
@@ -165,9 +164,7 @@ nav[role=navigation] li,
   @include box-sizing(border-box);
   display: inline-block;
   @include ie7-inline-block();
-  padding: .25em .875em; 
   margin-bottom: 0; // For input.btn
-  padding: .562em .875em; 
   font-size: $baseFontSize + .125em; 
   line-height: normal;
   text-align: center;
@@ -239,8 +236,8 @@ nav[role=navigation] ul:last-item {
 nav[role=navigation] li a {
   display:block;
   color:$joeorange;
-  padding: .25em 0 0 .2em;
-  border-bottom:none;
+  padding: .562em .875em; 
+  //padding: .25em 0 0 .2em;
   font-size:.8em;
 }
 nav[role=navigation] li a:hover {
@@ -291,7 +288,7 @@ nav[role=navigation] li a:hover {
 .landingmenu [class*=" icon-"]:before {
   position:absolute;
   font-size:2em;
-  top:1em;
+  top:.8em;
   left:50%;
   margin-left:-.4em;
   color:$grayDark;
