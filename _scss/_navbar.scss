@@ -1,5 +1,5 @@
 //
-// Navbars 
+// NAVBARS 
 // --------------------------------------------------
 
 
@@ -60,45 +60,6 @@
   font-size:.4em;
 }
 
-// LANDING BUTTONS
-// -------------------------
-
-.landingmenu {
-  clear:both;
-  @include box-sizing(border-box);
-  padding:.5em;
-}
-.landingmenu ul {
-  list-style-type:none;
-  margin:0;
-}
-.landingmenu li {
-  position:relative;
-  @include box-sizing(border-box);
-  float:left;
-  width:46%;
-  margin:2%;
-}
-.landingmenu li a {
-  text-align:center;
-  display:block;
-  padding:3.5em 0 1.5em 0;
-  color:$joeorange; 
-}
-.landingmenu li a:hover {
-  color:darken($linkColor, 15%);
-}
-.landingmenu [class^="icon-"]:before,
-.landingmenu [class*=" icon-"]:before {
-  position:absolute;
-  font-size:2em;
-  top:1em;
-  left:50%;
-  margin-left:-.4em;
-  color:$grayDark;
-  text-shadow:1px 1px $gray, -1px -1px $black;
-}
-
 
 // COLLAPSIBLE NAV
 // -------------------------
@@ -123,6 +84,8 @@ a.menu-link i {
   line-height:1em;
   text-shadow:none;
 }
+
+// nav[role=navigation] = .basemenu
 
 nav[role=navigation] {
   background-color:$navbarInverseBackgroundHighlight;
@@ -153,105 +116,55 @@ nav[role=navigation].active {
 
 }
 nav[role=navigation] ul {
-  list-style-type:none;
   border-top: 1px solid #808080;
   margin:0;
 }
-nav[role=navigation] li,
-.landingmenu li {
-  width:25%;
-  float:left;
-  @include box-sizing(border-box);
-  display: inline-block;
-  @include ie7-inline-block();
-  margin-bottom: 0; // For input.btn
-  font-size: $baseFontSize + .125em; 
-  line-height: normal;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  @include buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75));
-  //border: 1px solid $btnBorder;
-  *border: 0; // Remove the border to prevent IE7's black border on input:focus
-  //border-bottom-color: darken($btnBorder, 10%);
-  //border-color: #c5c5c5;
-  //border-color: rgba(0,0,0,.15) rgba(0,0,0,.15) rgba(0,0,0,.25);
-  @include ie7-restore-left-whitespace(); // Give IE7 some love
-  @include box-shadow(#{inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)});
-  //border-right-color:$grayDarker;
-  //border-left-color:$gray;
-  //border-bottom: 1px solid #808080;
-  // Hover state
-  &:hover {
-    text-decoration: none;
-    background-color: darken($white, 10%);
-    *background-color: darken($white, 15%); /* Buttons in IE7 don't get borders, so darken on hover */
-    background-position: 0 -.937em; 
-
-    // transition is only when going to hover, otherwise the background
-    // behind the gradient (there for IE<=9 fallback) gets mismatched
-    @include transition(background-position .1s linear);
-  }
-
-  // Focus state for keyboard and accessibility
-  &:focus {
-    @include tab-focus();
-  }
-
-  // Active state
-  &.active,
-  &:active {
-    background-color: darken($white, 10%);
-    background-color: darken($white, 15%) \9;
-    background-image: none;
-    outline: 0;
-    @include box-shadow(#{inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)});
-  }
-
-  // Disabled state
-  &.disabled,
-  &[disabled] {
-    cursor: default;
-    background-color: darken($white, 10%);
-    background-image: none;
-    @include opacity(65);
-    @include box-shadow(none);
-  }
+nav[role=navigation] a,
+.landingmenu a {
+  @include navButton
 }
 // reinstate backgrounds and details for effect
-nav[role=navigation] li,
-.landingmenu li {
+nav[role=navigation] a,
+.landingmenu a {
   @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
+  color:$linkColor;
 }
 nav[role=navigation] li {
   border-right: solid 1px $gray;
   border-left:solid 1px $grayDark;
+  position:relative;
+  display:block;
+  float:left;
+  width:25%;
+  @include box-sizing(border-box);
 }
-nav[role=navigation] ul:first-item {
+nav[role=navigation] ul>:first-child {
   border-left:none;
 }
-nav[role=navigation] ul:last-item {
+nav[role=navigation] ul>:last-child {
   border-right:none;
 }
 nav[role=navigation] li a {
   display:block;
   color:$joeorange;
-  padding: .562em .875em; 
-  //padding: .25em 0 0 .2em;
   font-size:.8em;
+  padding: 3em 0 1em 0;
 }
 nav[role=navigation] li a:hover {
   text-decoration:none;
 }
-.basemenu [class^="icon-"]:before,
-.basemenu [class*=" icon-"]:before {
+
+nav[role=navigation] [class^="icon-"]:before,
+nav[role=navigation] [class*=" icon-"]:before {
+  position:absolute;
   font-size:1.5em;
-  padding-top:.25em;
-  // left:50%;
-  // margin-left:-.4em;
+  top:.5em;
+  left:50%;
+  margin-left:-.4em;
   color:$grayDark;
   text-shadow:1px 1px $gray, -1px -1px $black;
 }
+
 
 // LANDING BUTTONS
 // -------------------------
@@ -264,7 +177,6 @@ nav[role=navigation] li a:hover {
   padding:.5em;
 }
 .landingmenu ul {
-  list-style-type:none;
   margin:0;
 }
 .landingmenu li {
@@ -273,14 +185,16 @@ nav[role=navigation] li a:hover {
   float:left;
   width:46%;
   margin:2%;
+  list-style-type:none;
 }
 .landingmenu li a {
   text-align:center;
   display:block;
+  width:100%;
   padding:3.5em 0 1.5em 0;
-  color:$joeorange; 
 }
-.landingmenu li a:hover {
+.landingmenu li a:hover,
+.basemenu li a:hover {
   color:darken($linkColor, 15%);
   text-decoration:none;
 }

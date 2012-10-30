@@ -3,7 +3,7 @@
 Template Name: joesnell-portfolio
 */
 
-get_header('portfolio'); ?>
+get_header(); ?>
 
 
 		<div id="primary" class="site-content row-fluid">

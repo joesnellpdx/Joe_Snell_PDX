@@ -483,6 +483,63 @@
   border-bottom: 1px solid $bottom;
 }
 
+// Buttons
+// ------------------
+
+@mixin navButton {
+  width:100%;
+  @include box-sizing(border-box);
+  margin-bottom: 0; // For input.btn
+  font-size: $baseFontSize + .125em; 
+  line-height: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
+  color:$linkColor;
+  *border: 0; // Remove the border to prevent IE7's black border on input:focus
+  @include ie7-restore-left-whitespace(); // Give IE7 some love
+  @include box-shadow(#{inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)});
+  z-index:1000;
+
+  // Hover state
+  &:hover {
+    text-decoration: none;
+    background-color: darken($white, 10%);
+    *background-color: darken($white, 15%); /* Buttons in IE7 don't get borders, so darken on hover */
+    background-position: 0 -.937em; 
+
+    // transition is only when going to hover, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    @include transition(background-position .1s linear);
+  }
+
+  // Focus state for keyboard and accessibility
+  &:focus {
+    @include tab-focus();
+  }
+
+  // Active state
+  &.active,
+  &:active {
+    background-color: darken($white, 10%);
+    background-color: darken($white, 15%) \9;
+    background-image: none;
+    outline: 0;
+    @include box-shadow(#{inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)});
+  }
+
+  // Disabled state
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    background-color: darken($white, 10%);
+    background-image: none;
+    @include opacity(65);
+    @include box-shadow(none);
+  }
+}
+
 // Button backgrounds
 // ------------------
 @mixin buttonBackground($startColor, $endColor, $textColor: #fff, $textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
