@@ -7,7 +7,7 @@ get_header(); ?>
 
 
 		<div id="primary" class="site-content row-fluid">
-			<div id="content" role="main" class="span8">
+			<div id="content-portfolio" role="main" class="span8">
             	<div id="portfolio" class="content-wrap">
                 		<ul class="thumbnails">
 					

@@ -48,14 +48,14 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 
 // Typography
 // -------------------------
-$sansFontFamily:        "dejarip",sans-serif, Arial, sans-serif !default;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$sansFontFamily:        "droid-sans",sans-serif, Arial, sans-serif !default;
+$serifFontFamily:       "droid-serif", "Georgia", Times, serif !default;
 $monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          1em !default;
-$baseFontFamily:        $sansFontFamily !default;
-$baseLineHeight:        1.4em !default;
-$altFontFamily:         $serifFontFamily !default;
+$baseFontFamily:        $serifFontFamily !default;
+$baseLineHeight:        1.5em !default;
+$altFontFamily:         $sansFontFamily !default;
 
 $navFontSize:           3em !default;
 

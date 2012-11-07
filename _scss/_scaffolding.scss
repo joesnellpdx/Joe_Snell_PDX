@@ -6,6 +6,9 @@
 // Body reset
 // -------------------------
 
+html {
+  background-color:$grayDark;
+}
 body {
   margin: 0;
   font-family: $baseFontFamily;
@@ -14,37 +17,6 @@ body {
   color: $textColor;
   background: transparent url(../_img/bg.gif) repeat scroll;
 }
-
-#footer {
-  position:fixed;
-  bottom:0;
-}
-#primary {
-  background-color:$joeBlueLight;
-} 
-#portfolio {
-	width: 100%;
-}
-.insertCont {
-	width: 62%;
-	float: left;
-	background: $joeBlueLight;
-	padding: 2%;
-	margin: 0 2% 2% 2%;
-	@include box-sizing(border-box);
-}
-.contact-intro {
-	padding-bottom: 2em;
-}
-.contact-intro p:nth-of-type(1) {
-	padding-top: 2em;
-}
-
-.entry-meta {
-	margin-top: 2em;
-}
-
-
 
 // Links
 // -------------------------
@@ -97,7 +69,87 @@ a:hover {
 .img-circle {
   @include border-radius(31.25em); // 500px/16px = 31.25em
 }
-.category-portfolio img {
-	padding-top:2em;
+
+// Specific Styles
+// -------------------------
+
+#primary {
+  // background-color:$joeBlueLight;
+} 
+#content {
+  background-color:$joeBlueLight;
 }
 
+.insertCont {
+  width: 62%;
+  float: left;
+  background: $joeBlueLight;
+  padding: 2%;
+  margin: 0 2% 2% 2%;
+  @include box-sizing(border-box);
+}
+.contact-intro {
+  padding-bottom: 2em;
+}
+.contact-intro p:nth-of-type(1) {
+  padding-top: 2em;
+}
+
+.entry-meta {
+  margin: .5em 0 1em;
+  font-family:$sansFontFamily;
+  text-align:center;
+  color:$grayLight;
+  font-weight:300;
+  font-style:italic;
+  a {
+    color:darken($linkColor, 10%);
+  }
+  a:hover {
+    color:darken($linkColor, 20%)
+  }
+}
+.entry-title {
+  text-align:center;
+}
+
+// Portfolio
+// -------------------------
+
+#content-portfolio {
+  padding:0;
+  padding: 1%;
+  box-sizing: border-box;
+}
+#portfolio {
+  width: 100%;
+}
+
+.category-portfolio {
+  @include box-sizing(border-box);
+  @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
+  width:46%;
+  margin:2%;
+  float:left;
+  min-height:26.25em;
+}
+.portfolioimg h2,
+.excerpt {
+  padding: .562em;
+  padding-top: .25em;
+  margin: 0 0 $baseFontSize 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-decoration: blink;
+}
+.portfolioimg h2 {
+  font-size:($baseFontSize *1.4);
+  color: $joeorange;
+  line-height:($baseLineHeight / 1.4);
+  margin-bottom:0;
+}
+.excerpt {
+  font-size: ($baseFontSize * .8);
+  font-family: $baseFontFamily;
+  color:$grayLight;
+}
+// Portfolio img  : see thumbnails.scss

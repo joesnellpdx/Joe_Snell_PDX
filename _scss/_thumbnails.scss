@@ -48,11 +48,10 @@ a.thumbnail:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.thumbnail .caption,
-.portfolioimg h2 {
-  	padding: .562em;
-  	font-family: $baseFontFamily;
-	font-size: $baseFontSize;
+.thumbnail .caption {
+  padding: .562em;
+  font-family: $baseFontFamily;
+	font-size: ($baseFontSize * .8);
 	color: $joeorange;
 	font-weight: normal;
 	line-height: $baseLineHeight;
@@ -72,8 +71,18 @@ a.thumbnail:hover {
 .selfPortrait img {
   width:100%;
 }
-.portfolioimg img {
-	width: 98%;
+
+// Portfolio img
+.category-portfolio img {
+  width:100%;
+  padding:0px;
+  margin:0;
+  @include border-radius(0);
+  border:none;
+  //@include filter(opacity(50%));
+}
+.category-portfolio img:hover {
+  //@include filter(opacity(100%));
 }
 
 

@@ -56,8 +56,8 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<script type="text/javascript" src="http://use.typekit.com/jrw3qjl.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript" src="//use.typekit.net/jrw3qjl.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body data-spy="scroll" <?php body_class(); ?>>

@@ -490,7 +490,8 @@
   width:100%;
   @include box-sizing(border-box);
   margin-bottom: 0; // For input.btn
-  font-size: $baseFontSize + .125em; 
+  font-size: $baseFontSize + .125em;
+  font-family:$sansFontFamily;
   line-height: normal;
   text-align: center;
   vertical-align: middle;

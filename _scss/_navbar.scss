@@ -7,7 +7,7 @@
 // -------------
 .topbar,
 .topbar-base,
-.bottombar {
+.footer {
   background-color:$joeorange;
   width:100%;
   @include box-sizing(border-box);
@@ -15,12 +15,8 @@
 .topbar {
   height:$navbarHeight; 
 }
-.topbar-base,
-.bottombar {
+.topbar-base {
   height:$navbarBaseHeight;
-}
-.bottombar {
-  padding: ($navbarBaseHeight * .25);
 }
 
 
@@ -29,6 +25,7 @@
 .logo-head img,
 .logo-head-base img {
   float:right;
+  margin:0;
 }
 .logo-head img {
   height:$navbarHeight;
@@ -55,9 +52,16 @@
   line-height: .5em;
   padding: .5em;
   margin:0 0 0 1.8em;
+  color:$white;
 }
 .brand-text .sub-head {
   font-size:.4em;
+}
+.footer a {
+  color:$joeBlue;
+  :hover {
+    color:darken($joeBlue, 15%);
+  }
 }
 
 
@@ -184,14 +188,18 @@ nav[role=navigation] [class*=" icon-"]:before {
   @include box-sizing(border-box);
   float:left;
   width:46%;
-  margin:2%;
+  margin:2%; 
   list-style-type:none;
+}
+.landingmenu li:nth-child(n+3) {
+  margin-bottom:2em;
 }
 .landingmenu li a {
   text-align:center;
   display:block;
   width:100%;
-  padding:3.5em 0 1.5em 0;
+  height:8em;
+  padding:4em 0 1.5em 0;
 }
 .landingmenu li a:hover,
 .basemenu li a:hover {
@@ -202,7 +210,7 @@ nav[role=navigation] [class*=" icon-"]:before {
 .landingmenu [class*=" icon-"]:before {
   position:absolute;
   font-size:2em;
-  top:.8em;
+  top:1.3em;
   left:50%;
   margin-left:-.4em;
   color:$grayDark;

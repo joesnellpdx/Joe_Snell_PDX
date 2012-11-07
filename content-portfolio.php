@@ -12,6 +12,9 @@
                             <div class="portfolioimg">
 								<?php the_post_thumbnail('full', array('class' => 'thumbnail')); ?>
                                 <h2 class="caption"><?php the_title(); ?></h2>
+                                <div class="excerpt">
+                                	<?php the_excerpt(); ?>
+                                </div>
                           	</div>
                           
                 </li>
