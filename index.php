@@ -21,7 +21,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
                 
 				<?php if ( is_home() ) {
-					query_posts( 'cat=-5');
+					query_posts( 'cat=-5,-10');
 					}
 					?>
 				<?php while ( have_posts() ) : the_post(); ?>

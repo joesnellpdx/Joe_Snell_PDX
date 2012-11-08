@@ -125,10 +125,10 @@ nav[role=navigation] ul {
 }
 nav[role=navigation] a,
 .landingmenu a {
-  @include navButton
+  @include navButton;
 }
 // reinstate backgrounds and details for effect
-nav[role=navigation] a,
+nav[role=navigation] a, 
 .landingmenu a {
   @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
   color:$linkColor;
