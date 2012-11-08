@@ -16,12 +16,12 @@ get_header(); ?>
 
 
 		<div id="primary" class="site-content row-fluid">
-			<div id="content" role="main" class="span8">
+			<div id="content-loop" role="main" class="span8">
 
 				<?php if ( have_posts() ) : ?>
                 
 				<?php if ( is_home() ) {
-					query_posts('category_name=blog');
+					query_posts( 'cat=-5');
 					}
 					?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 						 * If you want to overload this in a child theme then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						get_template_part( 'content', get_post_format() );
+						get_template_part( 'content', 'blog' );
 					?>
 
 				<?php endwhile; ?>

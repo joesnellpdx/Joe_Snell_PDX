@@ -6,7 +6,7 @@ Template Name: joesnell-basic: the primary page template
 get_header(); ?>
 
 
-		<div id="primary" class="site-content row-fluid">
+		<div id="test" class="site-content row-fluid">
 			<div id="content" role="main" class="span8">
             
 

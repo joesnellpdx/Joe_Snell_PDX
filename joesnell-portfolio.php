@@ -3,23 +3,17 @@
 Template Name: joesnell-portfolio
 */
 
-get_header(); ?>
+get_header(); ?> 
 
 
 		<div id="primary" class="site-content row-fluid">
-			<div id="content-portfolio" role="main" class="span8">
-            	<div id="portfolio" class="content-wrap">
-                		<ul class="thumbnails">
+			<div id="content-loop" role="main" class="span8">
 					
 							<?php query_posts('category_name=Portfolio'); ?>
                             <?php while ( have_posts() ) : the_post(); ?>
                             <?php get_template_part( 'content', 'portfolio' ); ?>
             				<?php comments_template( '', true ); ?>
             				<?php endwhile; // end of the loop. ?> 
-                
-                 		</ul>
-        		</div>
-
 
 			</div><!-- #content -->
              <div id="sidebar" class="span3">
@@ -29,4 +23,4 @@ get_header(); ?>
        
 
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> 

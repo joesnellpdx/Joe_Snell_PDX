@@ -95,61 +95,56 @@ a:hover {
   padding-top: 2em;
 }
 
-.entry-meta {
-  margin: .5em 0 1em;
-  font-family:$sansFontFamily;
-  text-align:center;
-  color:$grayLight;
-  font-weight:300;
-  font-style:italic;
-  a {
-    color:darken($linkColor, 10%);
-  }
-  a:hover {
-    color:darken($linkColor, 20%)
-  }
-}
-.entry-title {
-  text-align:center;
-}
 
-// Portfolio
+// Portfolio & Main Loop
 // -------------------------
 
-#content-portfolio {
+#content-loop {
   padding:0;
   padding: 1%;
   box-sizing: border-box;
-}
-#portfolio {
-  width: 100%;
+    article {
+      @include box-sizing(border-box);
+      @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
+      width:46%;
+      margin:2%;
+      float:left;
+      min-height:26.25em;
+  }
+    h2,
+    p,
+    entry-meta {
+      padding: .562em;
+      margin: 0 0 $baseFontSize 0;
+  }
+    h2 {
+      font-size:($baseFontSize *1.4);
+      color: $joeorange;
+      line-height:($baseLineHeight / 1.4);
+      margin-bottom:0;
+      text-align:center;
+    }
+    p,
+    .entry-meta {
+      font-size: ($baseFontSize * .8);
+      font-family: $baseFontFamily;
+      color:$grayLight;
+    }
+    .entry-meta {
+      text-align:center;
+      font-weight:300;
+      font-style:italic;
+      a {
+        color:darken($linkColor, 10%);
+    }
+      a:hover {
+        color:darken($linkColor, 20%)
+    }
+  }
+
+
+
 }
 
-.category-portfolio {
-  @include box-sizing(border-box);
-  @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
-  width:46%;
-  margin:2%;
-  float:left;
-  min-height:26.25em;
-}
-.portfolioimg h2,
-.excerpt {
-  padding: .562em;
-  padding-top: .25em;
-  margin: 0 0 $baseFontSize 0;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  text-decoration: blink;
-}
-.portfolioimg h2 {
-  font-size:($baseFontSize *1.4);
-  color: $joeorange;
-  line-height:($baseLineHeight / 1.4);
-  margin-bottom:0;
-}
-.excerpt {
-  font-size: ($baseFontSize * .8);
-  font-family: $baseFontFamily;
-  color:$grayLight;
-}
+
 // Portfolio img  : see thumbnails.scss

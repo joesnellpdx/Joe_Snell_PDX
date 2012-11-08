@@ -2,7 +2,7 @@
 /**
  * The Landing Page Header for our theme.
  *
- * Displays all of the <head> section and everything up till <div id="main">
+ * Displays all of the <head> section and everything up till 
  *
  * @package Joe_Snell_PDX
  * @since Joe_Snell_PDX 1.0
