@@ -6,8 +6,7 @@
 // COMMON STYLES
 // -------------
 .topbar,
-.topbar-base,
-.footer {
+.topbar-base {
   background-color:$joeorange;
   width:100%;
   @include box-sizing(border-box);
@@ -57,12 +56,6 @@
 .brand-text .sub-head {
   font-size:.4em;
 }
-.footer a {
-  color:$joeBlue;
-  :hover {
-    color:darken($joeBlue, 15%);
-  }
-}
 
 
 // COLLAPSIBLE NAV
@@ -89,9 +82,9 @@ a.menu-link i {
   text-shadow:none;
 }
 
-// nav[role=navigation] = .basemenu
+// nav.basemenu = .basemenu
 
-nav[role=navigation] {
+nav.basemenu {
   background-color:$navbarInverseBackgroundHighlight;
   clear: both;
   @include transition(all 0.3s ease-out);
@@ -102,7 +95,7 @@ nav[role=navigation] {
   padding-bottom:.0625em;
   border-bottom:1px solid $grayDarker;
 }
-.js nav[role=navigation] {
+.js nav.basemenu {
   overflow: hidden;
   max-height: 0;
   margin-top:0px;
@@ -111,7 +104,7 @@ nav[role=navigation] {
   padding:0;
   border:none;
 }
-nav[role=navigation].active {
+nav.basemenu.active {
   max-height: 15em;
   margin-top:0px;
   width:100%;
@@ -119,21 +112,20 @@ nav[role=navigation].active {
   border-bottom:1px solid $grayDarker;
 
 }
-nav[role=navigation] ul {
+nav.basemenu ul {
   border-top: 1px solid #808080;
   margin:0;
 }
-nav[role=navigation] a,
+nav.basemenu a,
 .landingmenu a {
   @include navButton;
 }
 // reinstate backgrounds and details for effect
-nav[role=navigation] a, 
+nav.basemenu a, 
 .landingmenu a {
-  @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
   color:$linkColor;
 }
-nav[role=navigation] li {
+nav.basemenu li {
   border-right: solid 1px $gray;
   border-left:solid 1px $grayDark;
   position:relative;
@@ -142,24 +134,24 @@ nav[role=navigation] li {
   width:25%;
   @include box-sizing(border-box);
 }
-nav[role=navigation] ul>:first-child {
+nav.basemenu ul>:first-child {
   border-left:none;
 }
-nav[role=navigation] ul>:last-child {
+nav.basemenu ul>:last-child {
   border-right:none;
 }
-nav[role=navigation] li a {
+nav.basemenu li a {
   display:block;
   color:$joeorange;
   font-size:.8em;
   padding: 3em 0 1em 0;
 }
-nav[role=navigation] li a:hover {
+nav.basemenu li a:hover {
   text-decoration:none;
 }
 
-nav[role=navigation] [class^="icon-"]:before,
-nav[role=navigation] [class*=" icon-"]:before {
+nav.basemenu [class^="icon-"]:before,
+nav.basemenu [class*=" icon-"]:before {
   position:absolute;
   font-size:1.5em;
   top:.5em;

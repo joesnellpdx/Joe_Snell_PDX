@@ -1,0 +1,72 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+
+@media (min-width: 62em) {
+  //
+  // Responsive: scaffolding
+  // --------------------------------------------------
+
+  //
+  // Responsive: grid
+  // --------------------------------------------------
+
+  //
+  // Responsive: layouts
+  // --------------------------------------------------
+
+  //
+  // Responsive: type
+  // --------------------------------------------------
+
+  //
+  // Responsive: buttons
+  // --------------------------------------------------
+
+  //
+  // Responsive: navbar 
+  // --------------------------------------------------
+
+  //
+  // Responsive: thumbnails
+  // --------------------------------------------------
+
+  //
+  // Responsive: utilities
+  // ----------------
+  
+	
+	.landingbody,
+	body {
+	  background: $white;
+  }
+  
+   
+  #sidebar {
+	  float: left;
+	  @include box-sizing(border-box);
+	  padding: .5em;
+	  background-color:  $joeBlueLight;
+	  @include border-radius(.25em);
+	  @include box-shadow(#{inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)})
+	    
+  }
+
+  .thumbnails {
+	  margin: 0px;
+  }
+  #content {
+	float: left;
+	background: $white;
+	padding: 0 2% 2% 0%;
+	margin: 0 2% 2% 0%;
+	@include box-sizing(border-box);
+  }
+  header {
+	  padding-bottom: 1.4em;
+  }
+  
+
+
+}

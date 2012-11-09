@@ -6,9 +6,6 @@
 // Body reset
 // -------------------------
 
-html {
-  background-color:$grayDark;
-}
 body {
   margin: 0;
   font-family: $baseFontFamily;
@@ -16,6 +13,14 @@ body {
   line-height: $baseLineHeight;
   color: $textColor;
   background: transparent url(../_img/bg.gif) repeat scroll;
+}
+.footer {
+  @include navButtonNoHov;
+  overflow:hidden;
+  min-height:$navbarBaseHeight;
+  .container {
+    padding:$gridGutterWidth;
+  }
 }
 
 // Links
@@ -105,9 +110,9 @@ a:hover {
   box-sizing: border-box;
     a {
       @include navButton;
-      @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
-      width:46%;
-      margin:2%;
+      width:48%;
+      margin:$gridGutterWidth *.2;
+      padding:$gridGutterWidth *.2;
       float:left;
     }
     h2,
@@ -126,6 +131,7 @@ a:hover {
       font-family: $baseFontFamily;
       color:$grayLight;
       text-align:left;
+      padding-bottom:$gridGutterWidth;
     } 
   }
 

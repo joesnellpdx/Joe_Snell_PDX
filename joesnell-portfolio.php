@@ -7,7 +7,7 @@ get_header(); ?>
 
 
 		<div id="primary" class="site-content row-fluid">
-			<div id="content-loop" role="main" class="span8">
+			<div id="content-loop" role="main" class="span9 offset3">
 					
 							<?php query_posts('category_name=Portfolio'); ?>
                             <?php while ( have_posts() ) : the_post(); ?>

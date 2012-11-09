@@ -83,7 +83,7 @@
                         </div>
                     </hgroup>
                 </div>
-                <nav id="menu" role="navigation" class="basemenu">
+                <nav id="menu" role="navigation" class="basemenu"> 
                     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
                 </nav>
             </header>

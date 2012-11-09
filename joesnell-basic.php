@@ -6,8 +6,8 @@ Template Name: joesnell-basic: the primary page template
 get_header(); ?>
 
 
-		<div id="test" class="site-content row-fluid">
-			<div id="content" role="main" class="span8">
+		<div id="content-wrap" class="site-content row-fluid">
+			<div id="content" role="main" class="span9 offset3">
             
 
 				<?php while ( have_posts() ) : the_post(); ?>

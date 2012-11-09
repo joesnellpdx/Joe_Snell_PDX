@@ -32,16 +32,16 @@
 // ------------------
 
 // Large desktops
-@import "responsive-1200px-min";
+@import "responsive-75em-min";
 
 // Regular desktops 
-@import "responsive-980px-min";
+@import "responsive-62em-min";
 
 // Tablets to regular desktops
-@import "responsive-768px-979px";
+@import "responsive-41.26em-61em";
 
 // Phones to portrait tablets and narrow desktops
-@import "responsive-767px-max";
+@import "responsive-41.25em-max";
 
 
 // RESPONSIVE NAVBAR

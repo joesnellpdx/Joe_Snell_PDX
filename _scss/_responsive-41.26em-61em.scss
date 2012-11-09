@@ -1,0 +1,67 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+
+@media (min-width: 41.26em) and (max-width: 61em) { // 768px/16px = 48em - 979px/16px = 61em
+
+  // Fixed grid
+  @include grid-core($gridColumnWidth768, $gridGutterWidth768);
+
+  // Fluid grid
+  @include grid-fluid($fluidGridColumnWidth768, $fluidGridGutterWidth768);
+
+  // Input grid
+  @include grid-input($gridColumnWidth768, $gridGutterWidth768);
+
+  // No need to reset .thumbnails here since it's the same $gridGutterWidth
+   
+  //
+  // Responsive: scaffolding
+  // --------------------------------------------------
+
+  #content {
+    margin-top:$gridGutterWidth;
+    padding:$gridGutterWidth;
+  }
+  .footer {
+    margin-left:25.69061%;
+    .container {
+      margin:0px;
+    }
+  }
+
+  //
+  // Responsive: grid
+  // --------------------------------------------------
+
+  //
+  // Responsive: layouts
+  // --------------------------------------------------
+
+  //
+  // Responsive: type
+  // --------------------------------------------------
+
+  //
+  // Responsive: buttons
+  // --------------------------------------------------
+
+  //
+  // Responsive: navbar 
+  // --------------------------------------------------
+
+  .topbar {
+    float:right;
+    width:100%;
+  }
+
+  //
+  // Responsive: thumbnails
+  // --------------------------------------------------
+
+  //
+  // Responsive: utilities
+  // --------------------------------------------------
+
+}

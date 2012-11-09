@@ -16,7 +16,7 @@ get_header(); ?>
 
 
 		<div id="primary" class="site-content row-fluid">
-			<div id="content-loop" role="main" class="span8">
+			<div id="content-loop" role="main" class="span9 offset3">
 
 				<?php if ( have_posts() ) : ?>
                 
