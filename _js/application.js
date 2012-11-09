@@ -15,44 +15,53 @@ $menulink.click(function() {
   $containerfluid.toggleClass('active');
   return false;
 });
+
+/* Thanks to CSS Tricks for pointing out this bit of jQuery
+http://css-tricks.com/equal-height-blocks-in-rows/ 
+and to Micah Godbolt for his fork on CodePen::
+http://codepen.io/micahgodbolt/pen/FgqLc
+Per Mica: It's been modified into a function called at page load and then each time the page is resized. One large modification was to remove the set height before each new calculation. */
+
+equalheight = function(container){
+
 var currentTallest = 0,
      currentRowStart = 0,
      rowDivs = new Array(),
      $el,
      topPosition = 0;
-
  $('#content-loop a').each(function() {
 
    $el = $(this);
+   $($el).height('auto')
    topPostion = $el.position().top;
-   
-   if (currentRowStart != topPostion) {
 
-     // we just came to a new row.  Set all the heights on the completed row
+   if (currentRowStart != topPostion) {
      for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
        rowDivs[currentDiv].height(currentTallest);
      }
-
-     // set the variables for the new row
      rowDivs.length = 0; // empty the array
      currentRowStart = topPostion;
      currentTallest = $el.height();
      rowDivs.push($el);
-
    } else {
-
-     // another div on the current row.  Add it to the list and check if it's taller
      rowDivs.push($el);
      currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-
   }
-   
-  // do the last row
    for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
      rowDivs[currentDiv].height(currentTallest);
    }
-   
  });
+}
+
+$(document).ready(function() {
+  equalheight('.main article');
+});
+
+
+$(window).resize(function(){
+  equalheight('.main article');
+});
+
 // $('#menu').bind('tap', function(){
 //    rolloverMenu(1, '#menu');
 // })
