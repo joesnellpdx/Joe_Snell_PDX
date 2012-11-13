@@ -11,7 +11,7 @@
 
 // New Navbar
 
-@media screen and (min-width: 41.25em) {
+@media screen and (min-width: 41.26em) {
   a.menu-link {
      display: none;
   }
@@ -58,5 +58,34 @@
     font-size: 2em;
     top: 1.3em;
     }
+
+}
+@media screen and (min-width: 62em) {
+  #header {
+    background-color:white;
+    height:auto;
+    h1, h2 {
+      color:$textColor;
+      font-size:4em;
+      margin:.5em 0 0 10%;
+    }
+  }
+  .js nav[role=navigation],
+  nav[role=navigation] {
+    width:10%;
+  }
+  nav[role=navigation] li a {
+    height:5em;
+    padding-top:2.5em;
+  }
+  nav[role=navigation] [class^="icon-"]::before, .landingmenu [class*=" icon-"]::before {
+    font-size:1.5em;
+    top: 1em;
+  }
+  .logo-head img,
+  .logo-head-base img {
+    height:$navbarHeight;
+    width:$navbarHeight;
+  }
 
 }

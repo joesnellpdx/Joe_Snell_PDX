@@ -18,7 +18,7 @@ get_header('child'); // use default header.php
  ?>
 
 		<div id="primary" class="site-content row-fluid">
-			<div id="content" role="main" class="span8">
+			<div id="content" role="main" class="span9 offset3">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 

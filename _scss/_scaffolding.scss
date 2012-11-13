@@ -7,7 +7,6 @@
 // -------------------------
 
 body {
-  margin: 0;
   font-family: $baseFontFamily;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
@@ -79,7 +78,7 @@ a:hover {
 // -------------------------
 
 #primary {
-  // background-color:$joeBlueLight;
+  margin-bottom:$navbarBaseHeight;
 } 
 #content {
   background-color:$joeBlueLight;
@@ -107,11 +106,11 @@ a:hover {
 #content-loop {
   padding:0;
   padding: 1%;
-  box-sizing: border-box;
+  @include box-sizing(border-box);
     a {
       @include navButton;
       width:48%;
-      margin:$gridGutterWidth *.2;
+      margin:1%;
       padding:$gridGutterWidth *.2;
       float:left;
     }
@@ -131,8 +130,10 @@ a:hover {
       font-family: $baseFontFamily;
       color:$grayLight;
       text-align:left;
-      padding-bottom:$gridGutterWidth;
     } 
+    article {
+      padding-bottom:1.5em;
+    }
   }
 
 

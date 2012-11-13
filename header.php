@@ -69,8 +69,8 @@
 
     <div id="main" class="container-fluid">
         <div id="wrap" class="wrap">
-            <header>
-                <div id="header" class="topbar-base">
+           
+                <header id="header" class="topbar-base">
                     <a href="#menu" class="btn btn-inverse menu-link">
                         <i class="icon-reorder navbtn"></i> 
                     </a>
@@ -82,8 +82,8 @@
                             <h1 class="brand-base"><?php wp_title( " " ); ?></h1>
                         </div>
                     </hgroup>
-                </div>
+                </header>
                 <nav id="menu" role="navigation" class="basemenu"> 
                     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
                 </nav>
-            </header>
+       

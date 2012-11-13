@@ -74,8 +74,8 @@
 
 <div id="main" class="container-fluid">
     <div id="wrap" class="wrap">
-        <div id="header" class="topbar">
-        	<header>
+        
+        	<header id="header" class="topbar">
             
                 <!-- <div class="navbar navbar-fixed-top">
                     <div class="navbar-inner"> -->
@@ -99,6 +99,6 @@
                     <!-- </div> -->  <!-- navbar --> 
 
         	</header><!-- #masthead .site-header  -->
-        </div> <!-- topbar -->
+        
 
 	

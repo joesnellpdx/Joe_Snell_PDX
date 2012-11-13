@@ -73,7 +73,7 @@ a.thumbnail:hover {
 }
 
 // Portfolio img
-.category-portfolio img {
+#content-loop .category-portfolio img {
   width:100%;
   padding:0px;
   margin:0;
@@ -81,7 +81,7 @@ a.thumbnail:hover {
   border:none;
   //@include filter(opacity(50%));
 }
-.category-portfolio img:hover {
+#content-loop .category-portfolio img:hover {
   //@include filter(opacity(100%));
 }
 
