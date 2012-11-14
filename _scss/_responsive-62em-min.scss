@@ -7,10 +7,14 @@
   //
   // Responsive: scaffolding
   // --------------------------------------------------
+  body {
+    background:none;
+    background-color:$grayLighter;
+  }
 
   #content {
     margin-top:$gridGutterWidth;
-    padding:$gridGutterWidth;
+    background-color:$white;
     article {
       max-width:47em;
     }
@@ -32,7 +36,6 @@
   #content-loop,
   .footer {
     margin-left:11%;
-    padding-right:$gridGutterWidth;
     width:90%;
   }
   #content-loop a {
@@ -53,6 +56,21 @@
   //
   // Responsive: type
   // --------------------------------------------------
+
+  #content {
+    h1 {
+      font-size:3em;
+      margin-bottom:.5em;
+    }
+    h2 {
+      font-size:2.4em;
+      margin-bottom:.5em;
+    }
+    h3 {
+      font-size:2em;
+      margin-bottom:.5em;
+    }
+  }
 
   //
   // Responsive: buttons

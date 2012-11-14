@@ -7,7 +7,7 @@ get_header(); ?>
 
 
 		<div id="content-wrap" class="site-content row-fluid">
-			<div id="content" role="main" class="span6 offset3">
+			<div id="content" role="main" class="span9 offset3">
             
 
 				<?php while ( have_posts() ) : the_post(); ?>

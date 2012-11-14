@@ -62,38 +62,31 @@
 
 }
 @media screen and (min-width: 62em) {
-  .body-base {
-    background: transparent url(../_img/top-bg.gif) repeat-x;
-  }
-  #main .topbar-base {
-    background:none;
-    height:($fluidGridGutterWidth * 6);
+
+  #header {
+    height:125px;
+    @include navButtonBackOnly;
+    margin-bottom:115px;
+
     h1, h2 {
       color:$textColor;
       font-size:4em;
       margin-left:10%;
-      padding-top:1em;
-      clear:both;
-    }
-  }
-  #main .topbar {
-    height:125px;
-    @include navButtonBackOnly;
-
-    h1, h2 {
-      color:$linkColor;
-      font-size:4em;
-      margin-left:10%;
-      padding-top:1em;
+      padding-top:1.5em;
       clear:both;
     }
     .brand {
+      color:$white;
+      text-shadow: 0 -1px 1px $gray;
       padding:25px 0 150px 0;
       margin:0px;
       width:50%;
       float:left;
       clear:none;
     }
+  }
+  #main .brand-base {
+    text-shadow: 0 1px 1px white;
   }
   .js nav[role=navigation],
   nav[role=navigation] {
