@@ -85,7 +85,6 @@ a.menu-link i {
 // nav.basemenu = .basemenu
 
 nav.basemenu {
-  background-color:$navbarInverseBackgroundHighlight;
   clear: both;
   @include transition(all 0.3s ease-out);
   @include box-sizing(border-box);
@@ -93,7 +92,6 @@ nav.basemenu {
   margin-top:0px;
   width:100%;
   padding-bottom:.0625em;
-  border-bottom:1px solid $grayDarker;
 }
 .js nav.basemenu {
   overflow: hidden;
@@ -157,7 +155,7 @@ nav.basemenu [class*=" icon-"]:before {
   top:.5em;
   left:50%;
   margin-left:-.4em;
-  color:$grayDark;
+  color:darken(#B3B3B3, 50%);
   text-shadow:1px 1px $gray, -1px -1px $black;
 }
 

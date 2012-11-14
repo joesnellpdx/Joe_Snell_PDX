@@ -53,14 +53,21 @@ var currentTallest = 0,
  });
 }
 
-$(document).ready(function() {
+$(window).load(function(){
   equalheight('.main article');
 });
 
 
 $(window).resize(function(){
-  equalheight('.main article');
+	// clearTimeout(resizeTimer);
+	// resizeTimer = setTimeout(resizeHandler(), 1000);
+  	equalheight('.main article');
 });
+
+$('body').scrollTop(1);
+$('#sidebar').hide();
+var resizeTimer;
+
 
 // $('#menu').bind('tap', function(){
 //    rolloverMenu(1, '#menu');
@@ -197,13 +204,7 @@ $(window).resize(function(){
 // }
 
 	
-	$('body').scrollTop(1);
-	$('#sidebar').hide();
-	var resizeTimer;
-	$(window).resize(function() {
-		clearTimeout(resizeTimer);
-		resizeTimer = setTimeout(resizeHandler(), 1000);
-	});
+
 
 
 	

@@ -20,6 +20,9 @@ body {
     padding:$fluidGridGutterWidth;
   }
 }
+#primary {
+  margin-bottom:$navbarBaseHeight;
+}
 
 // Links
 // -------------------------
@@ -131,7 +134,7 @@ a:hover {
     h2 {
       font-size:($baseFontSize *1.3);
       color: $joeorange;
-      line-height:($baseLineHeight / 1.6);
+      line-height:1.2em;
       margin-bottom:0;
     }
     p {
