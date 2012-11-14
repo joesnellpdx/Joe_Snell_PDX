@@ -8,12 +8,12 @@
   // Responsive: scaffolding
   // --------------------------------------------------
 
-  body {
-    background:white;
-  }
   #content {
     margin-top:$gridGutterWidth;
     padding:$gridGutterWidth;
+    article {
+      max-width:47em;
+    }
   }
   .footer {
     margin-left:25.69061%;
@@ -33,7 +33,10 @@
   .footer {
     margin-left:11%;
     padding-right:$gridGutterWidth;
-    width:47em;
+    width:90%;
+  }
+  #content-loop a {
+    width:31%;
   }
   .footer {
     width:auto;

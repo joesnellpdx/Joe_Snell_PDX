@@ -11,14 +11,13 @@ body {
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   color: $textColor;
-  background: transparent url(../_img/bg.gif) repeat scroll;
 }
 .footer {
   @include navButtonNoHov;
   overflow:hidden;
   min-height:$navbarBaseHeight;
   .container {
-    padding:$gridGutterWidth;
+    padding:$fluidGridGutterWidth;
   }
 }
 
@@ -81,7 +80,8 @@ a:hover {
   margin-bottom:$navbarBaseHeight;
 } 
 #content {
-  background-color:$joeBlueLight;
+    background-color:$joeBlueLight;
+    max-width:47em;
 }
 
 .insertCont {
@@ -111,7 +111,6 @@ a:hover {
       @include navButton;
       width:48%;
       margin:1%;
-      padding:$gridGutterWidth *.2;
       float:left;
     }
     h2,

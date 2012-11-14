@@ -12,6 +12,7 @@
 // New Navbar
 
 @media screen and (min-width: 41.26em) {
+
   a.menu-link {
      display: none;
   }
@@ -19,9 +20,9 @@
   .js nav[role=navigation] {
     max-height: none;
     height:50px;
-    width:24%;
-    padding:$gridGutterWidth * .5;
-    margin-top:$gridGutterWidth *.25;
+    width:(25%);
+    padding:$fluidGridGutterWidth * .5;
+    margin-top:$fluidGridGutterWidth *.25;
     background:none;
     float:left;
     position:absolute;
@@ -30,8 +31,8 @@
   }
   nav[role=navigation] {
     width:24%;
-    padding:$gridGutterWidth * .5;
-    margin-top:$gridGutterWidth *.75;
+    padding:$fluidGridGutterWidth * .5;
+    margin-top:$fluidGridGutterWidth *.75;
   }
   nav[role=navigation] ul {
     margin: 0;
@@ -42,11 +43,11 @@
     display: inline-block;
     border-left:none;
     border-right:none;
-    margin: $gridGutterWidth * .25;
     width:100%;
+    margin:$fluidGridGutterWidth;
   }
   nav[role=navigation] li:nth-child(n+3) {
-    margin-bottom: $gridGutterWidth * .25;
+    margin-bottom: $fluidGridGutterWidth;
   }
   nav[role=navigation] li a {
     border: 0;
@@ -61,13 +62,37 @@
 
 }
 @media screen and (min-width: 62em) {
-  #header {
-    background-color:white;
-    height:auto;
+  .body-base {
+    background: transparent url(../_img/top-bg.gif) repeat-x;
+  }
+  #main .topbar-base {
+    background:none;
+    height:($fluidGridGutterWidth * 6);
     h1, h2 {
       color:$textColor;
       font-size:4em;
-      margin:.5em 0 0 10%;
+      margin-left:10%;
+      padding-top:1em;
+      clear:both;
+    }
+  }
+  #main .topbar {
+    height:125px;
+    @include navButtonBackOnly;
+
+    h1, h2 {
+      color:$linkColor;
+      font-size:4em;
+      margin-left:10%;
+      padding-top:1em;
+      clear:both;
+    }
+    .brand {
+      padding:25px 0 150px 0;
+      margin:0px;
+      width:50%;
+      float:left;
+      clear:none;
     }
   }
   .js nav[role=navigation],
@@ -82,10 +107,18 @@
     font-size:1.5em;
     top: 1em;
   }
-  .logo-head img,
-  .logo-head-base img {
-    height:$navbarHeight;
-    width:$navbarHeight;
+  .logo-head,
+  .logo-head-base {
+    width:100px;
+    float:left;
+    padding:0 ($fluidGridGutterWidth * .5);
+    margin:0 0 ($fluidGridGutterWidth *.25) 11%;
+    @include box-sizing(border-box);
+    img {
+      width:100%;
+      height:auto;
+      padding-top:25px;
+    }
   }
 
 }
