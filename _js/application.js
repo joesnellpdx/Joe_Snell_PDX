@@ -2,7 +2,7 @@
 // FOR JOESNELL THEME
 // ++++++++++++++++++++++++++++++++++++++++++
 
-!function ($) {
+!function ($) { 
 
 $('body').addClass('js');
   var $menu = $('#menu'),
@@ -22,6 +22,17 @@ $menulinkright.click(function() {
   $containerfluid.toggleClass('activeright');
   return false;
 });
+
+if (document.documentElement.clientWidth > 980) {
+    $('.navbtn').removeClass('icon-reorder').addClass('icon-arrow-left');
+
+	  $('#main a.menu-link').click(function(){
+		  $(this).toggleClass('menu-link-active');
+		});
+	  $('#main a.menu-link-right').click(function(){
+		  $(this).toggleClass('menu-link-right-active');
+		});
+}
 
 
 
@@ -74,18 +85,9 @@ $(window).load(function(){
   equalheight('.main article');
 });
 
-  	if (document.documentElement.clientWidth > 980) {
-	    $('.navbtn').removeClass('icon-reorder').addClass('icon-arrow-left');
-
-		  $('#main a.menu-link').click(function(){
-			  $(this).toggleClass('menu-link-active');
-			});
-		  $('#main a.menu-link-right').click(function(){
-			  $(this).toggleClass('menu-link-right-active');
-			});
-	}
 
 
+//var resizeTimer;
 $(window).resize(function(){
 	// clearTimeout(resizeTimer);
 	// resizeTimer = setTimeout(resizeHandler(), 1000);
@@ -99,7 +101,7 @@ $(window).resize(function(){
 });
 
 $('body').scrollTop(1);
-var resizeTimer;
+
 
 
 // $('#menu').bind('tap', function(){

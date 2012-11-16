@@ -8,9 +8,11 @@
   @include container-fixed();
 }
 #sidebar {
-	padding:$fluidGridGutterWidth;
-	@include box-sizing(border-box);
+	position:absolute;
+	z-index:-500;
+	right:-1000px;
 }
+
 
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
 // .container-fluid {

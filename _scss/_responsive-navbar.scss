@@ -66,6 +66,10 @@
 }
 @media screen and (min-width: 62em) {
 
+  .icon-reorder {
+    display:none;
+  }
+
   #main a.menu-link,
   #main a.menu-link-right {
     display:inline;
@@ -82,21 +86,26 @@
   }
   #main a.menu-link {
     left:0;
+    border:none;
   }
   #main a.menu-link-right {
     right:0;
+    border:none;
   }
   .menu-link-active {
     @include rotate(-90deg);
+    border:none;
   }
   .menu-link-right-active {
     @include rotate(90deg);
+    border:none;
   }
 
   #header {
     height:125px;
     @include navButtonBackOnly;
     margin-bottom:125px;
+    @include box-shadow(0px 4px 6px $black);
 
     h1, h2 {
       color:$textColor;
@@ -131,6 +140,12 @@
 
   // LEFT NAV TOGGLE
 
+  #sidebar,
+  nav[role=navigation] {
+    position:absolute;
+    z-index:-500;
+  }
+
   .js nav[role=navigation] {
     z-index:-500;
     left:0px;
@@ -138,6 +153,7 @@
     bottom:0;
     width:200px;
     background: transparent url(../_img/bg.gif) repeat scroll;
+    @include transition(all 0.3s ease-out);
     margin:0px;
     padding:125px 1em 1em;
     @include box-shadow (-2px 0px 10px black inset);
@@ -147,11 +163,19 @@
     right:0px;
     top:0;
     bottom:0;
-    width:200px;
+    width:400px;
     margin:0px;
     padding:125px 1em 1em;
+    background-color:$gray;
     @include box-shadow (2px 0px 10px black inset);
-
+    padding:$fluidGridGutterWidth;
+    @include box-sizing(border-box);
+    @include transition(all 0.3s ease-out);
+    overflow:scroll;
+    #secondary {
+      padding:$gridGutterWidth;
+      @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
+    }
   }
   #sidebar.active {
     right:-400px;
@@ -159,9 +183,6 @@
   }
   nav[role=navigation].active {
     left:-200px;
-  }
-  nav[role=navigation] {
-    width:10%;
   }
 
   .js .container-fluid {
