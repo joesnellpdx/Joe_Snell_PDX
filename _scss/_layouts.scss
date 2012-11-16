@@ -8,8 +8,6 @@
   @include container-fixed();
 }
 #sidebar {
-	margin-left:10000px;
-	overflow:hidden;
 	padding:$fluidGridGutterWidth;
 	@include box-sizing(border-box);
 }

@@ -50,11 +50,9 @@ a:hover {
 .quick-links a {
   padding:.625em;				// 10px/16px = .625em
   text-decoration: none;
-  color: $white;
   @include transition(color .5s ease);
 }
 .quick-links a:hover {
-   color: $joeorange;
    @include transition(color .5s ease);
 }
 
@@ -84,20 +82,15 @@ a:hover {
 // -------------------------
 
 
-#content {
+#content,
+#sidebar {
     background-color:$joeBlueLight;
     max-width:47em;
     article,
-    #comments{
+    #comments,
+    #secondary {
       padding:$gridGutterWidth;
-      background-color:$white;
       @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
-      text-shadow: 0 1px 1px white;
-      background: white;
-      background-color: rgba(0, 0, 0, 0.04);
-    }
-    #comments {
-      @include box-shadow(white 0 1px 0, rgba(0, 0, 0, 0.5) 0 1px 3px 0px inset);
     }
 }
 

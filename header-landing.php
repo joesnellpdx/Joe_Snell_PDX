@@ -81,7 +81,7 @@
                     <div class="navbar-inner"> -->
                    
                     <a href="#menu" class="btn btn-inverse menu-link icon-reorder navbtn">
-                    <a href="#menu-right" class="btn icon-arrow-right menu-link-right"></a>
+                    <a href="#menu-right" class="btn icon-arrow-right menu-link-right visible-desktop"></a>
                     </a>
                     <hgroup>
             			<div class="logo-head">

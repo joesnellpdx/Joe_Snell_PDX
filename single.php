@@ -36,7 +36,7 @@ get_header('child'); // use default header.php
 			<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
-             <div id="sidebar" class="span3">
+             <div id="sidebar" class="span3 visible-desktop">
             	<?php get_sidebar(); ?>
          	</div>
 		</div><!-- #primary .site-content -->

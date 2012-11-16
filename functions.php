@@ -142,7 +142,7 @@ function Joe_Snell_PDX_scripts() {
 		
 		wp_enqueue_script( 'application-js', get_template_directory_uri() . '/_js/application-ck.js', array( 'jquery' ), '20120823', true  );
 		
-		wp_enqueue_script( 'chirp', get_template_directory_uri() . '/_js/chirp.min.js', array( 'jquery' ), '20120823'  );
+		wp_enqueue_script( 'chirp', get_template_directory_uri() . '/_js/chirp-ck.js', array( 'jquery' ), '20120823'  );
 		
 		wp_enqueue_script( 'orientation-change', get_template_directory_uri() . '/_js/ios-orientationchange-fix.js', array( 'jquery' ), '20120823'  );
 		

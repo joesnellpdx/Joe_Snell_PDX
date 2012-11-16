@@ -72,9 +72,7 @@
            
                 <header id="header" class="topbar-base">
                     <a href="#menu" class="btn btn-inverse menu-link icon-reorder navbtn">
-                    <a href="#menu-right" class="btn icon-arrow-right menu-link-right"></a>
-                        <!--<i class="icon-reorder navbtn"></i>--> 
-                    </a>
+                    <a href="#menu-right" class="btn icon-arrow-right menu-link-right visible-desktop"></a>
 
                     <hgroup>
                         <div class="logo-head-base">

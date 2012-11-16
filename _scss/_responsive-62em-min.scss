@@ -14,10 +14,15 @@
   #wrap {
     background-color:$grayLight;
   }
+  #sidebar {
+    background-color:$gray;
+  }
 
-  #content {
+  #content,
+  #secondary {
     margin-top:$fluidGridGutterWidth;
-    background-color:$white;
+    background-color: $joeBlueLight;
+    text-shadow: 0 1px 1px white;
     article {
       max-width:47em;
     }
@@ -47,7 +52,7 @@
     position:static;
     margin-left:0px;
   }
-    #primary {
+  #primary {
     min-height:30em;
   }
   #sidebar {
@@ -69,7 +74,8 @@
   // Responsive: type
   // --------------------------------------------------
 
-  #content {
+  #content,
+  #sidebar {
     h1 {
       font-size:3em;
       margin-bottom:.5em;

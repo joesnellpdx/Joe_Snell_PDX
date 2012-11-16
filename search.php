@@ -35,7 +35,10 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</div><!-- #content -->
+			<div id="sidebar" class="span3 visible-desktop">
+            	<?php get_sidebar(); ?>
+         	</div>
 		</section><!-- #primary .site-content -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

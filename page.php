@@ -26,7 +26,9 @@ get_header(); ?>
 
 			</div><!-- #content -->
             
-        	<?php get_sidebar(); ?>
+        	<div id="sidebar" class="span3 visible-desktop">
+            	<?php get_sidebar(); ?>
+         	</div>
   
  		</div><!-- #primary .site-content -->
             

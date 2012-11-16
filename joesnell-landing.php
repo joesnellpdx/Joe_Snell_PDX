@@ -20,7 +20,7 @@ Template Name: joesnell-landing
 			
 		</div><!-- #primary .site-content -->
 
-		<div id="sidebar" class="span3">
+		<div id="sidebar" class="span3 visible-desktop">
         	<?php get_sidebar(); ?>
      	</div>
 
