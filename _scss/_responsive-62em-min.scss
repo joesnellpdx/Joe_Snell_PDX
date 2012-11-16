@@ -9,11 +9,14 @@
   // --------------------------------------------------
   body {
     background:none;
-    background-color:$grayLighter;
+    background-color:$grayLight;
+  }
+  #wrap {
+    background-color:$grayLight;
   }
 
   #content {
-    margin-top:$gridGutterWidth;
+    margin-top:$fluidGridGutterWidth;
     background-color:$white;
     article {
       max-width:47em;
@@ -33,16 +36,25 @@
     }
   }
   #content,
-  #content-loop,
-  .footer {
-    margin-left:11%;
-    width:90%;
+  #content-loop {
+    margin:0 11%;
   }
   #content-loop a {
     width:31%;
   }
   .footer {
     width:auto;
+    position:static;
+    margin-left:0px;
+  }
+    #primary {
+    min-height:30em;
+  }
+  #sidebar {
+    display:inline;
+    position:absolute;
+    z-index:10000;
+    right:0;
   }
 
   //

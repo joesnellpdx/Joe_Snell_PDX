@@ -1,5 +1,5 @@
 //
-// Responsive: Navbar
+// Responsive: Navbar 
 // --------------------------------------------------
 
 
@@ -21,13 +21,16 @@
     max-height: none;
     height:50px;
     width:(25%);
-    padding:$fluidGridGutterWidth * .5;
-    margin-top:$fluidGridGutterWidth *.25;
+    padding: 0 ($fluidGridGutterWidth * .5) ($fluidGridGutterWidth * .5);
+    margin-top:($fluidGridGutterWidth*.25);
     background:none;
     float:left;
     position:absolute;
     height:auto;
-
+    padding-top:none;
+  }
+  #header .landingmenu {
+    padding-top:($fluidGridGutterWidth*1.75);
   }
   nav[role=navigation] {
     width:24%;
@@ -63,22 +66,50 @@
 }
 @media screen and (min-width: 62em) {
 
+  #main a.menu-link,
+  #main a.menu-link-right {
+    display:inline;
+    position: absolute;
+    margin:0px;
+    top: 125px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    font-size: 3em;
+    color:$textColor;
+    text-shadow: 0 1px 1px white;
+    @include transition(all 0.3s ease-out);
+  }
+  #main a.menu-link {
+    left:0;
+  }
+  #main a.menu-link-right {
+    right:0;
+  }
+  .menu-link-active {
+    @include rotate(-90deg);
+  }
+  .menu-link-right-active {
+    @include rotate(90deg);
+  }
+
   #header {
     height:125px;
     @include navButtonBackOnly;
-    margin-bottom:115px;
+    margin-bottom:125px;
 
     h1, h2 {
       color:$textColor;
       font-size:4em;
       margin-left:10%;
-      padding-top:1.5em;
+      padding-top:1.3em;
       clear:both;
     }
     .brand {
       color:$white;
-      text-shadow: 0 -1px 1px $gray;
-      padding:25px 0 150px 0;
+      font-size:2.5em;
+      text-shadow: none;
+      padding:40px 0 160px 0;
       margin:0px;
       width:50%;
       float:left;
@@ -88,9 +119,66 @@
   #main .brand-base {
     text-shadow: 0 1px 1px white;
   }
-  .js nav[role=navigation],
+
+  // Big Daddy Nav Pattern
+  .container-fluid {
+    @include transition(all 0.3s ease-out);
+    @include box-sizing(border-box);
+  }
+  #header .landingmenu {
+    padding-top:125px;
+  }
+
+  // LEFT NAV TOGGLE
+
+  .js nav[role=navigation] {
+    z-index:-500;
+    left:0px;
+    top:0;
+    bottom:0;
+    width:200px;
+    background: transparent url(../_img/bg.gif) repeat scroll;
+    margin:0px;
+    padding:125px 1em 1em;
+    @include box-shadow (-2px 0px 10px black inset);
+  }
+  .js #sidebar {
+    z-index:-500;
+    right:0px;
+    top:0;
+    bottom:0;
+    width:200px;
+    background: transparent url(../_img/bg.gif) repeat scroll;
+    margin:0px;
+    padding:125px 1em 1em;
+    @include box-shadow (2px 0px 10px black inset);
+
+  }
+  #sidebar.active {
+    right:-400px;
+    width:400px;
+  }
+  nav[role=navigation].active {
+    left:-200px;
+  }
   nav[role=navigation] {
     width:10%;
+  }
+
+  .js .container-fluid {
+    position:absolute;
+    right:0px;
+    left:0;
+    bottom:0;
+    top:0;
+  }
+  .container-fluid.active {
+    left:200px;
+    right:-200px;
+  }
+  .container-fluid.activeright {
+    left:-400px;
+    right:400px;
   }
   nav[role=navigation] li a {
     height:5em;
@@ -114,5 +202,6 @@
       padding-top:25px;
     }
   }
+
 
 }

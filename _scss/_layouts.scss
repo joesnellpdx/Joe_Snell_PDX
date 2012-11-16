@@ -7,6 +7,12 @@
 .container {
   @include container-fixed();
 }
+#sidebar {
+	margin-left:10000px;
+	overflow:hidden;
+	padding:$fluidGridGutterWidth;
+	@include box-sizing(border-box);
+}
 
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
 // .container-fluid {

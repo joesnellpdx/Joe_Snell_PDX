@@ -1,7 +1,7 @@
 //
 // NAVBARS 
 // --------------------------------------------------
-
+ 
 
 // COMMON STYLES
 // -------------
@@ -12,7 +12,10 @@
   @include box-sizing(border-box);
 }
 .topbar {
-  height:$navbarHeight; 
+  height:$navbarHeight;
+    a.menu-link {
+    margin-left:-1000px;
+  } 
 }
 .topbar-base {
   height:$navbarBaseHeight;
@@ -61,7 +64,13 @@
 // COLLAPSIBLE NAV
 // -------------------------
 
-a.menu-link{
+a.menu-link-right{
+  position:absolute;
+  right:-1000px;
+}
+
+a.menu-link,
+a.menu-link-right {
   display: block;
   color:$grayLighter;
   height:($navbarBaseHeight * .7);
@@ -75,11 +84,6 @@ a.menu-link{
 }
 a.menu-link:hover {
   text-decoration:none;
-}
-a.menu-link i {
-  font-size:1em;
-  line-height:1em;
-  text-shadow:none;
 }
 
 // nav.basemenu = .basemenu

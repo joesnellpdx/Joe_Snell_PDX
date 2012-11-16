@@ -19,4 +19,10 @@ Template Name: joesnell-landing
 
 			
 		</div><!-- #primary .site-content -->
+
+		<div id="sidebar" class="span3">
+        	<?php get_sidebar(); ?>
+     	</div>
+
+		<?php get_footer('landing'); ?>
         

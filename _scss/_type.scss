@@ -82,6 +82,9 @@ h4 small { font-size: 1em; }
     color:darken($linkColor,10%);
   }
 }
+.widget-title {
+  color:$white;
+}
 
 // Page header
 // -------------------------
@@ -150,14 +153,14 @@ ul.content-link-list {
 ul.chirp li,
 ul.content-link-list li {
 @include navButton;
-@include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
 position: relative;
 list-style: none;
 border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 width: 100%;
 display: inline-block;
-font-size: $baseFontSize;
+font-size: .8em;
 line-height: $baseLineHeight;
+text-align:left;
 vertical-align: middle;
 }
 
@@ -166,6 +169,7 @@ ul.content-link-list li.special-link {
 }
 ul.chirp li {
 	padding: .625em .625em .625em 3.75em;
+  min-height:5em;
 }
 ul.content-link-list li {
 	padding: 0px;
@@ -221,6 +225,9 @@ ul.content-link-list li.special-link a {
 ul.content-link-list a:hover,
 ul.content-link-list li.special-link a:hover {
   text-decoration:none;
+}
+.chirp .meta {
+  margin-left:1em;
 }
 
 // MISC

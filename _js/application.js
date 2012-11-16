@@ -7,6 +7,8 @@
 $('body').addClass('js');
   var $menu = $('#menu'),
     $menulink = $('.menu-link');
+    $menulinkright = $('.menu-link-right');
+    $sidebar = $('#sidebar');
     $containerfluid = $('.container-fluid');
   
 $menulink.click(function() {
@@ -15,6 +17,21 @@ $menulink.click(function() {
   $containerfluid.toggleClass('active');
   return false;
 });
+$menulinkright.click(function() {
+  $sidebar.toggleClass('active');
+  $containerfluid.toggleClass('activeright');
+  return false;
+});
+
+
+
+// function resizeHandler(){
+// 		if (document.documentElement.clientWidth > 980) {
+// 		$('.navbtn').removeClass('icon-reorder').addClass('icon-circle-arrow-down');
+// 	};
+// }
+
+//$('.navbtn').removeClass('icon-reorder').addClass('icon-circle-arrow-down');
 
 /* Thanks to CSS Tricks for pointing out this bit of jQuery
 http://css-tricks.com/equal-height-blocks-in-rows/ 
@@ -57,15 +74,31 @@ $(window).load(function(){
   equalheight('.main article');
 });
 
+  	if (document.documentElement.clientWidth > 980) {
+	    $('.navbtn').removeClass('icon-reorder').addClass('icon-arrow-left');
+
+		  $('#main a.menu-link').click(function(){
+			  $(this).toggleClass('menu-link-active');
+			});
+		  $('#main a.menu-link-right').click(function(){
+			  $(this).toggleClass('menu-link-right-active');
+			});
+	}
+
 
 $(window).resize(function(){
 	// clearTimeout(resizeTimer);
 	// resizeTimer = setTimeout(resizeHandler(), 1000);
   	equalheight('.main article');
+  	if (document.documentElement.clientWidth < 980) {
+	    $('.navbtn').removeClass('icon-arrow-left').addClass('icon-reorder');
+	}
+  	if (document.documentElement.clientWidth > 980) {
+	    $('.navbtn').removeClass('icon-reorder').addClass('icon-arrow-left');
+	}
 });
 
 $('body').scrollTop(1);
-$('#sidebar').hide();
 var resizeTimer;
 
 
