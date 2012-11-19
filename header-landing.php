@@ -80,15 +80,18 @@
                 <!-- <div class="navbar navbar-fixed-top">
                     <div class="navbar-inner"> -->
                    
-                    <a href="#menu" class="btn btn-inverse menu-link icon-reorder navbtn">
+                    <a href="#menu" class="btn btn-inverse menu-link icon-reorder navbtn hidden-large">
+                    <a href="#menu" class="btn menu-link-left icon-arrow-left navbtn hidden-medium">
                     <a href="#menu-right" class="btn icon-arrow-right menu-link-right visible-desktop"></a>
-                    </a>
                     <hgroup>
             			<div class="logo-head">
                             <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
                      	</div> <!-- .logo-head -->
                         <div class="brand-text">
                       		<h1 class="brand"><?php bloginfo( 'name' ); ?></br><span class="sub-head"><?php bloginfo( 'description' ); ?></span></h1>
+                            <h2 class="brand-base hidden-medium"><?php if (!(is_page('home'))): ?>
+                                <?php the_title(); ?>
+                                <?php endif; ?></h2>
                         </div>
                    	</hgroup>   
                 		

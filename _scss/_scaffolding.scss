@@ -12,6 +12,12 @@ body {
   line-height: $baseLineHeight;
   color: $textColor;
 }
+.hidden-small,
+.hidden-medium {
+  position:absolute;
+  z-index:-500;
+  left:-9999px;
+}
 #main {
   position:relative;
   z-index:1;
@@ -24,9 +30,7 @@ body {
     padding:$fluidGridGutterWidth;
   }
 }
-#primary {
-  margin-bottom:$navbarBaseHeight;
-}
+
 
 // Links
 // -------------------------
@@ -87,7 +91,8 @@ a:hover {
     max-width:47em;
     article,
     #comments,
-    #secondary {
+    #secondary,
+    .content-landing {
       padding:$gridGutterWidth;
       @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
     }

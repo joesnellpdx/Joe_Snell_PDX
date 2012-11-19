@@ -20,6 +20,14 @@
   // Responsive: scaffolding
   // --------------------------------------------------
 
+  .hidden-large {
+    position:absolute;
+    z-index:-1000;
+    left:-9999px;
+  }
+  .hidden-small {
+    position:static;
+  }
   #content {
     margin-top:($fluidGridGutterWidth);
   }

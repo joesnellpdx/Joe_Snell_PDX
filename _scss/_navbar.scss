@@ -13,12 +13,22 @@
 }
 .topbar {
   height:$navbarHeight;
+  // .brand-base {
+  //     position:absolute;
+  //     z-index:-500;
+  //     left:-9999px;
+  //   }
     a.menu-link {
     margin-left:-1000px;
   } 
 }
 .topbar-base {
   height:$navbarBaseHeight;
+  // .brand {
+  //   position:absolute;
+  //   z-index:-500;
+  //   left:-9999;
+  // }
 }
 
 

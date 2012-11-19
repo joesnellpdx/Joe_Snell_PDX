@@ -38,11 +38,11 @@ get_header(); ?>
 
 			
 
-			<?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
+				<?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
 
-				<?php get_template_part( 'no-results', 'index' ); ?>
+					<?php get_template_part( 'no-results', 'index' ); ?>
 
-			<?php endif; ?>
+				<?php endif; ?>
 			</div><!-- #content -->
             <div id="sidebar" class="span3 visible-desktop">
             	<?php get_sidebar(); ?>

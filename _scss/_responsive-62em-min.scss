@@ -11,6 +11,16 @@
     background:none;
     background-color:$grayLight;
   }
+  #main .hidden-large {
+    position:absolute;
+    z-indez:-1000;
+    left:-9999px;
+  }
+  .hidden-small,
+  .hidden-medium {
+    position:static;
+    z-index:auto;
+  }
   #wrap {
     background-color:$grayLight;
   }
@@ -23,7 +33,8 @@
     margin-top:$fluidGridGutterWidth;
     background-color: $joeBlueLight;
     text-shadow: 0 1px 1px white;
-    article {
+    article
+    .content-landing {
       max-width:47em;
     }
   }

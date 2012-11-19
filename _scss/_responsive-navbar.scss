@@ -13,9 +13,9 @@
 
 @media screen and (min-width: 41.26em) {
 
-  a.menu-link {
-     display: none;
-  }
+  // #main a.menu-link {
+  //    display: none;
+  // }
 
   .js nav[role=navigation] {
     max-height: none;
@@ -64,13 +64,12 @@
     }
 
 }
+
+
+
 @media screen and (min-width: 62em) {
 
-  .icon-reorder {
-    display:none;
-  }
-
-  #main a.menu-link,
+  #main a.menu-link-left,
   #main a.menu-link-right {
     display:inline;
     position: absolute;
@@ -84,7 +83,7 @@
     text-shadow: 0 1px 1px white;
     @include transition(all 0.3s ease-out);
   }
-  #main a.menu-link {
+  #main a.menu-link-left {
     left:0;
     border:none;
   }
@@ -92,11 +91,11 @@
     right:0;
     border:none;
   }
-  .menu-link-active {
+  #main a.menu-link-left.active {
     @include rotate(-90deg);
     border:none;
   }
-  .menu-link-right-active {
+  #main a.menu-link-right.active {
     @include rotate(90deg);
     border:none;
   }
@@ -114,19 +113,20 @@
       padding-top:1.3em;
       clear:both;
     }
+
     .brand {
       color:$white;
       font-size:2.5em;
       text-shadow: none;
-      padding:40px 0 160px 0;
+      padding:40px 0 0 0;
       margin:0px;
       width:50%;
       float:left;
       clear:none;
     }
-  }
-  #main .brand-base {
-    text-shadow: 0 1px 1px white;
+    .brand-base{
+      text-shadow: 0 1px 1px white;
+    }
   }
 
   // Big Daddy Nav Pattern

@@ -8,15 +8,17 @@ Template Name: joesnell-landing
 
 ?>
 
-		<div id="primary" class="site-content">
-			
-        	<div id="insertContent">
+		<section id="primary" class="site-content row-fluid">
+			<div id="content" role="main" class="span9 offset3 hidden-small">
+
+				<?php while ( have_posts() ) : the_post(); ?>
+
+					<?php get_template_part( 'content', 'page' ); ?>
+
+
+				<?php endwhile; // end of the loop. ?>
+				
             </div>
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php endwhile; // end of the loop. ?>
-
 			
 		</div><!-- #primary .site-content -->
 
