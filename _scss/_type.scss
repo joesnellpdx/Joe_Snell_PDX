@@ -1,6 +1,6 @@
-//
-// Typography
-// --------------------------------------------------
+/* ==========================================================================
+   TYPE
+   ========================================================================== */
 
 
 // Body text
@@ -103,6 +103,18 @@ ol ul {
 }
 li {
   line-height: $baseLineHeight;
+}
+.landingbody #content ul {
+  margin: 0 0 $baseLineHeight / 2 0;
+  li {
+  color:$white;
+  text-shadow:none;
+  background-color:$grayDark;
+  padding:($baseFontSize * .2) ($baseFontSize * .4);
+  margin-bottom:($baseFontSize * .4);
+  display:inline-block;
+  @include border-radius($baseFontSize * .4);
+  }
 }
 ul.unstyled,
 ol.unstyled {

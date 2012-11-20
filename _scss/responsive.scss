@@ -1,17 +1,30 @@
 /*!
- * Bootstrap Responsive v2.0.4
+ * JOE_SNELL_PDX RESPONSIVE CSS
  *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
+ * SECONDARY TO MAIN.CSS
  *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+ /*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS............
+ * VARIABLES...........SASS sitewide css variables
+ *
+ * RESPONSIVE UTILITIES. PRELIMINARY RESPONSIVE STYLES
+ *
+ * MEDIA QUERIES:
+ * 
+ * 41.25em-MAX.........
+ * 41.26-61em..........
+ * 62em-MIN............
+ * 75em-MIN............
+ *
+ * RESPONSIVE NAVBAR...
+ *
+ */
 
-// Responsive
-// For phone and tablet devices
-// -------------------------------------------------------------
 
 
 // REPEAT VARIABLES & MIXINS
@@ -31,17 +44,17 @@
 // MEDIA QUERIES
 // ------------------
 
+// Phones to portrait tablets and narrow desktops
+@import "responsive-41.25em-max";
+
+// Tablets to regular desktops
+@import "responsive-41.26em-61em";
+
 // Regular desktops 
 @import "responsive-62em-min";
 
 // Large desktops
 @import "responsive-75em-min";
-
-// Tablets to regular desktops
-@import "responsive-41.26em-61em";
-
-// Phones to portrait tablets and narrow desktops
-@import "responsive-41.25em-max";
 
 
 // RESPONSIVE NAVBAR

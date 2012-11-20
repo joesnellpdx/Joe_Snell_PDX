@@ -1,6 +1,6 @@
-//
-// Responsive: Tablet to desktop
-// --------------------------------------------------
+/* ==========================================================================
+   RESPONSIVE: 41.26em-61.99em
+   ========================================================================== */
 
 
 @media (min-width: 41.26em) and (max-width: 61.99em) { // 768px/16px = 48em - 979px/16px = 61em
@@ -20,14 +20,6 @@
   // Responsive: scaffolding
   // --------------------------------------------------
 
-  .hidden-large {
-    position:absolute;
-    z-index:-1000;
-    left:-9999px;
-  }
-  .hidden-small {
-    position:static;
-  }
   #content {
     margin-top:($fluidGridGutterWidth);
   }

@@ -82,7 +82,7 @@
                    
                     <a href="#menu" class="btn btn-inverse menu-link icon-reorder navbtn hidden-large">
                     <a href="#menu" class="btn menu-link-left icon-arrow-left navbtn hidden-medium">
-                    <a href="#menu-right" class="btn icon-arrow-right menu-link-right visible-desktop"></a>
+                    <a href="#menu-right" class="btn icon-arrow-right menu-link-right hidden-medium"></a>
                     <hgroup>
             			<div class="logo-head">
                             <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>

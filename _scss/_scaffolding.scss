@@ -1,19 +1,24 @@
-//
-// Scaffolding
-// --------------------------------------------------
+/* ==========================================================================
+   SCAFFOLDING
+   ========================================================================== */
 
 
-// Body reset
-// -------------------------
+/* Body reset */
+/* ------------------------- */
 
+html {
+  height:100%;
+}
 body {
   font-family: $baseFontFamily;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   color: $textColor;
+  height:100%;
 }
 .hidden-small,
-.hidden-medium {
+.hidden-medium,
+.visible-desktop {
   position:absolute;
   z-index:-500;
   left:-9999px;
@@ -21,19 +26,26 @@ body {
 #main {
   position:relative;
   z-index:1;
+  min-height:100%;
+  overflow:hidden;
+}
+#primary {
+  padding-bottom:4em;
 }
 .footer {
   @include navButtonNoHov;
   overflow:hidden;
   min-height:$navbarBaseHeight;
+  position:absolute;
+  bottom:0;
   .container {
     padding:$fluidGridGutterWidth;
   }
 }
 
 
-// Links
-// -------------------------
+/* LINKS */
+/* ------------------------- */
 
 a {
   color: $linkColor;
@@ -42,6 +54,12 @@ a {
 a:hover {
   color: $linkColorHover;
   text-decoration: underline;
+}
+.landingbody #content a {
+  text-shadow:none;
+  background-color:$grayDark;
+  padding:($baseFontSize * .2) ($baseFontSize * .4);
+  @include border-radius($baseFontSize * .4);
 }
 
 .quick-links {
@@ -61,8 +79,8 @@ a:hover {
 }
 
 
-// Images
-// -------------------------
+/* IMAGES */
+/* ------------------------- */
 
 .img-rounded {
   @include border-radius(6px);
@@ -82,8 +100,8 @@ a:hover {
   @include border-radius(31.25em); // 500px/16px = 31.25em
 }
 
-// Specific Styles
-// -------------------------
+/* SPECIFIC STLES */
+/* ------------------------- */
 
 
 #content{
@@ -114,8 +132,8 @@ a:hover {
 }
 
 
-// Portfolio & Main Loop
-// -------------------------
+/* PORTFOLIO AND MAIN LOOP */
+/* ------------------------- */
 
 #content-loop {
   padding:0;
@@ -151,6 +169,3 @@ a:hover {
       @include box-shadow(none);
     }
   }
-
-
-// Portfolio img  : see thumbnails.scss

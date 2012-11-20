@@ -1,31 +1,22 @@
-//
-// Responsive: Tablet to desktop
-// --------------------------------------------------
+/* ==========================================================================
+   RESPONSIVE: 62em MIN
+   ========================================================================== */
 
 
 @media (min-width: 62em) {
   //
   // Responsive: scaffolding
   // --------------------------------------------------
-  body {
-    background:none;
-    background-color:$grayLight;
-  }
-  #main .hidden-large {
-    position:absolute;
-    z-indez:-1000;
-    left:-9999px;
-  }
-  .hidden-small,
-  .hidden-medium {
-    position:static;
-    z-index:auto;
+
+  #main {
+    overflow:visible;
   }
   #wrap {
     background-color:$grayLight;
   }
   #sidebar {
     background-color:$gray;
+    left:auto;
   }
 
   #content,
