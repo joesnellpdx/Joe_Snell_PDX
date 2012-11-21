@@ -45,6 +45,7 @@ and Blueprint http://www.blueprintcss.org/
  * NAVBAR..............Main / header navbar styling
  * 
  * THUMBNAILS..........Thumbs and other img settings
+ * IMAGE SLIDER........Utilizing the soliloquy slider
  * 
  * UTILITIES...........Any necessary style overrides
  *
@@ -98,6 +99,7 @@ and Blueprint http://www.blueprintcss.org/
 
 // Components: Misc
 @import "thumbnails";
+@import "image-slider";
 //@import "labels-badges";
 //@import "progress-bars";
 //@import "accordion";

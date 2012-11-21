@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Image Slider == utilizing the soliloquy slider
+   http://soliloquywp.com/
+   ========================================================================== */
+
+
+.soliloquy-container { 
+	margin: 0 auto !important; 
+	padding-bottom:$fluidGridGutterWidth;
+}
+
+.soliloquy-container .flexslider .slides img { 
+	width:100%;
+	margin:0 auto; 
+}
