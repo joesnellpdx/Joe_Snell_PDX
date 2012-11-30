@@ -4,32 +4,32 @@
 
 !function ($) { 
 
-$('body').addClass('js');
-  var $menu = $('#menu'),
-    $menulink = $('.menu-link');
-    $menulinkleft = $('.menu-link-left');
-    $menulinkright = $('.menu-link-right');
-    $sidebar = $('#sidebar');
-    $containerfluid = $('.container-fluid');
+// $('body').addClass('js');
+//   var $menu = $('#menu'),
+//     $menulink = $('.menu-link');
+//     $menulinkleft = $('.menu-link-left');
+//     $menulinkright = $('.menu-link-right');
+//     $sidebar = $('#sidebar');
+//     $containerfluid = $('.container-fluid');
   
-$menulink.click(function() {
-  $menulink.toggleClass('active');
-  $menu.toggleClass('active');
-  $containerfluid.toggleClass('active');
-  return false;
-});
-$menulinkleft.click(function() {
-  $menulinkleft.toggleClass('active');
-  $menu.toggleClass('active');
-  $containerfluid.toggleClass('active');
-  return false;
-});
-$menulinkright.click(function() {
-  $menulinkright.toggleClass('active');
-  $sidebar.toggleClass('active');
-  $containerfluid.toggleClass('activeright');
-  return false;
-});
+// $menulink.click(function() {
+//   $menulink.toggleClass('active');
+//   $menu.toggleClass('active');
+//   $containerfluid.toggleClass('active');
+//   return false;
+// });
+// $menulinkleft.click(function() {
+//   $menulinkleft.toggleClass('active');
+//   $menu.toggleClass('active');
+//   $containerfluid.toggleClass('active');
+//   return false;
+// });
+// $menulinkright.click(function() {
+//   $menulinkright.toggleClass('active');
+//   $sidebar.toggleClass('active');
+//   $containerfluid.toggleClass('activeright');
+//   return false;
+// });
 
 
 equalheight = function(container){

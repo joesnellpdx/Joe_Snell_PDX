@@ -62,22 +62,23 @@
     <div id="main" class="container-fluid">
         <div id="wrap" class="wrap">
            
-                <header id="header" class="topbar-base">
-                    <a href="#menu" class="btn btn-inverse menu-link icon-reorder navbtn hidden-large">
-                    <a href="#menu" class="btn menu-link-left icon-arrow-left navbtn hidden-medium">
-                    <a href="#menu-right" class="btn icon-arrow-right menu-link-right visible-desktop"></a>
+                <header id="header" class="header-main header-main-page">
+                    <a id="jump-top" href="#nav-page" class="menu-link icon-reorder navbtn hidden-large">
+                    <a id="jump-left" href="#menu" class="btn menu-link-left icon-arrow-left navbtn hidden-medium">
+                    <a id="jump-right" href="#menu-right" class="btn icon-arrow-right menu-link-right visible-desktop"></a>
 
-                    <hgroup>
-                        <div class="logo-head-base">
-                            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
+                    <hgroup class="header-content">
+                        <div class="logo-container logo-head-base">
+                            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                                <img class="logo" src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
                         </div> <!-- .logo-head -->
-                        <div class="brand-text">
-                            <h2 class="brand hidden-medium"><?php bloginfo( 'name' ); ?></br><span class="sub-head"><?php bloginfo( 'description' ); ?></span></h2>
-                            <h1 class="brand-base"><?php wp_title( " " ); ?></h1>
+                        <div class="title-group">
+                            <h2 class="title hidden-medium"><?php bloginfo( 'name' ); ?></br><span class="title-sub"><?php bloginfo( 'description' ); ?></span></h2>
+                            <h1 class="title-secondary"><?php wp_title( " " ); ?></h1>
                         </div>
                     </hgroup>
                 </header>
                 <nav id="menu" role="navigation" class="basemenu"> 
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_id' => 'nav-page' ) ); ?> <!-- id = menu-item-491 is the 'back' list item -->
                 </nav>
        

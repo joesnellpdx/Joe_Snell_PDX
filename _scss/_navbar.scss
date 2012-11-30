@@ -5,220 +5,233 @@
 
 // COMMON STYLES
 // -------------
-.topbar,
-.topbar-base {
+.header-main {
   background-color:$joeorange;
+  color: $white;
   width:100%;
   @include box-sizing(border-box);
+  a {
+    color: $white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .logo-container {
+    position: relative;
+    z-index: 1001;
+    .logo {
+      float: right;
+      margin: 0;
+    }
+  }
+  .title,
+  .title-secondary {
+    line-height: .5em;
+  }
+  .title {
+    font-size: 2.5em;
+    margin: 0;
+    padding: .4em 0 0 5%;
+  }
+  .title-sub {
+    font-size: .4em;
+  }
+  .title-secondary {
+    font-size: 2em;
+    margin: 0 0 0 1.8em;
+    padding: .5em;
+  }
 }
-.topbar {
+
+.header-main-home {
   height:$navbarHeight;
-  // .brand-base {
-  //     position:absolute;
-  //     z-index:-500;
-  //     left:-9999px;
-  //   }
-    a.menu-link {
+  .menu-link {
     margin-left:-1000px;
   } 
-}
-.topbar-base {
-  height:$navbarBaseHeight;
-  // .brand {
-  //   position:absolute;
-  //   z-index:-500;
-  //   left:-9999;
-  // }
+  .logo {
+    height:$navbarHeight;
+    width:$navbarHeight;
+  }
 }
 
-// TYPE / IMG
-// -------------
-.logo-head img,
-.logo-head-base img {
-  float:right;
-  margin:0;
-}
-.logo-head img {
-  height:$navbarHeight;
-  width:$navbarHeight;
-}
-.logo-head-base img {
+.header-main-page {
   height:$navbarBaseHeight;
-  width:$navbarBaseHeight;
+  .logo {
+    height:$navbarBaseHeight;
+    width:$navbarBaseHeight;
+  }
 }
 
-.brand-text h1 {
-  color:$white;
-  font-weight:normal;
+// COLLAPSIBLE NAV
+// -------------------------
+
+
+
+// nav.basemenu = .basemenu
+
+#nav-home,
+#nav-page {
+  list-style-type: none;
+  li {
+    @include navButton;
+  }
+  a {
+    color: $linkColor;
+    font-family:$sansFontFamily;
+    &:hover {
+      color:darken($linkColor, 15%);
+      text-decoration:none;
+    }
+  }
 }
-.brand-text .brand {
-  font-size:2.5em; 
-  line-height:.5;
-  margin:0;
-  padding-top:.4em;
-  padding-left:5%;
-}
-.brand-text .brand-base {
-  font-size:2em;
-  line-height: .5em;
+
+#nav-home {
+  clear: both;
   padding: .5em;
-  margin:0 0 0 1.8em;
-  color:$white;
-}
-.brand-text .sub-head {
-  font-size:.4em;
+  margin: 0;
+  li {
+    float: left;
+    width: 46%;
+    margin: 2%;
+    position: relative;
+    &:nth-child(n+3) {
+      
+    }
+  }
+  a {
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    line-height: 9em;
+    height: 8em;
+    position: relative;
+    z-index: 1;
+  }
+  [class^="icon-"]:before,
+  [class*=" icon-"]:before {
+    font-size: 2em;
+    top: 1.3em;
+    left:50%;
+    margin-left:-.4em;
+    color:darken(#B3B3B3, 50%);
+    text-shadow:1px 1px $gray, -1px -1px $black;
+    position: absolute;
+    z-index: 0;
+  }
+  #menu-item-491 {
+  display: block;
+  width: 100%;
+  position: relative;
+  a {
+      background: transparent;
+      border: 0;
+      display: block;
+      height: auto;
+      line-height: 1;
+      position: absolute;
+      text-indent: -999em;
+      z-index: 0;
+    }
+  }
 }
 
 
 // COLLAPSIBLE NAV
 // -------------------------
 
-a.menu-link-right{
-  position:absolute;
-  right:-1000px;
+.menu-link {
+  @include menuLink;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1001;
 }
 
-a.menu-link,
-a.menu-link-right {
-  display: block;
-  color:$grayLighter;
-  height:($navbarBaseHeight * .7);
-  width:($navbarBaseHeight * .7); 
-  float:left;
-  margin:($navbarBaseHeight * .15);
-  padding:.3em 0;
-  text-align:center;
-  text-shadow:none;
-  @include box-sizing(border-box);
+body:not(:target) #nav-page {
+  margin: 0;
+  padding-top: $navbarBaseHeight;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  li {
+    float: left;
+    width: 25%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    &:first-child {
+      border-left: none;
+    }
+    &:nth-child(4) {
+      border-right: none;
+    }
+  }
+  a {
+    font-size: $baseFontSize + .125em;
+    width: 100%;
+    display: inline;
+    float: left;
+    overflow: hidden;
+    height: 0;
+    line-height: 0;
+    padding: 0;
+    position: relative;
+  }
+  [class^="icon-"]:before,
+  [class*=" icon-"]:before {
+    top:.5em;
+    left:50%;
+    margin-left:-.4em;
+    color:darken(#B3B3B3, 50%);
+    text-shadow:1px 1px $gray, -1px -1px $black;
+    position: absolute;
+  }
 }
-a.menu-link:hover {
-  text-decoration:none;
+body:not(:target) #nav-page:target {
+  z-index: 1001;
+  li {
+    height: auto;
+    overflow: visible;
+  }
+  a {
+    border-right: solid 1px $gray;
+    border-left:solid 1px $grayDark;
+    line-height: 5em;
+    height: 4em;
+    position: relative;
+    z-index: 1;
+    @include transition(height .25s, line-height .25s);
+  }
+  [class^="icon-"]:before,
+  [class*=" icon-"]:before {
+    top:.5em;
+    left:50%;
+    font-size: 1.5em;
+    margin-left:-.4em;
+    color:darken(#B3B3B3, 50%);
+    text-shadow:1px 1px $gray, -1px -1px $black;
+    z-index: 1;
+    position:absolute;
+  }
+  #menu-item-492 {
+    display: block;
+    width: 100%;
+    position: relative;
+    a {
+    background: transparent;
+    border: 0;
+    display: block;
+    height: auto;
+    line-height: 1;
+    position: absolute;
+    top: -101em;
+    bottom: -101em;
+    left: 0;
+    right: 0;
+    text-indent: -999em;
+    z-index: 0;
+    }
+  }
 }
-
-// nav.basemenu = .basemenu
-
-nav.basemenu {
-  clear: both;
-  @include transition(all 0.3s ease-out);
-  @include box-sizing(border-box);
-  max-height: 15em;
-  margin-top:0px;
-  width:100%;
-  padding-bottom:.0625em;
-}
-.js nav.basemenu {
-  overflow: hidden;
-  max-height: 0;
-  margin-top:0px;
-  float:left;
-  width:100%;
-  padding:0;
-  border:none;
-}
-nav.basemenu.active {
-  max-height: 15em;
-  margin-top:0px;
-  width:100%;
-  padding-bottom:.0625em;
-  border-bottom:1px solid $grayDarker;
-
-}
-nav.basemenu ul {
-  border-top: 1px solid #808080;
-  margin:0;
-}
-nav.basemenu a,
-.landingmenu a {
-  @include navButton;
-}
-// reinstate backgrounds and details for effect
-nav.basemenu a, 
-.landingmenu a {
-  color:$linkColor;
-}
-nav.basemenu li {
-  border-right: solid 1px $gray;
-  border-left:solid 1px $grayDark;
-  position:relative;
-  display:block;
-  float:left;
-  width:25%;
-  @include box-sizing(border-box);
-}
-nav.basemenu ul>:first-child {
-  border-left:none;
-}
-nav.basemenu ul>:last-child {
-  border-right:none;
-}
-nav.basemenu li a {
-  display:block;
-  color:$joeorange;
-  font-size:.8em;
-  padding: 3em 0 1em 0;
-}
-nav.basemenu li a:hover {
-  text-decoration:none;
-}
-
-nav.basemenu [class^="icon-"]:before,
-nav.basemenu [class*=" icon-"]:before {
-  position:absolute;
-  font-size:1.5em;
-  top:.5em;
-  left:50%;
-  margin-left:-.4em;
-  color:darken(#B3B3B3, 50%);
-  text-shadow:1px 1px $gray, -1px -1px $black;
-}
-
-
-// LANDING BUTTONS
-// -------------------------
-
-// .landingmenu li (button) defined above
-
-.landingmenu {
-  clear:both;
-  @include box-sizing(border-box);
-  padding:.5em;
-}
-.landingmenu ul {
-  margin:0;
-}
-.landingmenu li {
-  position:relative;
-  @include box-sizing(border-box);
-  float:left;
-  width:46%;
-  margin:2%; 
-  list-style-type:none;
-}
-.landingmenu li:nth-child(n+3) {
-  margin-bottom:2em;
-}
-.landingmenu li a {
-  text-align:center;
-  display:block;
-  width:100%;
-  height:8em;
-  padding:4em 0 1.5em 0;
-}
-.landingmenu li a:hover,
-.basemenu li a:hover {
-  color:darken($linkColor, 15%);
-  text-decoration:none;
-}
-.landingmenu [class^="icon-"]:before,
-.landingmenu [class*=" icon-"]:before {
-  position:absolute;
-  font-size:2em;
-  top:1.3em;
-  left:50%;
-  margin-left:-.4em;
-  color:$grayDark;
-  text-shadow:1px 1px $gray, -1px -1px $black;
-}
-
-
-

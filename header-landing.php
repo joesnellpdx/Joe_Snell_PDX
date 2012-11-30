@@ -74,7 +74,7 @@
 <div id="main" class="container-fluid">
     <div id="wrap" class="wrap">
         
-        	<header id="header" class="topbar">
+        	<header id="header" class="header-main header-main-home">
             
                 <!-- <div class="navbar navbar-fixed-top">
                     <div class="navbar-inner"> -->
@@ -82,20 +82,20 @@
                     <a href="#menu" class="btn btn-inverse menu-link icon-reorder navbtn hidden-large">
                     <a href="#menu" class="btn menu-link-left icon-arrow-left navbtn hidden-medium">
                     <a href="#menu-right" class="btn icon-arrow-right menu-link-right hidden-medium"></a>
-                    <hgroup>
-            			<div class="logo-head">
-                            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
+                    <hgroup class="header-content">
+            			<div class="logo-container logo-head">
+                            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
                      	</div> <!-- .logo-head -->
                         <div class="brand-text">
-                      		<h1 class="brand"><?php bloginfo( 'name' ); ?></br><span class="sub-head"><?php bloginfo( 'description' ); ?></span></h1>
-                            <h2 class="brand-base hidden-medium"><?php if (!(is_page('home'))): ?>
+                      		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><h1 class="title"><?php bloginfo( 'name' ); ?></br><span class="title-sub"><?php bloginfo( 'description' ); ?></span></h1>
+                            <h2 class="title-secondary hidden-medium"><?php if (!(is_page('home'))): ?>
                                 <?php the_title(); ?>
-                                <?php endif; ?></h2>
+                                <?php endif; ?></h2></a>
                         </div>
                    	</hgroup>   
                 		
                         <nav id="menu" role="navigation" class="landingmenu"> 
-            					<?php wp_nav_menu( array( 'theme_location' => 'landing' ) ); ?>
+            					<?php wp_nav_menu( array( 'theme_location' => 'landing', 'container' => '', 'menu_id' => 'nav-home' ) ); ?> <!-- id = menu-item-491 is the 'back' list item -->
                         </nav>
                         
             		
