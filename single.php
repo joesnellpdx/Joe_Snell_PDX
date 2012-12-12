@@ -17,15 +17,15 @@ get_header('child'); // use default header.php
 }
  ?>
 
-		<div id="primary" class="site-content row-fluid">
-			<div id="content" role="main" class="span9 offset3">
+		<div id="primary" class="site-content">
+			<div id="content" role="main" class="content">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
 
 				<?php get_template_part( 'content', 'single' ); ?>
 
-				
+				<?php Joe_Snell_PDX_content_nav( 'nav-below' ); ?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template
@@ -36,7 +36,7 @@ get_header('child'); // use default header.php
 			<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
-             <div id="sidebar" class="span3 visible-desktop">
+             <div id="sidebar" class="sidebar visible-desktop">
             	<?php get_sidebar(); ?>
          	</div>
 		</div><!-- #primary .site-content -->

@@ -13,10 +13,11 @@
 
 get_header(); ?>
 
-		<div id="primary" class="site-content row">
-			<div id="content" role="main" class="span9 offset3">
+		<div id="primary" class="site-content">
+			<div id="content" role="main" class="content">
 
 				<?php while ( have_posts() ) : the_post(); ?>
+					
 
 					<?php get_template_part( 'content', 'page' ); ?>
 
@@ -26,7 +27,7 @@ get_header(); ?>
 
 			</div><!-- #content -->
             
-        	<div id="sidebar" class="span3 visible-desktop">
+        	<div id="sidebar" class="sidebar visible-desktop">
             	<?php get_sidebar(); ?>
          	</div>
   

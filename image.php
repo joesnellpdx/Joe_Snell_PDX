@@ -10,7 +10,7 @@ get_header();
 ?>
 
 		<div id="primary" class="site-content image-attachment">
-			<div id="content" role="main">
+			<div id="content" role="main" class="content">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 

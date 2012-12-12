@@ -8,61 +8,58 @@
   // Responsive: scaffolding
   // --------------------------------------------------
 
-  #main {
+  .main {
     overflow:visible;
   }
-  #wrap {
+  .wrap {
     background-color:$grayLight;
   }
-  #sidebar {
-    background-color:$gray;
-    left:auto;
+  .site-content {
+    min-height:30em;
+    max-width: auto;
+    padding: 2em;
+    margin: 0 11%;
+    background-color: $grayLighter;
+    .content,
+    .widget-area {
+      margin-top:$fluidGridGutterWidth;
+      text-shadow: 0 1px 1px white;
+      article
+      .content-landing {
+        max-width:47em;
+      }
+    }
+    .content,
+    .content-loop {
+      margin:0 11%;
+    }
+    .content-loop a {
+      width:31%;
+    }
+    .sidebar {
+      background-color:$gray;
+      padding: 8em 1em 1em;
+      @include box-shadow (2px 0px 10px black inset);
+      @include box-sizing(border-box);
+      overflow: scroll;
+      .widget-area {
+        padding:$gridGutterWidth;
+        @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
+      }
+    }
+    .footer {
+      width: auto;
+      position: static;
+      margin-left: 0px;
+      line-height: 1;
+      padding: 0 0.5em;
+      .container {
+        margin:0px;
+      }
+    }
   }
 
-  #content,
-  #secondary {
-    margin-top:$fluidGridGutterWidth;
-    background-color: $joeBlueLight;
-    text-shadow: 0 1px 1px white;
-    article
-    .content-landing {
-      max-width:47em;
-    }
-  }
-  .footer {
-    margin-left:25.69061%;
-    line-height: 1;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    padding: 0 0.5em;
-    .container {
-      margin:0px;
-    }
-  }
-  #content,
-  #content-loop {
-    margin:0 11%;
-  }
-  #content-loop a {
-    width:31%;
-  }
-  .footer {
-    width:auto;
-    position:static;
-    margin-left:0px;
-  }
-  #primary {
-    min-height:30em;
-  }
-  #sidebar {
-    display:inline;
-    position:absolute;
-    z-index:10000;
-    right:0;
-  }
+
 
   //
   // Responsive: grid
@@ -76,8 +73,8 @@
   // Responsive: type
   // --------------------------------------------------
 
-  #content,
-  #sidebar {
+  .content,
+  .sidebar {
     h1 {
       font-size:3em;
       margin-bottom:.5em;

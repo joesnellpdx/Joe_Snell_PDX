@@ -16,32 +16,6 @@ body {
   color: $textColor;
   height:100%;
 }
-.hidden-small,
-.hidden-medium,
-.visible-desktop {
-  position:absolute;
-  z-index:-500;
-  left:-9999px;
-}
-#main {
-  position:relative;
-  z-index:1;
-  min-height:100%;
-  overflow:hidden;
-}
-#primary {
-  padding-bottom:4em;
-}
-.footer {
-  @include navButtonNoHov;
-  overflow:hidden;
-  min-height:$navbarBaseHeight;
-  position:absolute;
-  bottom:0;
-  .container {
-    padding:$fluidGridGutterWidth;
-  }
-}
 
 
 /* LINKS */
@@ -55,7 +29,7 @@ a:hover {
   color: $linkColorHover;
   text-decoration: underline;
 }
-.landingbody #content a {
+.landingbody .content a {
   text-shadow:none;
   background-color:$grayDark;
   padding:($baseFontSize * .2) ($baseFontSize * .4);
@@ -103,17 +77,52 @@ a:hover {
 /* SPECIFIC STLES */
 /* ------------------------- */
 
+.hidden-small,
+.hidden-medium,
+.visible-desktop {
+  position:absolute;
+  z-index:-500;
+  left:-9999px;
+}
+.main {
+  position:relative;
+  z-index:1;
+  overflow:hidden;
+  min-height: 100%;
+}
 
-#content{
-    background-color:$joeBlueLight;
-    max-width:47em;
-    article,
-    #comments,
-    #secondary,
-    .content-landing {
-      padding:$gridGutterWidth;
-      @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
+.site-content {
+  max-width: 50em;
+  background-color: $joeBlueLight;
+  @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
+  @include box-sizing(border-box);
+  .content{
+    padding:$gridGutterWidth;
+    .entry-meta,
+    .post-navigation {
+      font-size:($baseFontSize *.8);
+      margin: ($baseLineHeight * .5) 0;
+      font-style:italic;
+      color:lighten($textColor, 10%);
+      a {
+        color:darken($linkColor,10%);
+      }
     }
+  }
+}
+.site-footer {
+  clear: both;
+  overflow: hidden;
+  @include navButtonNoHov;
+  .container {
+    padding:$fluidGridGutterWidth;
+  }
+}
+.footer-absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .insertCont {
@@ -135,7 +144,7 @@ a:hover {
 /* PORTFOLIO AND MAIN LOOP */
 /* ------------------------- */
 
-#content-loop {
+.content-loop {
   padding:0;
   padding: 1%;
   @include box-sizing(border-box);

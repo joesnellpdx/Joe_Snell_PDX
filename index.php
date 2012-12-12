@@ -15,8 +15,10 @@
 get_header(); ?>
 
 
-		<div id="primary" class="site-content row-fluid">
-			<div id="content-loop" role="main" class="span9 offset3">
+		<div id="primary" class="site-content">
+		<!-- <div id="primary" class="site-content row-fluid"> -->
+			<div id="content-loop" role="main" class="content-loop">
+				<!-- <div id="content-loop" role="main" class="span9 offset3"> -->
 
 				<?php if ( have_posts() ) : ?>
                 
@@ -44,7 +46,7 @@ get_header(); ?>
 
 				<?php endif; ?>
 			</div><!-- #content -->
-            <div id="sidebar" class="span3 visible-desktop">
+            <div id="sidebar" class="sidebar visible-desktop">
             	<?php get_sidebar(); ?>
          	</div>
             

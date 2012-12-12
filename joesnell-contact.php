@@ -7,7 +7,7 @@ get_header(); ?>
 
 
 		<div id="primary" class="site-content">
-			<div id="content" role="main">
+			<div id="content" role="main" class="content">
             	<div class="contact-intro">
                 	<p>Do you have a great website idea?  Do you need help with your digital marketing strategy?  Do you need help maintaining your website?</p>
                     <p>Drop me a line by filling out this form, or you can reach out to me on my social channeles below.  I look forward to hearing form you!</p>
@@ -68,7 +68,7 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
-            <div id="sidebar" class="span3">
+            <div id="sidebar" class="sidebar">
             	<?php get_sidebar(); ?>
          	</div>
 		</div><!-- #primary .site-content -->

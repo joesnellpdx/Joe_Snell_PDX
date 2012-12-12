@@ -6,13 +6,13 @@
 @media (min-width: 41.26em) and (max-width: 61.99em) { // 768px/16px = 48em - 979px/16px = 61em
 
   // Fixed grid
-  @include grid-core($gridColumnWidth768, $gridGutterWidth768);
+  // @include grid-core($gridColumnWidth768, $gridGutterWidth768);
 
-  // Fluid grid
-  @include grid-fluid($fluidGridColumnWidth768, $fluidGridGutterWidth768);
+  // // Fluid grid
+  // @include grid-fluid($fluidGridColumnWidth768, $fluidGridGutterWidth768);
 
-  // Input grid
-  @include grid-input($gridColumnWidth768, $gridGutterWidth768);
+  // // Input grid
+  // @include grid-input($gridColumnWidth768, $gridGutterWidth768);
 
   // No need to reset .thumbnails here since it's the same $gridGutterWidth
    
@@ -20,17 +20,25 @@
   // Responsive: scaffolding
   // --------------------------------------------------
 
-  #content {
-    margin-top:($fluidGridGutterWidth);
+  .site-content {
+    margin: $fluidGridGutterWidth $fluidGridGutterWidth 0;
+    width: (75% - ($fluidGridGutterWidth * 2));
+    float: left;
+    @include box-sizing(border-box);
   }
+  .content {
+    min-height: 40em;
+    article {
+      min-height: 100%;
+    }
+  }
+  .content-loop {
+    margin-left: 24%;
+  }
+
   .footer {
-    margin-left:25.69061%;
+    position: static;
     line-height: 1;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
     padding: 0 0.5em;
     .container {
       margin:0px;

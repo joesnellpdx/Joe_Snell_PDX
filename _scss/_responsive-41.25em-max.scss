@@ -12,11 +12,6 @@
   // Responsive: grid
   // --------------------------------------------------
 
-  #content,
-  #content-loop {
-    margin-left:0px;
-  }
-
   //
   // Responsive: layouts
   // --------------------------------------------------
@@ -43,9 +38,7 @@
 
   // Padding to set content in a bit
     // Remove padding on container given explicit padding set on body
-  .container-fluid {
-    padding: 0;
-  }
+
 
   // TYPOGRAPHY
   // ----------
@@ -58,9 +51,7 @@
     width: auto;
   }
   // Fluid rows
-  .row-fluid {
-    width: 100%;
-  }
+
   // Undo negative margin on rows and thumbnails
   .row,
   .thumbnails {
@@ -77,11 +68,6 @@
     display: block;
     width: auto;
     margin-left: 0;
-  }
-  .span12,
-  .row-fluid .span12 {
-    width: 100%;
-    @include box-sizing(border-box);
   }
 
   // FORM FIELDS

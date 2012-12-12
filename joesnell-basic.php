@@ -6,8 +6,8 @@ Template Name: joesnell-basic: the primary page template
 get_header(); ?>
 
 
-		<div id="content-wrap" class="site-content row-fluid">
-			<div id="content" role="main" class="span9 offset3">
+		<div id="primary" class="site-content">
+			<div id="content" role="main" class="content">
             
 
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -19,7 +19,7 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
-            <div id="sidebar" class="span3 visible-desktop">
+            <div id="sidebar" class="sidebar visible-desktop">
             	<?php get_sidebar(); ?>
          	</div>
             

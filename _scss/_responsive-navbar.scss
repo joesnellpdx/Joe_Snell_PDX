@@ -3,65 +3,113 @@
    ========================================================================== */
 
 
-// TABLETS AND BELOW
-// -----------------
-/* @media (max-width: $navbarCollapseWidth) { */
-
-
-
 // New Navbar
 
-@media screen and (min-width: 41.26em) and (max-width: 61.99em) {
+@media screen and (min-width: 41.26em) {
 
-  // #main a.menu-link {
-  //    display: none;
-  // }
-
-  .js nav[role=navigation] {
-    max-height: none;
-    height:100%;
-    width:(25%);
-    padding: 0 ($fluidGridGutterWidth * .5) ($fluidGridGutterWidth * .5);
-    margin-top:($fluidGridGutterWidth*.25);
-    background:none;
-    float:left;
-    position:absolute;
-    height:auto;
-    padding-top:none;
-  }
-  #header .landingmenu {
-    padding-top:($fluidGridGutterWidth*1.75);
-  }
-  nav[role=navigation] {
-    width:24%;
+  #nav-home,
+  body:not(:target) #nav-page {
+    clear: both;
+    float: left;
     padding:$fluidGridGutterWidth * .5;
-    margin-top:$fluidGridGutterWidth *.75;
-  }
-  nav[role=navigation] ul {
-    margin: 0;
-    border: 0;
-  }
-  
-  nav[role=navigation]  li {
-    display: inline-block;
-    border-left:none;
-    border-right:none;
-    width:100%;
-    margin:$fluidGridGutterWidth;
-  }
-  nav[role=navigation] li:nth-child(n+3) {
-    margin-bottom: $fluidGridGutterWidth;
-  }
-  nav[role=navigation] li a {
-    border: 0;
-    height:8em;
-    padding:4em 0 1.5em 0;
-    font-size:1.125em;
-  }
-  nav[role=navigation] [class^="icon-"]::before, .landingmenu [class*=" icon-"]::before {
-    font-size: 32px;
-    top: 1.3em;
+    width: 24%;
+    position: static;
+    ul {
+      margin: 0;
+      border: 0;
     }
+    li {
+      display: inline-block;
+      border-left: none;
+      border-right: none;
+      width: 100%;
+      height: auto;
+      margin: $fluidGridGutterWidth;
+      &:nth-child(n+3) { 
+        margin-bottom: $fluidGridGutterWidth;
+      }
+    }
+    a {
+      font-size: 1.2em;
+      display: block;
+      width: 100%;
+      line-height: 9em;
+      height: 8em;
+      position: relative;
+      z-index: 1;
+    }
+    [class^="icon-"]:before,
+    [class*=" icon-"]:before {
+      font-size: 2em;
+      top: 1.3em;
+      left:50%;
+      margin-left:-.4em;
+      color:darken(#B3B3B3, 50%);
+      text-shadow:1px 1px $gray, -1px -1px $black;
+      position: absolute;
+      z-index: 0;
+    }
+    .back {
+      display: block;
+      width: 100%;
+      position: relative;
+      a {
+        background: transparent;
+        border: 0;
+        display: block;
+        height: auto;
+        line-height: 1;
+        position: absolute;
+        text-indent: -999em;
+        z-index: 0;
+      }
+    }
+  }
+
+
+  // #nav-home,
+  // #nav-page {
+  //   max-height: none;
+  //   height: 100%;
+  //   width: 100%;
+  //   padding: 0 ($fluidGridGutterWidth * .5) ($fluidGridGutterWidth * .5);
+  //   margin-top:($fluidGridGutterWidth*.25);
+  //   background:none;
+  //   float:left;
+  // // }
+  // #header .landingmenu {
+  //   padding-top:($fluidGridGutterWidth*1.75);
+  // }
+  // nav[role=navigation] {
+  //   width:24%;
+  //   padding:$fluidGridGutterWidth * .5;
+  //   margin-top:$fluidGridGutterWidth *.75;
+  // }
+  // nav[role=navigation] ul {
+  //   margin: 0;
+  //   border: 0;
+  // }
+  
+  // nav[role=navigation]  li {
+  //   display: inline-block;
+  //   border-left:none;
+  //   border-right:none;
+  //   width:100%;
+  //   margin:$fluidGridGutterWidth;
+  // }
+  // nav[role=navigation] li:nth-child(n+3) {
+  //   margin-bottom: $fluidGridGutterWidth;
+  // }
+  // nav[role=navigation] li a {
+  //   border: 0;
+  //   height:8em;
+  //   padding:4em 0 1.5em 0;
+  //   font-size:1.125em;
+  // }
+  // nav[role=navigation] [class^="icon-"]::before, .landingmenu [class*=" icon-"]::before {
+  //   font-size: 32px;
+  //   top: 1.3em;
+  //   }
 
 }
 
@@ -69,53 +117,25 @@
 
 @media screen and (min-width: 62em) {
   
-  #main a.menu-link-left,
-  #main a.menu-link-right {
-    display:inline;
-    position: absolute;
-    margin:0px;
-    top: 125px;
-    background: none;
-    box-shadow: none;
-    border: none;
-    font-size: 3em;
-    color:$textColor;
-    text-shadow: 0 1px 1px white;
-    @include transition(all 0.3s ease-out);
-  }
-  #main a.menu-link-left {
-    left:0;
-    border:none;
-  }
-  #main a.menu-link-right {
-    left:auto;
-    right:0;
-    border:none;
-  }
-  #main a.menu-link-left.active {
-    @include rotate(-90deg);
-    border:none;
-  }
-  #main a.menu-link-right.active {
-    @include rotate(90deg);
-    border:none;
-  }
-
-  #header {
-    height:125px;
+  .header-main {
+    height: 8em;
     @include navButtonBackOnly;
-    margin-bottom:125px;
+    margin-bottom: 8em;
     @include box-shadow(0px 4px 6px $black);
-
-    h1, h2 {
-      color:$textColor;
-      font-size:4em;
-      margin-left:10%;
-      padding-top:1.3em;
-      clear:both;
+    color: $textColor;
+    &:hover {
+      color: $textColor;
     }
-
-    .brand {
+  }
+  .header-content {
+    .title,
+    .title-secondary {
+      font-size: 4em;
+      margin-left: 10%;
+      padding-top: 1.3em;
+      clear: both;
+    }
+    .title {
       color:$white;
       font-size:2.5em;
       text-shadow: none;
@@ -124,109 +144,205 @@
       width:50%;
       float:left;
       clear:none;
+      &:hover {
+        color: $white;
+      }
     }
-    .brand-base{
+    .title-secondary {
+      color: $textColor;
       text-shadow: 0 1px 1px white;
+    }
+    .logo-container {
+      width:100px;
+      float:left;
+      padding:0 ($fluidGridGutterWidth * .5);
+      margin:0 0 ($fluidGridGutterWidth *.25) 11%;
+      @include box-sizing(border-box);
+      .logo {
+        width:100%;
+        height:auto;
+        padding-top:25px;
+      }
     }
   }
 
-  // Big Daddy Nav Pattern
-  .container-fluid {
+  // COLLAPSIBLE NAV
+  // -------------------------
+
+  .menu-link-left,
+  .menu-link-right {
+    display:inline;
+    margin:0px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    font-size: 3em;
+    color: $textColor;
+    text-shadow: 0 1px 1px white;
+    position: absolute;
+    top: 4em;
+    z-index: 1001;
     @include transition(all 0.3s ease-out);
-    @include box-sizing(border-box);
+    &:hover {
+      color: $textColor;
+      text-decoration: none;
+    }
   }
-  #header .landingmenu {
-    padding-top:125px;
+  .menu-link-left {
+    left: .875em;
+  }
+  .menu-link-right {
+    left:auto;
+    right: .875em;
+  }
+  body:not(:target) #main,
+  body:not(:target) #wrap {
+    position: relative;
+    @include transition(all 0.3s ease-out);
+    .back-large-screen {
+      display: block;
+      height: 0;
+      line-height: 0;
+      position: absolute;
+      text-indent: -999em;
+    }
+  }
+  body:not(:target) #main:target,
+  body:not(:target) #wrap:target {
+    .back-large-screen {
+      background: transparent;
+      border: 0;
+      height: auto;
+      line-height: 1;
+      top: -101em;
+      bottom: -101em;
+      left: 0;
+      right: 0;
+      z-index: 1001;
+    }
+  }
+  body:not(:target) #main:target {
+    left: 12em;
+    z-index: 1001;
+    .menu-link-left {
+      @include rotate(-90deg);
+    }
+  }
+  body:not(:target) #wrap:target {
+    right: 24em;
+    z-index: 1001;
+    .menu-link-right {
+      @include rotate(90deg);
+    }
+  }
+  body:not(:target) #nav-page,
+  body:not(:target) #nav-home {
+    position: absolute;
+    width: 12em;
+    left: -12em;
+    top: 8em;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  body:not(:target) .sidebar {
+    position: absolute;
+    width: 24em;
+    right: -24em;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
   }
 
   // LEFT NAV TOGGLE
 
-  #sidebar,
-  nav[role=navigation] {
-    position:absolute;
-    z-index:-500;
-  }
-  nav[role=navigation] ul {
-    border:none;
-  }
-  nav[role=navigation]  li {
-    width:100%;
-    margin: 2%;
-    border: none;
-    margin-bottom: $fluidGridGutterWidth;
-  }
-  nav[role=navigation] li:nth-child(n+3) {
-    margin-bottom: $fluidGridGutterWidth;
-  }
-    nav[role=navigation] li a {
-    border: 0;
-    height:8em;
-    padding:4em 0 1.5em 0;
-    font-size:1.125em;
-    border: none;
-  }
-    nav[role=navigation] [class^="icon-"]::before, 
-    .landingmenu [class*=" icon-"]::before {
-    font-size: 32px;
-    top: 1.3em;
-  }
+  // #sidebar,
+  // nav[role=navigation] {
+  //   position:absolute;
+  //   z-index:-500;
+  // }
+  // nav[role=navigation] ul {
+  //   border:none;
+  // }
+  // nav[role=navigation]  li {
+  //   width:100%;
+  //   margin: 2%;
+  //   border: none;
+  //   margin-bottom: $fluidGridGutterWidth;
+  // }
+  // nav[role=navigation] li:nth-child(n+3) {
+  //   margin-bottom: $fluidGridGutterWidth;
+  // }
+  //   nav[role=navigation] li a {
+  //   border: 0;
+  //   height:8em;
+  //   padding:4em 0 1.5em 0;
+  //   font-size:1.125em;
+  //   border: none;
+  // }
+  //   nav[role=navigation] [class^="icon-"]::before, 
+  //   .landingmenu [class*=" icon-"]::before {
+  //   font-size: 32px;
+  //   top: 1.3em;
+  // }
 
-  .js nav[role=navigation] {
-    z-index:-500;
-    height: auto;
-    left:0px;
-    top:0;
-    bottom:0;
-    width:200px;
-    background: transparent url(../_img/bg.gif) repeat scroll;
-    @include transition(all 0.3s ease-out);
-    margin:0px;
-    padding:125px 1em 1em;
-    @include box-shadow (-2px 0px 10px black inset);
-  }
-  .js #sidebar {
-    z-index:-500;
-    right:0px;
-    top:0;
-    bottom:0;
-    width:400px;
-    margin:0px;
-    padding:125px 1em 1em;
-    background-color:$gray;
-    @include box-shadow (2px 0px 10px black inset);
-    padding:$fluidGridGutterWidth;
-    @include box-sizing(border-box);
-    @include transition(all 0.3s ease-out);
-    overflow:scroll;
-    #secondary {
-      padding:$gridGutterWidth;
-      @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
-    }
-  }
-  #sidebar.active {
-    right:-400px;
-    width:400px;
-  }
-  nav[role=navigation].active {
-    left:-200px;
-    max-height: 100%;
-  }
+  // .js nav[role=navigation] {
+  //   z-index:-500;
+  //   height: auto;
+  //   left:0px;
+  //   top:0;
+  //   bottom:0;
+  //   width:200px;
+  //   background: transparent url(../_img/bg.gif) repeat scroll;
+  //   @include transition(all 0.3s ease-out);
+  //   margin:0px;
+  //   padding:125px 1em 1em;
+  //   @include box-shadow (-2px 0px 10px black inset);
+  // }
+  // .js #sidebar {
+  //   z-index:-500;
+  //   right:0px;
+  //   top:0;
+  //   bottom:0;
+  //   width:400px;
+  //   margin:0px;
+  //   padding:125px 1em 1em;
+  //   background-color:$gray;
+  //   @include box-shadow (2px 0px 10px black inset);
+  //   padding:$fluidGridGutterWidth;
+  //   @include box-sizing(border-box);
+  //   @include transition(all 0.3s ease-out);
+  //   overflow:scroll;
+  //   #secondary {
+  //     padding:$gridGutterWidth;
+  //     @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
+  //   }
+  // }
+  // #sidebar.active {
+  //   right:-400px;
+  //   width:400px;
+  // }
+  // nav[role=navigation].active {
+  //   left:-200px;
+  //   max-height: 100%;
+  // }
 
-  .js .container-fluid {
-    position:absolute;
-    right:0px;
-    left:0;
-    bottom:0;
-    top:0;
-  }
-  .container-fluid.active {
-    left:200px;
-    right:-200px;
-  }
-  .container-fluid.activeright {
-    left:-400px;
-    right:400px;
-  }
+  // .js .container-fluid {
+  //   position:absolute;
+  //   right:0px;
+  //   left:0;
+  //   bottom:0;
+  //   top:0;
+  // }
+  // .container-fluid.active {
+  //   left:200px;
+  //   right:-200px;
+  // }
+  // .container-fluid.activeright {
+  //   left:-400px;
+  //   right:400px;
+  // }
   // nav[role=navigation] li a {
   //   height:5em;
   //   padding-top:2.5em;
@@ -236,19 +352,7 @@
   //   font-size:24px;
   //   top: 1em;
   // }
-  .logo-head,
-  .logo-head-base {
-    width:100px;
-    float:left;
-    padding:0 ($fluidGridGutterWidth * .5);
-    margin:0 0 ($fluidGridGutterWidth *.25) 11%;
-    @include box-sizing(border-box);
-    img {
-      width:100%;
-      height:auto;
-      padding-top:25px;
-    }
-  }
+
 
 
 }

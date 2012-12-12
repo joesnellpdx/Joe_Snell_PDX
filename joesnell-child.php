@@ -6,8 +6,8 @@ Template Name: joesnell-child
 get_header('child'); ?>
 
 
-		<div id="primary" class="site-content row-fluid">
-			<div id="content" role="main" class="span8">
+		<div id="primary" class="site-content">
+			<div id="content" role="main" class="content">
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -18,7 +18,7 @@ get_header('child'); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
-            <div id="sidebar" class="span3 visible-desktop">
+            <div id="sidebar" class="sidebar visible-desktop">
             	<?php get_sidebar(); ?>
          	</div>
 		</div><!-- #primary .site-content -->

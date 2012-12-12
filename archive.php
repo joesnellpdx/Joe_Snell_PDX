@@ -10,8 +10,8 @@
 
 get_header(); ?>
 
-		<section id="primary" class="site-content row-fluid">
-			<div id="content-loop" role="main" class="span9 offset3">
+		<section id="primary" class="site-content-loop">
+			<div id="content-loop" role="main" class="content-loop">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -40,7 +40,7 @@ get_header(); ?>
 
 			</div><!-- #content -->
 			
-			<div id="sidebar" class="span3 visible-desktop">
+			<div id="sidebar" class="sidebar visible-desktop">
             	<?php get_sidebar(); ?>
          	</div>
 		</section><!-- #primary .site-content -->

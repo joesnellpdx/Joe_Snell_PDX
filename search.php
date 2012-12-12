@@ -9,7 +9,7 @@
 get_header(); ?>
 
 		<section id="primary" class="site-content">
-			<div id="content" role="main">
+			<div id="content" role="main" class="content">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -35,7 +35,7 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</div><!-- #content -->
-			<div id="sidebar" class="span3 visible-desktop">
+			<div id="sidebar" class="sidebar visible-desktop">
             	<?php get_sidebar(); ?>
          	</div>
 		</section><!-- #primary .site-content -->
