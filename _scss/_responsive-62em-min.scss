@@ -16,23 +16,24 @@
   }
   .site-content {
     min-height:30em;
-    max-width: auto;
+    max-width: 100%;
     padding: 2em;
     margin: 0 11%;
     background-color: $grayLighter;
     .content,
     .widget-area {
-      margin-top:$fluidGridGutterWidth;
+      max-width: 50em;
+      margin:$fluidGridGutterWidth auto;
       text-shadow: 0 1px 1px white;
       article
       .content-landing {
         max-width:47em;
       }
     }
-    .content,
-    .content-loop {
-      margin:0 11%;
-    }
+    // .content,
+    // .content-loop {
+    //   margin:0 11%;
+    // }
     .content-loop a {
       width:31%;
     }

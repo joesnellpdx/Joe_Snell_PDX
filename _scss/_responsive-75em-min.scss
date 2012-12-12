@@ -8,7 +8,13 @@
   // Responsive: scaffolding
   // --------------------------------------------------
 
-  #content-loop a {
+  .site-content {
+    .content,
+    .widget-area {
+      font-size: 1.2em;
+    }
+}
+  .content-loop a {
     width:23%;
   }
 
