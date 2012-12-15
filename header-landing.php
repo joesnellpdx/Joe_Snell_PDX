@@ -70,41 +70,36 @@
 <!--[if lt IE 7]>
     <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
-
-<div id="main" class="container-fluid main">
-    <div id="wrap" class="wrap">
-        
-        	<header id="header" class="header-main header-main-home">
+<div class="container-primary">
+    <div id="main" class="main">
+        <div id="wrap" class="wrap">
             
-                <!-- <div class="navbar navbar-fixed-top">
-                    <div class="navbar-inner"> -->
-                   
-                    <a id="jump-top" href="#nav-page" class="menu-link icon-reorder hidden-large">
-                    <a id="jump-left" href="#main" class="menu-link-left icon-arrow-left hidden-medium">
-                    <a id="jump-right" href="#wrap" class="icon-arrow-right menu-link-right visible-desktop"></a>
-                    <a id="jump-back" href="#header" class="back-large-screen visible-desktop">JUMP BACK</a>
-                    <hgroup class="header-content">
-            			<div class="logo-container logo-head">
-                            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
-                     	</div> <!-- .logo-head -->
-                        <div class="brand-text">
-                      		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><h1 class="title"><?php bloginfo( 'name' ); ?></br><span class="title-sub"><?php bloginfo( 'description' ); ?></span></h1>
-                            <h2 class="title-secondary hidden-medium"><?php if (!(is_page('home'))): ?>
-                                <?php the_title(); ?>
-                                <?php endif; ?></h2></a>
-                        </div>
-                   	</hgroup>   
-                		
-                        <nav id="menu" role="navigation" class="landingmenu"> 
-            					<?php wp_nav_menu( array( 'theme_location' => 'landing', 'container' => '', 'menu_id' => 'nav-home' ) ); ?> <!-- id = menu-item-491 is the 'back' list item -->
-                        </nav>
+            	<header id="header" class="header-main header-main-home">
+                
+                    <!-- <div class="navbar navbar-fixed-top">
+                        <div class="navbar-inner"> -->
+                       
+                        <a id="jump-top" href="#nav-page" class="menu-link icon-reorder hidden-large"></a>
+                        <a id="jump-left" href="#main" class="menu-link-left icon-reorder hidden-medium">Menu</a>
+                        <a id="jump-right" href="#wrap" class="menu-link-right icon-twitter visible-desktop">Social</a>
+                        <a id="jump-back" href="#header" class="back-large-screen visible-desktop">JUMP BACK</a>
+                        <hgroup class="header-content">
+                			<div class="logo-container logo-head">
+                                <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
+                         	</div> <!-- .logo-head -->
+                            <div class="brand-text">
+                          		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><h1 class="title"><?php bloginfo( 'name' ); ?></br><span class="title-sub"><?php bloginfo( 'description' ); ?></span></h1></a>
+                                <h2 class="title-secondary hidden-medium"><?php if (!(is_page('home'))): ?>
+                                    <?php the_title(); ?>
+                                    <?php endif; ?></h2>
+                            </div>
+                       	</hgroup>   
+                    		
                         
-            		
-                   
-                    <!-- </div> .inner -->
-                    <!-- </div> -->  <!-- navbar --> 
+                            
+                		
+                       
+                        <!-- </div> .inner -->
+                        <!-- </div> -->  <!-- navbar --> 
 
-        	</header><!-- #masthead .site-header  -->
-        
-
-	
+            	</header><!-- #masthead .site-header  -->

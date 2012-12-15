@@ -57,6 +57,10 @@ and Blueprint http://www.blueprintcss.org/
 // Core variables and mixins
 @import "variables"; // Modify this for custom colors, font-sizes, etc
 @import "mixins";
+@import "compass/css3";
+$expermintal-support-for-svg: true;
+// @codekit-prepend "jquery.fitvids.js"
+// @codekit-append "prism.js"
 
 // CSS Reset
 @import "reset";

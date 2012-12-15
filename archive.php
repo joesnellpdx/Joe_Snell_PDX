@@ -40,9 +40,6 @@ get_header(); ?>
 
 			</div><!-- #content -->
 			
-			<div id="sidebar" class="sidebar visible-desktop">
-            	<?php get_sidebar(); ?>
-         	</div>
 		</section><!-- #primary .site-content -->
 
 <?php get_footer(); ?>

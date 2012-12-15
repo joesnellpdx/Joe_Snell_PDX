@@ -63,7 +63,8 @@
 <body data-spy="scroll" data-target=".subnav" data-offset="50" <?php body_class(); ?>>
 
 
-<div id="main" class="container main">
+<div class="container-primary">
+<div id="main" class="main">
 
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>

@@ -15,7 +15,7 @@ get_header(); ?>
 
 		<div id="primary" class="site-content">
 			<div id="content" role="main" class="content">
-
+				
 				<?php while ( have_posts() ) : the_post(); ?>
 					
 
@@ -27,9 +27,6 @@ get_header(); ?>
 
 			</div><!-- #content -->
             
-        	<div id="sidebar" class="sidebar visible-desktop">
-            	<?php get_sidebar(); ?>
-         	</div>
   
  		</div><!-- #primary .site-content -->
             

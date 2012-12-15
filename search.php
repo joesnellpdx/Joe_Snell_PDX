@@ -35,9 +35,7 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</div><!-- #content -->
-			<div id="sidebar" class="sidebar visible-desktop">
-            	<?php get_sidebar(); ?>
-         	</div>
+
 		</section><!-- #primary .site-content -->
 
 

@@ -8,12 +8,6 @@
   // Responsive: scaffolding
   // --------------------------------------------------
 
-  .main {
-    overflow:visible;
-  }
-  .wrap {
-    background-color:$grayLight;
-  }
   .site-content {
     min-height:30em;
     max-width: 100%;
@@ -30,33 +24,21 @@
         max-width:47em;
       }
     }
-    // .content,
-    // .content-loop {
-    //   margin:0 11%;
-    // }
-    .content-loop a {
-      width:31%;
+  }
+  .footer {
+    width: auto;
+    position: static;
+    margin-left: 0px;
+    line-height: 1;
+    padding: 0 0.5em;
+    .container {
+      margin:0px;
     }
-    .sidebar {
-      background-color:$gray;
-      padding: 8em 1em 1em;
-      @include box-shadow (2px 0px 10px black inset);
-      @include box-sizing(border-box);
-      overflow: scroll;
-      .widget-area {
-        padding:$gridGutterWidth;
-        @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
-      }
-    }
-    .footer {
-      width: auto;
-      position: static;
-      margin-left: 0px;
-      line-height: 1;
-      padding: 0 0.5em;
-      .container {
-        margin:0px;
-      }
+  }
+  .content-loop {
+    margin: 0 11%;
+    a {
+      width: 31%;
     }
   }
 

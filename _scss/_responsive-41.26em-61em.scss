@@ -23,7 +23,7 @@
   .site-content {
     margin: $fluidGridGutterWidth $fluidGridGutterWidth 0;
     width: (75% - ($fluidGridGutterWidth * 2));
-    float: left;
+    float: right;
     @include box-sizing(border-box);
   }
   .content {
@@ -36,6 +36,10 @@
     margin-left: 24%;
   }
 
+  .footer-landing {
+    margin: 0;
+  }
+
   .footer {
     position: static;
     line-height: 1;
@@ -44,6 +48,7 @@
       margin:0px;
     }
   }
+
 
   //
   // Responsive: grid

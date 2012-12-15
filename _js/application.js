@@ -2,7 +2,7 @@
 // FOR JOESNELL THEME
 // ++++++++++++++++++++++++++++++++++++++++++
 
-!function ($) { 
+(function ($) { 
 
 // $('body').addClass('js');
 //   var $menu = $('#menu'),
@@ -78,4 +78,4 @@ $(window).resize(function(){
 $('body').scrollTop(1);
 
 }
-(window.jQuery)
+)(jQuery);

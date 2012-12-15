@@ -6,9 +6,6 @@
 /* Body reset */
 /* ------------------------- */
 
-html {
-  height:100%;
-}
 body {
   font-family: $baseFontFamily;
   font-size: $baseFontSize;
@@ -114,15 +111,12 @@ a:hover {
   clear: both;
   overflow: hidden;
   @include navButtonNoHov;
-  .container {
+  .site-info {
     padding:$fluidGridGutterWidth;
   }
 }
-.footer-absolute {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.footer-landing {
+  margin-top: 28em;
 }
 
 .insertCont {

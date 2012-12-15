@@ -27,9 +27,7 @@ get_header('childportfolio'); ?>
 			<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
-             <div id="sidebar" class="sidebar visible-desktop">
-            	<?php get_sidebar(); ?>
-         	</div>
+
 		</div><!-- #primary .site-content -->
 
 

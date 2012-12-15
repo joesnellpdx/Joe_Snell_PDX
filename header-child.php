@@ -59,13 +59,14 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-    <div id="main" class="container-fluid main">
+    <div class="container-primary">
+        <div id="main" class="main">
         <div id="wrap" class="wrap">
             <header>
               <div id="header" class="header-main header-main-page">
-                    <a id="jump-top" href="#nav-page" class="menu-link icon-reorder hidden-large">
-                    <a id="jump-left" href="#main" class="menu-link-left icon-arrow-left hidden-medium">
-                    <a id="jump-right" href="#wrap" class="icon-arrow-right menu-link-right visible-desktop"></a>
+                    <a id="jump-top" href="#nav-page" class="menu-link icon-reorder hidden-large"></a>
+                    <a id="jump-left" href="#main" class="menu-link-left icon-reorder hidden-medium">Menu</a>
+                    <a id="jump-right" href="#wrap" class="menu-link-right icon-twitter visible-desktop">Social</a>
                     <a id="jump-back" href="#header" class="back-large-screen visible-desktop">JUMP BACK</a>
                     <hgroup class="header-content">
                 			<div class="logo-container logo-head-base">
@@ -78,8 +79,6 @@
                       </div>
               		</hgroup>
               </div>
-                <nav id="menu" role="navigation" class="basemenu">
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_id' => 'nav-page' ) ); ?> 
-                </nav>
+
             </header>
        
