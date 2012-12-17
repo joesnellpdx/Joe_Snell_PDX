@@ -220,9 +220,6 @@
   //   right: 0;
   //   @include transition(left .25s ease-out);
   // }
-  .container-primary {
-    overflow-y: hidden;
-  }
 
   body:not(:target) #main,
   body:not(:target) #wrap {
