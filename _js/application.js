@@ -31,6 +31,11 @@
 //   return false;
 // });
 
+$('.add-icon-user a').addClass('icon-user');
+$('.add-icon-pencil a').addClass('icon-pencil');
+$('.add-icon-briefcase a').addClass('icon-briefcase');
+$('.add-icon-comment a').addClass('icon-comment');
+
 
 equalheight = function(container){
 

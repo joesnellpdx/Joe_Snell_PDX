@@ -82,6 +82,7 @@ html {
     font-family: $baseFontFamily; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
+    background: transparent url(../_img/bg.gif) repeat scroll;
 }
 
 /*
@@ -90,7 +91,6 @@ html {
 
 body {
     margin: 0;
-    background: transparent url(../_img/bg.gif) repeat scroll;
 }
 
 /* ==========================================================================

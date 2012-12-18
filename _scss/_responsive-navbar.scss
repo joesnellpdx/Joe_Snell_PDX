@@ -1,7 +1,9 @@
 /* ==========================================================================
    RESPONSIVE: NAVBAR
    ========================================================================== */
+@media screen and (max-width: 41.25em) {
 
+}
 
 // New Navbar
 
@@ -17,6 +19,7 @@
   body:not(:target) #nav-page {
     position: absolute;
     margin-top: 1.25em;
+    margin-left: 0;
     left: 0;
     padding: 0 .5em;
     width: 25%;
@@ -36,87 +39,33 @@
       }
     }
     a {
-      font-size: 1.2em;
-      display: block;
+      font-size: 1em;
       width: 100%;
-      line-height: 9em;
-      height: 8em;
+      padding: 3.5em 0 2.5em;
       position: relative;
-      z-index: 1;
+      height: inherit;
+      line-height: inherit;
     }
-    [class^="icon-"]:before,
-    [class*=" icon-"]:before {
+    .icon-user:before,
+    .icon-pencil:before,
+    .icon-briefcase:before,
+    .icon-comment:before {
+      position: absolute;
       font-size: 2em;
-      top: 1.3em;
+      top: 1em;
       left:50%;
       margin-left:-.4em;
       color:darken(#B3B3B3, 50%);
       text-shadow:1px 1px $gray, -1px -1px $black;
-      position: absolute;
-      z-index: 0;
     }
     .back {
-      display: block;
-      width: 100%;
       position: absolute;
+      left: -101em;
       a {
-        background: transparent;
-        border: 0;
-        display: block;
-        height: auto;
-        line-height: 1;
-        position: absolute;
-        text-indent: -999em;
-        z-index: 0;
+        position: static;
       }
     }
   }
-
-
-//   #nav-home,
-//   #nav-page {
-//     max-height: none;
-//     height: 100%;
-//     width: 100%;
-//     padding: 0 ($fluidGridGutterWidth * .5) ($fluidGridGutterWidth * .5);
-//     margin-top:($fluidGridGutterWidth*.25);
-//     background:none;
-//     float:left;
-//   // }
-//   #header .landingmenu {
-//     padding-top:($fluidGridGutterWidth*1.75);
-//   }
-//   nav[role=navigation] {
-//     width:24%;
-//     padding:$fluidGridGutterWidth * .5;
-//     margin-top:$fluidGridGutterWidth *.75;
-//   }
-//   nav[role=navigation] ul {
-//     margin: 0;
-//     border: 0;
-//   }
-  
-//   nav[role=navigation]  li {
-//     display: inline-block;
-//     border-left:none;
-//     border-right:none;
-//     width:100%;
-//     margin:$fluidGridGutterWidth;
-//   }
-//   nav[role=navigation] li:nth-child(n+3) {
-//     margin-bottom: $fluidGridGutterWidth;
-//   }
-//   nav[role=navigation] li a {
-//     border: 0;
-//     height:8em;
-//     padding:4em 0 1.5em 0;
-//     font-size:1.125em;
-//   }
-//   nav[role=navigation] [class^="icon-"]::before, .landingmenu [class*=" icon-"]::before {
-//     font-size: 32px;
-//     top: 1.3em;
-//     }
-//   }
 }
 
 
@@ -193,33 +142,6 @@
   .icon-reorder::before {
       margin-right: .5em;
   }
-  // .main,
-  // .wrap {
-  //   max-width: 100%;
-  //   overflow: visible;
-  //   left: 0;
-  //   right: 0;
-  //   position: absolute;
-  //   @include transition(left .25s ease-out);
-  // }
-  // body:not(:target) #main {
-  //   width: 100%;
-  //   overflow: visible;
-  //   z-index: 1000;
-  //   position: absolute;
-  //   left: 0;
-  //   right: 0;
-  //   @include transition(left .25s ease-out);
-  // }
-  // body:not(:target) #wrap {
-  //   width: 100%;
-  //   background-color: $gray;
-  //   z-index: 1001;
-  //   position: absolute;
-  //   left: 0;
-  //   right: 0;
-  //   @include transition(left .25s ease-out);
-  // }
 
   body:not(:target) #main,
   body:not(:target) #wrap {
@@ -274,12 +196,28 @@
     left: 12em;
     right: -12em;
     @include transition(left .25s ease-out);
+    .menu-link-left,
+    .menu-link-right {
+      color: $linkColor;
+      text-shadow: none;
+      background-color: $grayDarker;
+      text-decoration: none;
+      @include transition(background-color .5s ease-out);
+    }
   }
   body:not(:target) #wrap:target {
     position: relative;
     right: 24em;
     left: -24em;
     @include transition(left .25s ease-out);
+    .menu-link-left,
+    .menu-link-right {
+      color: $linkColor;
+      text-shadow: none;
+      background-color: $grayDarker;
+      text-decoration: none;
+      @include transition(background-color .5s ease-out);
+    }
   }
   body:not(:target) #main:target #nav-page,
   body:not(:target) #main:target #nav-home {
@@ -308,201 +246,4 @@
       }
     }
   }
-
-
-// TESTING HERE
-
-  // body:not(:target) #main,
-  // body:not(:target) #wrap {
-  //   max-width: 100%;
-  //   z-index: 1000;
-  //   overflow: visible;
-  //   left: 0;
-  //   right: 0;
-  //   position: absolute;
-  //   .back-large-screen {
-  //     display: block;
-  //     height: 0;
-  //     line-height: 0;
-  //     position: absolute;
-  //     text-indent: -999em;
-  //   }
-  // }
-  // body:not(:target) #wrap {
-  //   background-color: $grayLight;
-  // }
-  // body:not(:target) #nav-page,
-  // body:not(:target) #nav-home {
-  //   position: absolute;
-  //   width: 12em;
-  //   left: 0;
-  //   top: 8em;
-  //   bottom: 0;
-  //   z-index: -1;
-  // }
-
-  // body:not(:target) .sidebar {
-  //   background-color:$gray;
-  //   padding: 8em 1em 1em;
-  //   @include box-shadow (2px 0px 10px black inset);
-  //   @include box-sizing(border-box);
-  //   width: 24em;
-  //   right: -24em;
-  //   left: auto;
-  //   top: 0;
-  //   bottom: 0;
-  //   right: 0; 
-  //   position: absolute;
-  //   z-index: -1;
-  //   .widget-area {
-  //     padding:$gridGutterWidth;
-  //     background-color: $grayLighter;
-  //     @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
-  //   }
-  // }
-
-  // body:not(:target) #main:target {
-  //   left: 12em;
-  //   right: -12em;
-  //   z-index: 1001;
-  //   .menu-link-left {
-  //     // @include rotate(-90deg);
-  //   }
-  //   #nav-page,
-  //   #nav-home {
-  //     left: -12em;
-  //     right: 12em;
-  //   }
-  // }
-  // body:not(:target) #wrap:target {
-  //   right: 24em;
-  //   left: -24em;
-  //   z-index: 1001;
-  //   .menu-link-right {
-  //     // @include rotate(90deg);
-  //   }
-  //   .sidebar {
-  //     right: -24em;
-  //     -webkit-transition: left liner .25s;
-  //   }
-  // }
-  // body:not(:target) #main:target,
-  // body:not(:target) #wrap:target {
-  //   .back-large-screen {
-  //     //background-color: rgba(0, 0, 0, .5);
-  //     border: 0;
-  //     height: auto;
-  //     line-height: 1;
-  //     top: 0em;
-  //     bottom: 0em;
-  //     left: 0;
-  //     right: 0;
-  //     z-index: 1001;
-  //     &:hover {
-  //       background-color: transparent;
-  //     }
-  //   }
-  // }
-
-
-  // LEFT NAV TOGGLE
-
-  // #sidebar,
-  // nav[role=navigation] {
-  //   position:absolute;
-  //   z-index:-500;
-  // }
-  // nav[role=navigation] ul {
-  //   border:none;
-  // }
-  // nav[role=navigation]  li {
-  //   width:100%;
-  //   margin: 2%;
-  //   border: none;
-  //   margin-bottom: $fluidGridGutterWidth;
-  // }
-  // nav[role=navigation] li:nth-child(n+3) {
-  //   margin-bottom: $fluidGridGutterWidth;
-  // }
-  //   nav[role=navigation] li a {
-  //   border: 0;
-  //   height:8em;
-  //   padding:4em 0 1.5em 0;
-  //   font-size:1.125em;
-  //   border: none;
-  // }
-  //   nav[role=navigation] [class^="icon-"]::before, 
-  //   .landingmenu [class*=" icon-"]::before {
-  //   font-size: 32px;
-  //   top: 1.3em;
-  // }
-
-  // .js nav[role=navigation] {
-  //   z-index:-500;
-  //   height: auto;
-  //   left:0px;
-  //   top:0;
-  //   bottom:0;
-  //   width:200px;
-  //   background: transparent url(../_img/bg.gif) repeat scroll;
-  //   @include transition(all 0.3s ease-out);
-  //   margin:0px;
-  //   padding:125px 1em 1em;
-  //   @include box-shadow (-2px 0px 10px black inset);
-  // }
-  // .js #sidebar {
-  //   z-index:-500;
-  //   right:0px;
-  //   top:0;
-  //   bottom:0;
-  //   width:400px;
-  //   margin:0px;
-  //   padding:125px 1em 1em;
-  //   background-color:$gray;
-  //   @include box-shadow (2px 0px 10px black inset);
-  //   padding:$fluidGridGutterWidth;
-  //   @include box-sizing(border-box);
-  //   @include transition(all 0.3s ease-out);
-  //   overflow:scroll;
-  //   #secondary {
-  //     padding:$gridGutterWidth;
-  //     @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
-  //   }
-  // }
-  // #sidebar.active {
-  //   right:-400px;
-  //   width:400px;
-  // }
-  // nav[role=navigation].active {
-  //   left:-200px;
-  //   max-height: 100%;
-  // }
-
-  // .js .container-fluid {
-  //   position:absolute;
-  //   right:0px;
-  //   left:0;
-  //   bottom:0;
-  //   top:0;
-  // }
-  // .container-fluid.active {
-  //   left:200px;
-  //   right:-200px;
-  // }
-  // .container-fluid.activeright {
-  //   left:-400px;
-  //   right:400px;
-  // }
-  // nav[role=navigation] li a {
-  //   height:5em;
-  //   padding-top:2.5em;
-  // }
-  // nav[role=navigation] [class^="icon-"]::before, 
-  // .landingmenu [class*=" icon-"]::before {
-  //   font-size:24px;
-  //   top: 1em;
-  // }
-
-
-
 }
