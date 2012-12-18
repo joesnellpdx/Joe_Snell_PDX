@@ -80,7 +80,7 @@ $(window).resize(function(){
   	equalheight('.main article');
 });
 
-$('body').scrollTop(1);
+// $('body').scrollTop(1);
 
 }
 )(jQuery);
