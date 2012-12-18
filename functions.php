@@ -82,11 +82,59 @@ add_action( 'after_setup_theme', 'Joe_Snell_PDX_setup' );
  * @since Joe_Snell_PDX 1.0
  */
 function Joe_Snell_PDX_widgets_init() {
+	// register_sidebar( array(
+	// 	'name' => __( 'Sidebar', 'Joe_Snell_PDX' ),
+	// 	'id' => 'sidebar-1',
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget' => "</aside>",
+	// 	'before_title' => '<h3 class="widget-title">',
+	// 	'after_title' => '</h3>',
+	// ) );
+
 	register_sidebar( array(
-		'name' => __( 'Sidebar', 'Joe_Snell_PDX' ),
+		'name' => __( 'Main Sidebar', 'Joe_Snell_PDX' ),
 		'id' => 'sidebar-1',
+		'description' => __( 'Main content sidebar', 'Joe_Snell_PDX' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'First Footer Widget Area', 'Joe_Snell_PDX' ),
+		'id' => 'footer-1',
+		'description' => __( 'First Footer Widget Area', 'Joe_Snell_PDX' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Second Footer Widget Area', 'Joe_Snell_PDX' ),
+		'id' => 'footer-2',
+		'description' => __( 'Second Footer Widget Area', 'Joe_Snell_PDX' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Third Footer Widget Area', 'Joe_Snell_PDX' ),
+		'id' => 'footer-3',
+		'description' => __( 'Third Footer Widget Area', 'Joe_Snell_PDX' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Fourth Footer Widget Area', 'Joe_Snell_PDX' ),
+		'id' => 'footer-4',
+		'description' => __( 'Fourth Footer Widget Area', 'Joe_Snell_PDX' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );

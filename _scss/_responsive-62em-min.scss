@@ -28,16 +28,35 @@
       }
     }
   }
-  .footer {
-    width: auto;
-    position: static;
-    margin-left: 0px;
-    line-height: 1;
-    padding: 0 0.5em;
-    .container {
-      margin:0px;
+  .site-footer {
+    clear: both;
+    @include navButtonNoHov;
+    .footer-widget-wrap-one,
+    .footer-widget-wrap-two {
+      @include display-box;
+      @include box-orient(horizontal);
+      @include box-align(stretch);
+      @include box-direction(normal);
+      height: auto;
+      width: 50%;
+      float: left;
+      .widget-area {
+        float: none;
+        @include box-flex(1);
+        flex-flow: column;
+      }
     }
   }
+  // .footer {
+  //   width: auto;
+  //   position: static;
+  //   margin-left: 0px;
+  //   line-height: 1;
+  //   padding: 0 0.5em;
+  //   .container {
+  //     margin:0px;
+  //   }
+  // }
   .content-loop {
     margin: 0 11%;
     a {

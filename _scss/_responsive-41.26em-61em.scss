@@ -40,12 +40,21 @@
     margin: 0;
   }
 
-  .footer {
-    position: static;
-    line-height: 1;
-    padding: 0 0.5em;
-    .container {
-      margin:0px;
+  .site-footer {
+    clear: both;
+    @include navButtonNoHov;
+  .footer-widget-wrap-one,
+  .footer-widget-wrap-two {
+      @include display-box;
+      @include box-orient(horizontal);
+      @include box-align(stretch);
+      @include box-direction(normal);
+      width: 100%;
+      .widget-area {
+        float: none;
+        @include box-flex(1);
+        flex-flow: column;
+      }
     }
   }
 

@@ -9,6 +9,12 @@
 // Clearfix
 // --------
 // For clearing floats like a boss h5bp.com/q
+
+@import "compass/css3";
+$expermintal-support-for-svg: true;
+
+@import "compass/css3/box";
+ 
 @mixin clearfix {
   *zoom: 1;
   &:before,
@@ -601,18 +607,13 @@
   width:100%;
   @include box-sizing(border-box);
   margin-bottom: 0; // For input.btn
-  font-size: $baseFontSize + .125em;
   font-family:$sansFontFamily;
   line-height: normal;
-  text-align: center;
-  vertical-align: middle;
-  @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
-  color:$linkColor;
+  @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight, $grayLighter, 0 0 0 rgba(0,0,0,.0));
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
   @include ie7-restore-left-whitespace(); // Give IE7 some love
   @include box-shadow(#{inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)});
   z-index:1000;
-  @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
 }
 @mixin navButtonBackOnly {
   width:100%;

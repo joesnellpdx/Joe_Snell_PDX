@@ -107,14 +107,42 @@ a:hover {
     }
   }
 }
+
 .site-footer {
   clear: both;
   overflow: hidden;
+  padding: $fluidGridGutterWidth;
   @include navButtonNoHov;
+  .footer-widget-wrap-one,
+  .footer-widget-wrap-two {
+    .widget-area {
+      width: 100%;
+      float: left;
+      text-align: left;
+      padding: $fluidGridGutterWidth;
+    }
+  }
   .site-info {
-    padding:$fluidGridGutterWidth;
+    text-align: center;
   }
 }
+.site-footer {
+  ul {
+    margin: 0 0 1em 0;
+    [class^="icon-"]::before, 
+    [class*=" icon-"]::before {
+      margin-right: .5em;
+    }
+    li {
+    list-style-type: none;
+    margin: 0 0 .75em 0;
+      a {
+        font-family: $serifFontFamily;
+      }
+    }
+  }
+}
+
 .footer-landing {
   margin-top: 28em;
 }
@@ -162,7 +190,7 @@ a:hover {
     p {
       font-size: ($baseFontSize * .7);
       font-family: $baseFontFamily;
-      color:$grayLight;
+      color:$grayLighter;
       text-align:left;
     } 
     article {
