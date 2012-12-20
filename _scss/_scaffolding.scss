@@ -11,7 +11,6 @@ body {
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   color: $textColor;
-  height:100%;
 }
 
 
@@ -81,12 +80,12 @@ a:hover {
   z-index:-500;
   left:-9999px;
 }
-.main {
-  position:relative;
-  z-index:1;
-  overflow:hidden;
-  min-height: 100%;
-}
+// .main {
+//   position:relative;
+//   z-index:1;
+//   overflow:hidden;
+//   min-height: 100%;
+// }
 
 .site-content {
   max-width: 50em;

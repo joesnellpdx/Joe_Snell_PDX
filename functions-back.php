@@ -11,10 +11,10 @@
  *
  * @since Joe_Snell_PDX 1.0
  */
-if ( ! isset( $content_width ) )
+//if ( ! isset( $content_width ) )
 	$content_width = 640; /* pixels */
 
-if ( ! function_exists( 'Joe_Snell_PDX_setup' ) ):
+//if ( ! function_exists( 'Joe_Snell_PDX_setup' ) ):
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -24,7 +24,7 @@ if ( ! function_exists( 'Joe_Snell_PDX_setup' ) ):
  *
  * @since Joe_Snell_PDX 1.0
  */
-function Joe_Snell_PDX_setup() {
+//function Joe_Snell_PDX_setup() {
 
 	/**
 	 * Custom template tags for this theme.
@@ -119,7 +119,7 @@ function Joe_Snell_PDX_scripts() {
 
 		//wp_enqueue_script( 'ajaxloop-js', get_template_directory_uri() . '/_js/ajaxLoop.js', array( 'jquery' ), '20120823', true  );
 		
-		wp_enqueue_script( 'chirp', get_template_directory_uri() . '/_js/chirp-ck.js', array( 'jquery' ), '20120823' );
+		wp_enqueue_script( 'touchswipe', get_template_directory_uri() . '/_js/touchswipe.js', array( 'jquery' ), '20120823' );
 		
 		//wp_enqueue_script( 'orientation-change', get_template_directory_uri() . '/_js/ios-orientationchange-fix.js', array( 'jquery' ), '20120823'  );
 		

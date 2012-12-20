@@ -51,7 +51,6 @@
     .icon-briefcase:before,
     .icon-comment:before {
       position: absolute;
-      font-size: 2em;
       top: 1em;
       left:50%;
       margin-left:-.4em;
@@ -64,6 +63,25 @@
       a {
         position: static;
       }
+    }
+  }
+  body:not(:target) #nav-page {
+    .icon-user:before,
+    .icon-pencil:before,
+    .icon-briefcase:before,
+    .icon-comment:before {
+      font-size: 2em;
+    }
+  }
+}
+.no-textshadow {
+  body:not(:target) #nav-page,
+  body:not(:target) #nav-home {
+    .icon-user::before,
+    .icon-pencil::before,
+    .icon-briefcase::before,
+    .icon-comment::before {
+      color: $gray;
     }
   }
 }
@@ -108,6 +126,7 @@
       text-shadow: 0 1px 1px white;
     }
     .logo-container {
+      position: static;
       width:100px;
       float:left;
       padding:0 ($fluidGridGutterWidth * .5);
@@ -143,35 +162,33 @@
       margin-right: .5em;
   }
 
+  body {
+    position: relative;
+    width: 100%;
+  }
   body:not(:target) #main,
   body:not(:target) #wrap {
-    width: 100%;
-    margin-left: 0;
-    overflow: visible;
+    // width: 100%;
+    // margin-left: 0;
+    // overflow: visible;
+    // z-index: 1000;
+    
+    position: static;
     z-index: 1000;
-    position: relative;
-    left: 0;
-    right: 0;
+    // position: relative;
+    // left: 0;
+    // right: 0;
     @include transition(left .25s ease-out);
     .back-large-screen {
-      display: block;
-      height: 0;
-      line-height: 0;
-      position: absolute;
-      text-indent: -999em;
+      display: none;
+      text-indent: -101em;
     }
+  }
+  .css-animations #main {
+    width: 100%;
   }
   body:not(:target) #wrap {
     background-color: $grayLight;
-  }
-  body:not(:target) #nav-page,
-  body:not(:target) #nav-home {
-    width: 11.5em;
-    position: absolute;
-    left: 0;
-    top: 8em;
-    z-index: -1;
-    @include transition(left .25s ease-out);
   }
   body:not(:target) .sidebar {
     width: 24em;
@@ -191,11 +208,24 @@
       @include box-shadow(white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
     }
   }
-  body:not(:target) #main:target {
-    position: relative;
-    left: 12em;
-    right: -12em;
+  body:not(:target) #nav-page,
+  body:not(:target) #nav-home {
+    width: 11.5em;
+    position: absolute;
+    left: 0;
+    top: 8em;
+    z-index: -1;
     @include transition(left .25s ease-out);
+  }
+  #header {
+    width: 100%;
+
+  }
+  .cssanimations body:not(:target) #main:target {
+    position: absolute;
+    right: -12em;
+    left: 12em;
+     @include transition(left .25s ease-out);
     .menu-link-left,
     .menu-link-right {
       color: $linkColor;
@@ -205,10 +235,25 @@
       @include transition(background-color .5s ease-out);
     }
   }
+  .no-cssanimations body:not(:target) #main:target {
+    position: absolute;
+    left: 12em;
+    .menu-link-left,
+    .menu-link-right {
+      color: $linkColor;
+      text-shadow: none;
+      background-color: $grayDarker;
+      text-decoration: none;
+    }
+  }
+  html .no-csstransitions #main:target {
+    position: absolute;
+    left: 12em;
+  }
   body:not(:target) #wrap:target {
-    position: relative;
-    right: 24em;
+    position: absolute;
     left: -24em;
+    right: 24em;
     @include transition(left .25s ease-out);
     .menu-link-left,
     .menu-link-right {
@@ -232,7 +277,9 @@
   body:not(:target) #main:target,
   body:not(:target) #wrap:target {
     .back-large-screen {
-      //background-color: rgba(0, 0, 0, .5);
+      background-color: rgba(0, 0, 0, .5);
+      display: inline;
+      position: absolute;
       border: 0;
       height: auto;
       line-height: 1;
@@ -241,8 +288,10 @@
       right: 0;
       bottom: 0;
       z-index: 1001;
+      @include transition(background-color .25s ease-out);
       &:hover {
         background-color: transparent;
+        @include transition(background-color .25s ease-out);
       }
     }
   }

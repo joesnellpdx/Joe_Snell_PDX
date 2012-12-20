@@ -71,8 +71,6 @@ var currentTallest = 0,
 $(window).load(function(){
   equalheight('.main article');
 });
-
-
 // //var resizeTimer;
 $(window).resize(function(){
 	// clearTimeout(resizeTimer);
@@ -80,7 +78,7 @@ $(window).resize(function(){
   	equalheight('.main article');
 });
 
-// $('body').scrollTop(1);
+
 
 }
 )(jQuery);

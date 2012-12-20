@@ -47,6 +47,7 @@
 
 .header-main-home {
   height:$navbarHeight;
+  width: 100%;
   .menu-link {
     margin-left:-101em;
   } 
@@ -107,17 +108,17 @@
     padding: 4.5em 0 3.5em;
     position: relative;
   }
-  .icon-user:before,
-  .icon-pencil:before,
-  .icon-briefcase:before,
-  .icon-comment:before {
-    position: absolute;
-    font-size: 2em;
-    top: 1.4em;
-    left: 50%;
+  .icon-user::before,
+  .icon-pencil::before,
+  .icon-briefcase::before,
+  .icon-comment::before {
     margin-left:-.4em;
     color:darken(#B3B3B3, 50%);
     text-shadow:1px 1px $gray, -1px -1px $black;
+    position: absolute;
+    font-size: 2em;
+    left: 50%;
+    top: 1.4em;
   }
   .back {
   position: absolute;
@@ -169,10 +170,10 @@ body:not(:target) #nav-page:target {
     text-align: center;
     overflow: visible;
   }
-  .icon-user:before,
-  .icon-pencil:before,
-  .icon-briefcase:before,
-  .icon-comment:before {
+  .icon-user::before,
+  .icon-pencil::before,
+  .icon-briefcase::before,
+  .icon-comment::before {
     display: block;
     font-size: 2em;
     color:darken(#B3B3B3, 50%);
@@ -207,6 +208,17 @@ body:not(:target) #nav-page:target {
     right: 0;
     text-indent: -999em;
     z-index: 0;
+    }
+  }
+}
+.no-textshadow {
+  #nav-page,
+  #nav-home {
+    .icon-user::before,
+    .icon-pencil::before,
+    .icon-briefcase::before,
+    .icon-comment::before {
+      color: $gray;
     }
   }
 }
