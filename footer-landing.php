@@ -19,16 +19,16 @@
 
 				
 
-
+		    	<div id="sidebar" class="sidebar visible-desktop">
+		        	<?php get_sidebar(); ?>
+		     	</div>
 			</div> <!-- #wrap -->
 			<nav id="menu" role="navigation" class="landingmenu"> 
 				<?php wp_nav_menu( array( 'theme_location' => 'landing', 'container' => '', 'menu_id' => 'nav-home' ) ); ?> <!-- id = menu-item-491 is the 'back' list item -->
 	    	</nav>
-	    	<div id="sidebar" class="sidebar visible-desktop">
-	        	<?php get_sidebar(); ?>
-	     	</div>
 
 		</div> <!-- #main .container -->
+	</div>
 
 <?php wp_footer(); ?>
 </body>

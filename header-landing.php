@@ -61,10 +61,6 @@
         <div id="wrap" class="wrap">
             
             	<header id="header" class="header-main header-main-home">
-                
-                    <!-- <div class="navbar navbar-fixed-top">
-                        <div class="navbar-inner"> -->
-                       
                         <a id="jump-top" href="#nav-page" class="menu-link icon-reorder hidden-large"></a>
                         <a id="jump-left" href="#main" class="menu-link-left icon-reorder hidden-medium">Menu</a>
                         <a id="jump-right" href="#wrap" class="menu-link-right icon-twitter visible-desktop">Social</a>
@@ -80,12 +76,5 @@
                                     <?php endif; ?></h2>
                             </div>
                        	</hgroup>   
-                    		
-                        
-                            
-                		
-                       
-                        <!-- </div> .inner -->
-                        <!-- </div> -->  <!-- navbar --> 
 
-            	</header><!-- #masthead .site-header  -->
+            	</header>

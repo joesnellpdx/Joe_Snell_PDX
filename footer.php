@@ -41,14 +41,13 @@
 
 			
 
-
+	       	<div id="sidebar" class="sidebar visible-desktop">
+	        	<?php get_sidebar(); ?>
+	     	</div>
 		</div> <!-- #wrap -->
         <nav id="menu" role="navigation" class="basemenu"> 
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_id' => 'nav-page' ) ); ?> <!-- id = menu-item-491 is the 'back' list item -->
         </nav>
-       	<div id="sidebar" class="sidebar visible-desktop">
-        	<?php get_sidebar(); ?>
-     	</div>
 
 	</div> <!-- #main .container -->
 </div>

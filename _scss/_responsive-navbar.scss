@@ -174,24 +174,28 @@
     // z-index: 1000;
     
     position: static;
-    z-index: 1000;
+    left: 0;
+    right: 0;
+    //z-index: 1000;
     // position: relative;
     // left: 0;
     // right: 0;
-    @include transition(left .25s ease-out);
+    @include transition(all .25s ease-out);
     .back-large-screen {
       display: none;
       text-indent: -101em;
     }
   }
-  .css-animations #main {
-    width: 100%;
-  }
+  // .no-cssanimations #main {
+  //   width: 100%;
+  // }
   body:not(:target) #wrap {
     background-color: $grayLight;
   }
-  body:not(:target) .sidebar {
+  body:not(:target) #wrap .sidebar {
     width: 24em;
+    height: 100%;
+    overflow: scroll;
     background-color: $gray;
     padding: 8em 1em 1em;
     @include box-shadow (2px 0px 10px black inset);
@@ -201,7 +205,6 @@
     top: 0;
     left: auto;
     z-index: -1;
-    @include transition(left .25s ease-out);
     .widget-area {
       padding: $fluidGridGutterWidth;
       background-color: $grayLighter;
@@ -217,15 +220,11 @@
     z-index: -1;
     @include transition(left .25s ease-out);
   }
-  #header {
-    width: 100%;
-
-  }
   .cssanimations body:not(:target) #main:target {
     position: absolute;
     right: -12em;
     left: 12em;
-     @include transition(left .25s ease-out);
+     @include transition(all .25s ease-out);
     .menu-link-left,
     .menu-link-right {
       color: $linkColor;
@@ -238,23 +237,24 @@
   .no-cssanimations body:not(:target) #main:target {
     position: absolute;
     left: 12em;
-    .menu-link-left,
-    .menu-link-right {
-      color: $linkColor;
-      text-shadow: none;
-      background-color: $grayDarker;
-      text-decoration: none;
-    }
+    right: 0;
+    // .menu-link-left,
+    // .menu-link-right {
+    //   color: $linkColor;
+    //   text-shadow: none;
+    //   background-color: $grayDarker;
+    //   text-decoration: none;
+    // }
   }
-  html .no-csstransitions #main:target {
-    position: absolute;
-    left: 12em;
-  }
+  // html .no-csstransitions #main:target {
+  //   position: absolute;
+  //   left: 12em;
+  // }
   body:not(:target) #wrap:target {
     position: absolute;
     left: -24em;
     right: 24em;
-    @include transition(left .25s ease-out);
+    @include transition(all .25s ease-out);
     .menu-link-left,
     .menu-link-right {
       color: $linkColor;
@@ -270,12 +270,14 @@
     @include transition(left .25s ease-out);
   }
   body:not(:target) #wrap:target .sidebar {
+    //height: 100%;
+    // overflow: visibile;
     right: -24em;
     @include transition(right .25s ease-out);
-    top: 0;
+    // top: 0;
   }
-  body:not(:target) #main:target,
-  body:not(:target) #wrap:target {
+  .cssanimations body:not(:target) #main:target,
+  .cssanimations body:not(:target) #wrap:target {
     .back-large-screen {
       background-color: rgba(0, 0, 0, .5);
       display: inline;
@@ -293,6 +295,23 @@
         background-color: transparent;
         @include transition(background-color .25s ease-out);
       }
+    }
+  }
+  .no-cssanimations body:not(:target) #main:target,
+  .no-cssanimations body:not(:target) #wrap:target {
+    .back-large-screen {
+      background-color: rgba(0, 0, 0, .5);
+      display: inline;
+      position: absolute;
+      border: 0;
+      height: auto;
+      line-height: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1001;
+      @include transition(background-color .25s ease-out);
     }
   }
 }
