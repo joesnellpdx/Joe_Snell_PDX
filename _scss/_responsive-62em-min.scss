@@ -16,13 +16,9 @@
     background-color: $grayLighter;
     .content,
     .widget-area {
-      max-width: 50em;
+      max-width: 40em;
       margin:$fluidGridGutterWidth auto;
       text-shadow: 0 1px 1px white;
-      article
-      .content-landing {
-        max-width:47em;
-      }
     }
   }
   .site-footer {
@@ -83,10 +79,6 @@
     }
     h2 {
       font-size:2.4em;
-      margin-bottom:.5em;
-    }
-    h3 {
-      font-size:2em;
       margin-bottom:.5em;
     }
   }

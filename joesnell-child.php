@@ -6,7 +6,7 @@ Template Name: joesnell-child
 get_header('child'); ?>
 
 
-		<div id="primary" class="site-content">
+		<section id="primary" class="site-content">
 			<div id="content" role="main" class="content">
 
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -19,7 +19,7 @@ get_header('child'); ?>
 
 			</div><!-- #content -->
 
-		</div><!-- #primary .site-content -->
+		</section><!-- #primary .site-content -->
 
 
 <?php get_footer(); ?>

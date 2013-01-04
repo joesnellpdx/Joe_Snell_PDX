@@ -52,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $headingsFontFamily;
   font-weight: $headingsFontWeight;
   line-height: 1;
-  margin: 0 0 $baseLineHeight / 2;
   color: $headingsColor;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
   small {
@@ -61,12 +60,12 @@ h1, h2, h3, h4, h5, h6 {
     color: $grayLight;
   }
 }
-h1 { font-size: 1.875em; }
-h2 { font-size: 1.875em; }
-h3 { font-size: 1.5em; } 
-h4 { font-size: 1.125em; line-height: 1.6em; }  
-h5 { font-size: 1em;  line-height: 1.4em; }
-h6 { font-size: .875em; line-height: 1.25em; } // 14px/16px = .875em | 20px/16px = 1.25em
+h1 { font-size: 1.875em; margin: 0 0 $baseLineHeight / 2;}
+h2 { font-size: 1.875em; margin: 0 0 $baseLineHeight / 2;}
+h3 { font-family: $sansFontFamily; font-weight: bold; font-size: 1.2em; margin: 0; line-height: 1.5em;} 
+h4 { font-size: 1.125em; line-height: 1.6em; margin: 0; line-height: 1.5em;}  
+h5 { font-size: 1em;  line-height: 1.4em; margin: 0; line-height: 1.5em;}
+h6 { font-size: .875em; line-height: 1.25em; margin: 0; line-height: 1.5em;} // 14px/16px = .875em | 20px/16px = 1.25em
 
 h1 small { font-size: 1.875em; }
 h2 small { font-size: 1.125em; }
@@ -94,7 +93,40 @@ ol ul {
 li {
   line-height: $baseLineHeight;
 }
-.landingbody #content ul {
+// add 
+
+.content ul {
+  list-style-type: none;
+  margin-left: 2em;
+  text-indent: -.8em;
+
+  li {
+    line-height: $baseLineHeight;
+    padding-bottom: .25em;
+    &::before {
+      font-family: FontAwesome;
+      color: $joeorange;
+      font-weight: normal;
+      font-style: normal;
+      display: inline-block;
+      width: .8em;
+      text-decoration: inherit;content: "\f054";
+    }
+  }
+}
+// li {
+//   line-height: $baseLineHeight;
+//   list-style-type: none;
+// }
+// li:before {
+//   font-family: FontAwesome;
+//   font-weight: normal;
+//   font-style: normal;
+//   display: inline-block;
+//   text-decoration: inherit;content: "\f095";
+// }
+.content .list-bubble {
+  text-indent: 0;
   margin: 0 0 $baseLineHeight / 2 0;
   li {
   color:$white;
@@ -104,8 +136,26 @@ li {
   margin-bottom:($baseFontSize * .4);
   display:inline-block;
   @include border-radius($baseFontSize * .4);
+  &:before {
+    content: "";
+    width: 0;
+    }
   }
 }
+
+// end add
+// .landingbody #content ul {
+//   margin: 0 0 $baseLineHeight / 2 0;
+//   li {
+//   color:$white;
+//   text-shadow:none;
+//   background-color:$grayDark;
+//   padding:($baseFontSize * .2) ($baseFontSize * .4);
+//   margin-bottom:($baseFontSize * .4);
+//   display:inline-block;
+//   @include border-radius($baseFontSize * .4);
+//   }
+// }
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;

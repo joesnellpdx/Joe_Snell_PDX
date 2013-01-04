@@ -6,7 +6,7 @@ Template Name: joesnell-portfolio
 get_header(); ?> 
 
 
-		<div id="primary" class="site-content-loop">
+		<section id="primary" class="site-content-loop">
 			<div id="content-loop" role="main" class="content-loop">
 					
 							<?php query_posts('category_name=Portfolio'); ?>
@@ -17,7 +17,7 @@ get_header(); ?>
 
 			</div><!-- #content -->
 
-		</div><!-- #primary .site-content -->
+		</section><!-- #primary .site-content -->
        
 
 

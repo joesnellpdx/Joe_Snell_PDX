@@ -43,6 +43,10 @@
     <script type="text/javascript" src="//use.typekit.net/jrw3qjl.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+    <!--[if lt IE 9]>
+        <script src="http://www.joesnellpdx.com/wp-content/themes/Joe_Snell_PDX/_dist/html5shiv.js"></script>
+    <![endif]-->
+
 </head>
 
 <body data-spy="scroll" <?php body_class('body-base'); ?>>

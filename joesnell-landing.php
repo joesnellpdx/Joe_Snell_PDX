@@ -8,7 +8,7 @@ Template Name: joesnell-landing
 
 ?>
 
-		<div id="primary" class="site-content">
+		<section id="primary" class="site-content">
 			<div id="content" role="main" class="content hidden-small">
 
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -20,7 +20,7 @@ Template Name: joesnell-landing
 				
             </div>
 			
-		</div><!-- #primary .site-content -->
+		</section><!-- #primary .site-content -->
 
 		<?php get_footer('landing'); ?>
         
