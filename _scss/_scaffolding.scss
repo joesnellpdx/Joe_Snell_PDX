@@ -48,6 +48,21 @@ a:hover {
    @include transition(color .5s ease);
 }
 
+a[href$='.pdf'] {
+ &:before {
+    font-family: FontAwesome;
+    font-size: .5em;
+    color: $red;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    margin-left: .25em;
+    width: 1em;
+    text-decoration: inherit;content: "\f0f6";
+    vertical-align: middle;
+  }
+}
+
 
 /* IMAGES */
 /* ------------------------- */
@@ -112,6 +127,10 @@ a:hover {
   overflow: hidden;
   padding: $fluidGridGutterWidth;
   @include navButtonNoHov;
+  h3 {
+    color: $black;
+    text-shadow: 0 1px 1px $gray;
+  }
   .footer-widget-wrap-one,
   .footer-widget-wrap-two {
     .widget-area {

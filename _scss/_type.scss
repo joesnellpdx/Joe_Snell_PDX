@@ -60,8 +60,8 @@ h1, h2, h3, h4, h5, h6 {
     color: $grayLight;
   }
 }
-h1 { font-size: 1.875em; margin: 0 0 $baseLineHeight / 2;}
-h2 { font-size: 1.875em; margin: 0 0 $baseLineHeight / 2;}
+h1 { font-size: 2em; margin: 0 0 $baseLineHeight / 4;}
+h2 { font-size: 2em; margin: 0 0 $baseLineHeight / 4;}
 h3 { font-family: $sansFontFamily; font-weight: bold; font-size: 1.2em; margin: 0; line-height: 1.5em;} 
 h4 { font-size: 1.125em; line-height: 1.6em; margin: 0; line-height: 1.5em;}  
 h5 { font-size: 1em;  line-height: 1.4em; margin: 0; line-height: 1.5em;}
@@ -103,14 +103,15 @@ li {
   li {
     line-height: $baseLineHeight;
     padding-bottom: .25em;
-    &::before {
+    &:before {
       font-family: FontAwesome;
       color: $joeorange;
       font-weight: normal;
       font-style: normal;
       display: inline-block;
       width: .8em;
-      text-decoration: inherit;content: "\f054";
+      text-decoration: inherit;
+      content: "\f054";
     }
   }
 }
@@ -314,7 +315,7 @@ abbr.initialism {
 blockquote {
   padding: 0 0 0 .937em;
   margin: 0 0 $baseLineHeight;
-  border-left: 5px solid lighten($joeorange, 25%);
+  //border-left: 5px solid lighten($joeorange, 25%);
   p,
   li,
   ol {
@@ -322,6 +323,10 @@ blockquote {
     @include font-shorthand(.9em,300,$baseLineHeight * .9);
     font-style:italic;
     color:$gray;
+  }
+  p {
+    display: inline;
+    margin: .8em;
   }
   small {
     display: block;
@@ -356,10 +361,40 @@ blockquote {
 
 // Quotes
 q:before,
-q:after,
 blockquote:before,
+q:after,
 blockquote:after {
-  content: "";
+  font-family: FontAwesome;
+  color: $joeorange;
+  text-shadow: 0 1px 1px $white;
+  font-weight: normal;
+  font-style: normal;
+  display: inline;
+  width: .8em;
+  text-decoration: inherit;
+}
+q:before,
+blockquote:before {
+  content: "\f10d";
+}
+q:after,
+blockquote:after {
+  content: "\f10e";
+}
+.icons-responsive {
+  text-align: center;
+  margin: 2em 0;
+  i {
+    color: $grayLight;
+    display: inline;
+    vertical-align: middle;
+    &:nth-child(2n+1) {
+      font-size: 3em;
+      color: $joeorange;
+      text-shadow: 0 1px 1px $white;
+      padding: .25em;
+    }
+  }
 }
 
 // Addresses
