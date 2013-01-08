@@ -46,10 +46,8 @@
 
 			
 
-	       	<div id="sidebar" class="sidebar visible-desktop">
-	        	<div class="loading-div">
-					<a href="load #secondary"><i class="icon-refresh icon-spin"></i>Synchronizing Content...</a>
-				</div>
+	       	<div id="sidebar-ajax" class="sidebar visible-desktop">
+	        	<?php get_sidebar(); ?>
 	     	</div>
 		</div> <!-- #wrap -->
         <nav id="menu" role="navigation" class="basemenu"> 

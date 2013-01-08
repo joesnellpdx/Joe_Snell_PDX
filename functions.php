@@ -160,7 +160,7 @@ function Joe_Snell_PDX_scripts() {
 
 		wp_enqueue_script( 'application-js', get_template_directory_uri() . '/_js/application-ck.js', array( 'jquery' ), '20121218', true  );
 
-			
+		// wp_enqueue_script( 'ajaxinclude-ck.js', get_template_directory_uri() . '/_js/ajaxInclude-ck.js', array( 'jquery' ), '20121218', true  );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -170,7 +170,9 @@ function Joe_Snell_PDX_scripts() {
 		wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'Joe_Snell_PDX_scripts' );
+
 
 /**
  * Implement the Custom Header feature

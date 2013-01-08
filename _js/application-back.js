@@ -31,6 +31,19 @@ $menulinkright.click(function() {
   return false;
 });
 
+// $(function() {
+//       $('#loading-indicator')
+//         .hide()  // hide it initially.
+//         .ajaxStart(function() {
+//           $(this).show(); // show on any Ajax event.
+//         })
+//         .ajaxStop(function() {
+//           $(this).hide(); // hide it when it is done.
+//       });
+//     });
+
+
+
 // if (document.documentElement.clientWidth > 980) {
 
 // 	  $('#main a.menu-link').click(function(){

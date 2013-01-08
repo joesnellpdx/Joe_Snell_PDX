@@ -12,6 +12,17 @@ body {
   line-height: $baseLineHeight;
   color: $textColor;
 }
+.loading-div {
+  width: 100%;
+  margin: 8em auto;
+  text-align: center;
+  a [class^="icon-"], a [class*=" icon-"] {
+    font-size: 2em;
+    color: $textColor;
+    display: block;
+    margin: .5em;
+  }
+}
 
 
 /* LINKS */
@@ -24,12 +35,6 @@ a {
 a:hover {
   color: $linkColorHover;
   text-decoration: underline;
-}
-.landingbody .content a {
-  text-shadow:none;
-  background-color:$grayDark;
-  padding:($baseFontSize * .2) ($baseFontSize * .4);
-  @include border-radius($baseFontSize * .4);
 }
 
 .quick-links {
