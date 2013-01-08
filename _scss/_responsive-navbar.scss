@@ -157,9 +157,11 @@
     left: auto;
     right: .875em;
   }
-  .icon-twitter::before,
-  .icon-reorder::before {
-      margin-right: .5em;
+  header {
+    .icon-twitter::before,
+    .icon-reorder::before {
+        margin-right: .5em;
+    }
   }
 
   body {
