@@ -72,6 +72,21 @@ h2 small { font-size: 1.125em; }
 h3 small { font-size: 1em; }
 h4 small { font-size: 1em; }
 
+// WP post nav / social headers
+
+.entry-meta,
+.post-navigation,
+#resond h3,
+.sd-title {
+  font-size:($baseFontSize *.8);
+  margin: ($baseLineHeight * .5) 0;
+  font-style:italic;
+  color:lighten($textColor, 10%);
+  a {
+    color:darken($linkColor,10%);
+  }
+}
+
 // Page header
 // -------------------------
 
@@ -144,6 +159,13 @@ li {
   }
 }
 
+.content .tools {
+  li {
+    margin-right: .25em;
+    font-style: normal;
+  }
+}
+
 // end add
 // .landingbody #content ul {
 //   margin: 0 0 $baseLineHeight / 2 0;
@@ -213,16 +235,21 @@ ul.chirp li {
   font-family:$sansFontFamily;
 }
 ul.content-link-list li {
-@include navButton;
-position: relative;
-list-style: none;
-border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-width: 100%;
-display: inline-block;
-font-size: .8em;
-line-height: $baseLineHeight;
-text-align:left;
-vertical-align: middle;
+  @include navButton;
+  position: relative;
+  list-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  width: 100%;
+  font-size: .8em;
+  line-height: $baseLineHeight;
+  text-align:left;
+  vertical-align: middle;
+  &:before {
+    font-family: inherit;
+    display: inline;
+    width: auto;
+    content: "";
+  }
 }
 
 ul.content-link-list li.special-link {
@@ -273,6 +300,7 @@ ul.content-link-list a {
 	display: block;
 	padding: 1.25em 1.25em 1.25em 1.25em;
 	height: 100%;
+  text-indent: 0;
 }
 ul.content-link-list li.special-link a {
 	color: white;
@@ -389,10 +417,10 @@ blockquote:after {
     display: inline;
     vertical-align: middle;
     &:nth-child(2n+1) {
-      font-size: 3em;
+      font-size: 2.8em;
       color: $joeorange;
       text-shadow: 0 1px 1px $white;
-      padding: .25em;
+      padding: .15em;
     }
   }
 }

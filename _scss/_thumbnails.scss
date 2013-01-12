@@ -84,6 +84,10 @@ a.thumbnail:hover {
 #content-loop img:hover {
   //@include filter(opacity(100%));
 }
+
+.entry-content img {
+  @include box-shadow(2px 2px 5px $grayLight);
+}
 // Wordpress Core Images
 
 /* =WordPress Core
@@ -134,8 +138,8 @@ a img.aligncenter {
 }
 
 .wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
+    background: none;
+    border: 1px solid transparent;
     max-width: 96%; /* Image does not overflow the content area */
     padding: 5px 3px 10px;
     text-align: center;
@@ -160,14 +164,31 @@ a img.aligncenter {
     max-width: 98.5%;
     padding: 0;
     width: auto;
+    //@include box-shadow(2px 2px 5px $grayLight);
 }
 
 .wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
+    font-size: .8em;
+    line-height: 1.5em;
     margin: 0;
     padding: 0 4px 5px;
 }
+
+// Gallery Images
+
+#gallery-1 {
+  .gallery-icon {
+    img {
+      width: 80%;
+      margin: 0;
+      border: none;
+    }
+  }
+  .gallery-caption {
+    font-size: .8em;
+  }
+}
+
 
 
 

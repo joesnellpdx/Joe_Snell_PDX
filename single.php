@@ -23,7 +23,15 @@ get_header('child'); // use default header.php
 			<?php while ( have_posts() ) : the_post(); ?>
 
 
-				<?php get_template_part( 'content', 'single' ); ?>
+				<?php 
+					if ( in_category(portfolio) ) {
+
+						get_template_part( 'content', 'singleportfolio' );
+
+					} else  {
+						get_template_part( 'content', 'single' );
+					} 
+					?>
 
 				<?php Joe_Snell_PDX_content_nav( 'nav-below' ); ?>
 

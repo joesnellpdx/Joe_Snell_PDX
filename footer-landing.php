@@ -23,8 +23,6 @@
 							<a href="load #secondary"><i class="icon-refresh icon-spin"></i>Synchronizing Content...</a>
 					</div>
 		     	</div>
-		     	<div id="testing-div">
-	    		</div>
 			</div> <!-- #wrap -->
 			<nav id="menu" role="navigation" class="landingmenu"> 
 				<?php wp_nav_menu( array( 'theme_location' => 'landing', 'container' => '', 'menu_id' => 'nav-home' ) ); ?> <!-- id = menu-item-491 is the 'back' list item -->

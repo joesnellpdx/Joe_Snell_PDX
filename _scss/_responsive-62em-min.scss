@@ -59,6 +59,15 @@
       width: 31%;
     }
   }
+  .some-loop {
+    margin: 0 11%;
+    article {
+      width: 31%;
+    }
+  }
+  .btn-some {
+    margin: 0 13%;
+  }
 
 
 
@@ -83,6 +92,15 @@
     h2 {
       font-size:2.4em;
       margin-bottom:.5em;
+    }
+  }
+  .icons-responsive {
+    i {
+      font-size: 1.5em;
+      &:nth-child(2n+1) {
+        font-size: 4em;
+        padding: .15em;
+      }
     }
   }
 

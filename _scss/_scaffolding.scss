@@ -6,6 +6,9 @@
 /* Body reset */
 /* ------------------------- */
 
+html {
+  min-height: 100%;
+}
 body {
   font-family: $baseFontFamily;
   font-size: $baseFontSize;
@@ -114,16 +117,6 @@ a[href$='.pdf'] {
   @include box-sizing(border-box);
   .content{
     padding:$gridGutterWidth;
-    .entry-meta,
-    .post-navigation {
-      font-size:($baseFontSize *.8);
-      margin: ($baseLineHeight * .5) 0;
-      font-style:italic;
-      color:lighten($textColor, 10%);
-      a {
-        color:darken($linkColor,10%);
-      }
-    }
   }
 }
 

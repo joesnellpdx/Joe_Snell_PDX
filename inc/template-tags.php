@@ -23,7 +23,7 @@ function Joe_Snell_PDX_content_nav( $nav_id ) {
 
 	?>
 	<nav role="navigation" id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
-		<h3 class="assistive-text"><?php _e( 'Post Navigation', 'Joe_Snell_PDX' ); ?></h3>
+		<h3 class="assistive-text"><?php _e( 'Other Posts', 'Joe_Snell_PDX' ); ?></h3>
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
