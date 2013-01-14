@@ -70,6 +70,31 @@ a[href$='.pdf'] {
     vertical-align: middle;
   }
 }
+.work-link {
+  color:$white;
+  text-shadow:none;
+  background-color:$blue;
+  padding:($baseFontSize * .2) ($baseFontSize * .4);
+  margin-bottom:($baseFontSize * .4);
+  display:inline-block;
+  @include border-radius($baseFontSize * .4);
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    background-color:darken($blue,10%);
+  }
+}
+.work-link-altered {
+  text-decoration: line-through;
+  background-color:$green;
+  &:hover {
+    text-decoration: line-through;
+    background-color:darken($green,10%);
+  }
+}
+.previous-image {
+  margin-right: 1em;
+}
 
 
 /* IMAGES */

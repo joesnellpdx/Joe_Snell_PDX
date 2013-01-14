@@ -6,7 +6,7 @@
  * @since Joe_Snell_PDX 1.0
  */
 
-get_header();
+get_header('image');
 ?>
 
 		<div id="primary" class="site-content image-attachment">
@@ -35,8 +35,8 @@ get_header();
 						</div><!-- .entry-meta -->
 
 						<nav id="image-navigation">
-							<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous', 'Joe_Snell_PDX' ) ); ?></span>
-							<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;', 'Joe_Snell_PDX' ) ); ?></span>
+							<span class="previous-image"><?php previous_image_link( false, __( '<i class="icon-arrow-left"></i> Previous', 'Joe_Snell_PDX' ) ); ?></span>
+							<span class="next-image"><?php next_image_link( false, __( 'Next <i class="icon-arrow-right"></i>', 'Joe_Snell_PDX' ) ); ?></span>
 						</nav><!-- #image-navigation -->
 					</header><!-- .entry-header -->
 
