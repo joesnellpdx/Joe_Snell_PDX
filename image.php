@@ -34,16 +34,16 @@ get_header('image');
 							<?php edit_post_link( __( 'Edit', 'Joe_Snell_PDX' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
 						</div><!-- .entry-meta -->
 
-						<nav id="image-navigation">
-							<span class="previous-image"><?php previous_image_link( false, __( '<i class="icon-arrow-left"></i> Previous', 'Joe_Snell_PDX' ) ); ?></span>
-							<span class="next-image"><?php next_image_link( false, __( 'Next <i class="icon-arrow-right"></i>', 'Joe_Snell_PDX' ) ); ?></span>
-						</nav><!-- #image-navigation -->
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
 
 						<div class="entry-attachment">
 							<div class="attachment">
+								<nav id="image-navigation">
+									<span class="previous-image"><?php previous_image_link( false, __( '<i class="icon-arrow-left"></i> Previous', 'Joe_Snell_PDX' ) ); ?></span>
+									<span class="next-image"><?php next_image_link( false, __( 'Next <i class="icon-arrow-right"></i>', 'Joe_Snell_PDX' ) ); ?></span>
+								</nav><!-- #image-navigation -->
 								<?php
 									/**
 									 * Grab the IDs of all the image attachments in a gallery so we can get the URL of the next adjacent image in a gallery,

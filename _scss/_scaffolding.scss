@@ -26,7 +26,14 @@ body {
     margin: .5em;
   }
 }
-
+.attachment {
+  article {
+    text-align: center;
+    footer {
+      text-align: left;
+    }
+  }
+}
 
 /* LINKS */
 /* ------------------------- */

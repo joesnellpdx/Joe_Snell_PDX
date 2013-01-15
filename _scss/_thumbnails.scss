@@ -178,6 +178,8 @@ a img.aligncenter {
 
 #gallery-1 {
   .gallery-icon {
+    max-height: 250px;
+    overflow: hidden;
     img {
       width: 80%;
       margin: 0;
