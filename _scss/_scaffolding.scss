@@ -73,7 +73,8 @@ a[href$='.pdf'] {
     display: inline-block;
     margin-left: .25em;
     width: 1em;
-    text-decoration: inherit;content: "\f0f6";
+    text-decoration: inherit;
+    content: "\f0f6";
     vertical-align: middle;
   }
 }
@@ -101,6 +102,23 @@ a[href$='.pdf'] {
 }
 .previous-image {
   margin-right: 1em;
+}
+.entry-content {
+  a[href*="github"] {
+    &:before {
+      color: $textColor;
+      font-family: FontAwesome;
+      content: "\f09b";
+      margin-left: .25em;
+    }
+  }
+  .icon-link-container {
+  a[href*="github"]::before {
+    color: $white;
+    margin-left: 0px;
+    margin-right: .25em;
+  }
+}
 }
 
 

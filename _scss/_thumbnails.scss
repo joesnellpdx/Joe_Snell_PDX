@@ -87,6 +87,7 @@ a.thumbnail:hover {
 
 .entry-content img {
   @include box-shadow(2px 2px 5px $grayLight);
+  margin-bottom: 1em;
 }
 // Wordpress Core Images
 
@@ -103,13 +104,13 @@ div.aligncenter {
 }
 
 .alignright {
-    float:right;
-    margin: 5px 0 20px 20px;
+    display: block;
+    margin: 5px auto 5px auto;
 }
 
 .alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
+    display: block;
+    margin: 5px auto 5px auto;
 }
 
 .aligncenter {
@@ -118,8 +119,9 @@ div.aligncenter {
 }
 
 a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 a img.alignnone {
@@ -127,8 +129,9 @@ a img.alignnone {
 }
 
 a img.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 a img.aligncenter {
