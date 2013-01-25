@@ -59,7 +59,10 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-        <div id="main" class="main">
+    <div id="main" class="main">
+        <nav id="menu" role="navigation" class="basemenu"> 
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_id' => 'nav-page' ) ); ?> <!-- id = menu-item-491 is the 'back' list item -->
+        </nav>
         <div id="wrap" class="wrap">
             <header>
                 <div id="header" class="header-main header-main-page">

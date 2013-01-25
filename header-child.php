@@ -63,7 +63,10 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-        <div id="main" class="main">
+    <div id="main" class="main">
+        <nav id="menu" role="navigation" class="basemenu"> 
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_id' => 'nav-page' ) ); ?> <!-- id = menu-item-491 is the 'back' list item -->
+        </nav>
         <div id="wrap" class="wrap">
             <header>
               <div id="header" class="header-main header-main-page">
@@ -73,7 +76,7 @@
                     <a id="jump-back" href="#header" class="back-large-screen visible-desktop">JUMP BACK</a>
                     <hgroup class="header-content">
                 			<div class="logo-container logo-head-base">
-                        <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                             <img class="logo" src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
                       </div> <!-- .logo-head -->
                       <div class="title-group">

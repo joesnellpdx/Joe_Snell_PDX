@@ -9,12 +9,12 @@
  
  
 $post = $wp_query->post;
-if ( in_category(portfolio) ) {
-get_header('childportfolio'); // use header-videos.php
+		if ( in_category(portfolio) ) {
+		get_header('childportfolio'); // use header-videos.php
 
-} else {
-get_header('child'); // use default header.php
-}
+		} else {
+		get_header('child'); // use default header.php
+		}
  ?>
 
 		<div id="primary" class="site-content">

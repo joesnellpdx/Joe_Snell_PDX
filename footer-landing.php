@@ -19,48 +19,47 @@
 
 		    	<div id="sidebar" class="sidebar visible-desktop">
 		    	
-		        	<div class="loading-div">
+		        	<div class="loading-div hidden-small">
 							<a href="load #secondary"><i class="icon-refresh icon-spin"></i>Synchronizing Content...</a>
 					</div>
 		     	</div>
 			</div> <!-- #wrap -->
-			<nav id="menu" role="navigation" class="landingmenu"> 
-				<?php wp_nav_menu( array( 'theme_location' => 'landing', 'container' => '', 'menu_id' => 'nav-home' ) ); ?> <!-- id = menu-item-491 is the 'back' list item -->
-	    	</nav>
+
 
 
 		</div> <!-- #main .container -->
 	</div>
 
 <?php wp_footer(); ?>
+
 <script>
-jQuery(document).ready(function($) {
-	if (matchMedia('only screen and (min-width: 41.26em)').matches) {
+	jQuery(document).ready(function($) {
+		if (matchMedia('only screen and (min-width: 41.26em)').matches) {
 
-		  $('#content article').load('about #content article', function () {
-		  		$( this ).hide().fadeIn('slow');
-		  });
+			  $('#content article').load('about #content article', function () {
+			  		$( this ).hide().fadeIn('slow');
+			  });
 
-	}
-
-	$(window).resize(function(){
-		if ($('#content .loading-div').length) 
-
-			{
-
-				if (matchMedia('only screen and (min-width: 41.26em)').matches) 
-					{
-
-					$('#content article').load('about #content article',
-						function () {
-							$( this ).hide().fadeIn('slow');
-						});
-
-				}
 		}
-	});
 
-});
+		$(window).resize(function(){
+			if ($('#content .loading-div').length) 
+
+				{
+
+					if (matchMedia('only screen and (min-width: 41.26em)').matches) 
+						{
+
+						$('#content article').load('about #content article',
+							function () {
+								$( this ).hide().fadeIn('slow');
+							});
+
+					}
+			}
+		});
+
+	});
 </script>
 
 
