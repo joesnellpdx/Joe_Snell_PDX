@@ -17,7 +17,7 @@ get_header(); ?>
 
 		<section id="primary" class="site-content-loop">
 			
-			<div id="content" role="main" class="content-loop">
+			<div id="content-loop" role="main" class="content-loop">
 
 				<?php if ( have_posts() ) : ?>
                 
