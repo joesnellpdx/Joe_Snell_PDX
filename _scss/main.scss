@@ -33,7 +33,7 @@ and Blueprint http://www.blueprintcss.org/
  * LAYOUTS.............
  *
  * TYPE................
- * CODE................
+ * PRISM............... Syntax / Code Highlighting
  * FORMS...............
  * TABLES..............
  *
@@ -70,7 +70,7 @@ and Blueprint http://www.blueprintcss.org/
 
 // Base CSS
 @import "type"; 
-@import "code";
+@import "prism";
 @import "forms";
 @import "tables";
 
