@@ -29,7 +29,7 @@
 // Initial styles found under scaffolding.scss
 
 // Tablets & small desktops only
-@media (min-width: 41.26em) and (max-width: 61.99em) {
+@media screen and (min-width: 41.26em) and (max-width: 61.99em) {
   .hidden-large {
     position:absolute;
     z-index:-1000;
@@ -42,7 +42,7 @@
 
 
 // Phones only
-@media (min-width: 62em) {
+@media screen and (min-width: 62em) {
     #main .hidden-large {
     position:absolute;
     z-indez:-1000;

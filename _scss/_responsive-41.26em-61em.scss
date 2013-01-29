@@ -3,7 +3,7 @@
    ========================================================================== */
 
 
-@media (min-width: 41.26em) and (max-width: 61.99em) { // 768px/16px = 48em - 979px/16px = 61em
+@media screen and (min-width: 41.26em) and (max-width: 61.99em) { // 768px/16px = 48em - 979px/16px = 61em
 
   // Fixed grid
   // @include grid-core($gridColumnWidth768, $gridGutterWidth768);

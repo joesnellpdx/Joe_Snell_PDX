@@ -3,7 +3,7 @@
    ========================================================================== */
 
 
-@media (max-width: 41.25em) {
+@media screen and (max-width: 41.25em) {
   //
   // Responsive: scaffolding
   // --------------------------------------------------
@@ -114,7 +114,7 @@
 // UP TO LANDSCAPE PHONE
 // ---------------------
 
-@media (max-width: 30em) {
+@media screen and (max-width: 30em) {
 
   // Smooth out the collapsing/expanding nav
 

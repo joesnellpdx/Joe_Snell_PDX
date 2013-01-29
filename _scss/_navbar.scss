@@ -261,3 +261,40 @@ body:not(:target) #nav-page:target {
     @include transition(background-color .5s ease-out);
   }
 }
+.lt-ie9 {
+  body:not(:target) #nav-page {
+    li {
+      height: auto;
+    }
+      .icon-user::before,
+    .icon-pencil::before,
+    .icon-briefcase::before,
+    .icon-comment::before {
+      display: block;
+      font-size: 1.5em;
+      color:darken(#B3B3B3, 50%);
+      text-shadow:1px 1px $gray, -1px -1px $black;
+    }
+    a {
+      clear: left;
+      font-size: .8em;
+      line-height: 1.6em;
+      padding-top: 1em;
+      height: 4em;
+      position: relative;
+      border-right: solid 1px $gray;
+      border-left:solid 1px $grayDark;
+      z-index: 1;
+      @include transition(height .25s);
+    }
+    .back {
+      display: none;
+    }
+  }
+  .body-base {
+    .site-content,
+    .site-content-loop {
+      padding-top: 4em;
+    }
+  }
+}
