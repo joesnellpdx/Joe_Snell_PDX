@@ -2,7 +2,12 @@
 // FOR JOESNELL THEME
 // ++++++++++++++++++++++++++++++++++++++++++
 
-// @codekit-append "prism.js"
+//@codekit-prepend "hide-address-bar.js"
+// @codekit-prepend "matchMedia.js"
+// @codekit-prepend "matchMedia.addListener.js"
+// @codekit-prepend "ajaxInclude.js"
+// @codekit-append "prism.js" hide-address-bar.js
+// @codekit-append "hide-address-bar.js"
 
 (function ($) {
 
