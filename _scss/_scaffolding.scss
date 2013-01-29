@@ -82,7 +82,7 @@ a[href$='.pdf'] {
   color:$white;
   text-shadow:none;
   background-color:$blue;
-  padding:($baseFontSize * .2) ($baseFontSize * .4);
+  padding:($baseFontSize * .25) ($baseFontSize * .5);
   margin-bottom:($baseFontSize * .4);
   display:inline-block;
   @include border-radius($baseFontSize * .4);
@@ -103,23 +103,23 @@ a[href$='.pdf'] {
 .previous-image {
   margin-right: 1em;
 }
-.entry-content {
-  a[href*="github"] {
-    &:before {
-      color: $textColor;
-      font-family: FontAwesome;
-      content: "\f09b";
-      margin: 0 .25em;
-    }
-  }
-  .icon-link-container {
-  a[href*="github"]::before {
-    color: $white;
-    margin-left: 0px;
-    margin-right: .25em;
-  }
-}
-}
+// .entry-content {
+//   a[href*="github"] {
+//     &:before {
+//       color: $textColor;
+//       font-family: FontAwesome;
+//       content: "\f09b";
+//       margin: 0 .25em;
+//     }
+//   }
+//   .icon-link-container {
+//     a[href*="github"]::before {
+//       color: $white;
+//       margin-left: 0px;
+//       margin-right: .25em;
+//     }
+//   }
+// }
 
 
 /* IMAGES */

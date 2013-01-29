@@ -53,15 +53,16 @@
   //     margin:0px;
   //   }
   // }
-  .content-loop {
-    margin: 0 11%;
-    a {
-      width: 31%;
-    }
-  }
+  .content-loop,
   .some-loop {
     margin: 0 11%;
-    article {
+    h2 {
+      font-size: 1.8em;
+    }
+    p {
+      font-size: .9em;
+    }
+    a {
       width: 31%;
     }
   }
