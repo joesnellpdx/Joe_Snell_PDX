@@ -101,10 +101,15 @@
     margin: 0;
     &.fade.in { top: auto; }
   }
-
+  @media screen and (min-height: 32.31em) {
+    .footer-landing {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
 }
-
-
 
 // UP TO LANDSCAPE PHONE
 // ---------------------
