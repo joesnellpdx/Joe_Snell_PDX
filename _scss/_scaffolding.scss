@@ -267,3 +267,17 @@ a[href$='.pdf'] {
       @include box-shadow(none);
     }
   }
+
+  // HIRE ME 
+
+.home-call-out {
+  @include homeCallOutBase;
+  width: 33%;
+  float: right;
+  margin: 0 0 1em 1em;
+  @include box-sizing(border-box);
+}
+
+  // call out btn in buttons.scss
+  // 
+  

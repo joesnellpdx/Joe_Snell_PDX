@@ -33,8 +33,6 @@
 
 @import "variables"; // Modify this for custom colors, font-sizes, etc
 @import "mixins";
-@import "compass/css3";
-$expermintal-support-for-svg: true;
 
 
 // RESPONSIVE CLASSES
@@ -46,16 +44,16 @@ $expermintal-support-for-svg: true;
 // MEDIA QUERIES
 // ------------------
 
-// Phones to portrait tablets and narrow desktops
+
 @import "responsive-41.25em-max";
 
-// Tablets to regular desktops
+
 @import "responsive-41.26em-61em";
 
-// Regular desktops 
+
 @import "responsive-62em-min";
 
-// Large desktops
+
 @import "responsive-75em-min";
 
 

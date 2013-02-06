@@ -237,7 +237,7 @@ body:not(:target) #nav-page:target {
 
 .menu-link-left,
 .menu-link-right {
-  font-size: .8em;
+  font-size: 1em;
   font-weight: bold;
   font-family:$sansFontFamily;
   color: $grayDarker;
@@ -245,12 +245,12 @@ body:not(:target) #nav-page:target {
   text-shadow: 0 1px 1px $white;
   text-align: center;
   margin: 0;
-  padding: .2em .8em;
+  padding: 1em .8em;
   @include border-radius(.5em);
   @include box-shadow(white 0 1px 0, rgba(0, 0, 0, 0.5) 0 1px 3px 0px inset);
   background: $white;
   background-color: rgba(0, 0, 0, 0.04);
-  top: 11em;
+  top: 9em;
   @include box-sizing(border-box);
   @include transition(background-color .5s ease-out);
   &:hover {

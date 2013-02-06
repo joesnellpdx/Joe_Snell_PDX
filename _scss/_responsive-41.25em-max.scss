@@ -7,6 +7,22 @@
   //
   // Responsive: scaffolding
   // --------------------------------------------------
+  .home-call-out {
+    width: 33%;
+    min-width: 10em;
+    padding-bottom: 1em;
+  }
+  .home-call-out-bg {
+    margin: 1em;
+    padding-top: 10em;
+    background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2012/09/joeheadshot.png');
+    background-size: cover;
+    moz-background-size: cover;  /* Firefox 3.6 */
+    background-position: center;  /* Internet Explorer 7/8 */
+  }
+  .home-call-out-btn {
+    font-size: 2em;
+  }
 
   //
   // Responsive: grid
@@ -42,7 +58,7 @@
 
   // TYPOGRAPHY
   // ----------
-
+ 
 
   // GRID & CONTAINERS
   // -----------------
@@ -116,6 +132,30 @@
 
 @media screen and (max-width: 30em) {
 
+  .home-call-out {
+    width: 33%;
+    min-width: 33%;
+    padding-bottom: .5em;
+  }
+
+  .home-call-out-bg {
+    margin: .5em;
+    padding-top: 7em;
+    @include respond-to(small, false) {
+      background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2013/02/joe-headshot-mobile-first.png');
+    }
+    @include respond-to(smal, true) {
+      background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2013/01/ToggleNavNoJSFeatured.png');
+    }
+    background-size: cover;
+    moz-background-size: cover;  /* Firefox 3.6 */
+    background-position: center;  /* Internet Explorer 7/8 */
+  }
+  .home-call-out-btn {
+    font-size: 1em;
+    width: 88%;
+  }
+
   // Smooth out the collapsing/expanding nav
 
   // Block level the page header small tag for readability
@@ -142,5 +182,6 @@
   .carousel-caption {
     position: static;
   }
+
 
 }

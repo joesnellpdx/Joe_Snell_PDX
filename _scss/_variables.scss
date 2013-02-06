@@ -84,6 +84,9 @@ $btnBorder:                         #bbb !default;
 $btnPrimaryBackground:              $blue !default;
 $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
 
+$btnHomeCallOutBackground:              $blue !default;
+$btnHomeCallOutBackgroundHighlight:     adjust-hue($btnHomeCallOutBackground, 20%) !default;
+
 $btnInfoBackground:                 #5bc0de !default;
 $btnInfoBackgroundHighlight:        #2f96b4 !default;
 

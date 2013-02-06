@@ -44,9 +44,9 @@
     }
   }
 
-.btn-some {
-  margin-left: 26%;
-}
+  .btn-some {
+    margin-left: 26%;
+  }
   .footer-landing {
     margin: 0;
   }
@@ -67,6 +67,19 @@
         flex-flow: column;
       }
     }
+  }
+  .home-call-out {
+    width: 33%;
+    min-width: 10em;
+    padding-bottom: 1em;
+  }
+  .home-call-out-bg {
+    margin: 1em;
+    padding-top: 10em;
+    background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2012/09/joeheadshot.png');
+    background-size: cover;
+    moz-background-size: cover;  /* Firefox 3.6 */
+    background-position: center;  /* Internet Explorer 7/8 */
   }
 
 
