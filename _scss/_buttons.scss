@@ -68,14 +68,12 @@
 }
 
 .home-call-out-btn {
-  font-size: 2em;
   font-family: $sansFontFamily;
   display: inline-block;
   @include ie7-inline-block();
   padding: 0; 
   text-align: center;
   vertical-align: middle;
-  width: 82%;
   cursor: pointer;
   //@include buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75));
   border: 1px solid $btnBorder;
@@ -93,24 +91,22 @@
     text-shadow: 0px 2px 3px $blue;
     width:30%;
     float: left;
-    height: 3.4em;
+    padding: 1.2em 0;
     border-right: 1px solid $blue;
     @include box-sizing (border-box);
-    position: absolute;
-    left: 0;
-    top: 0;
   }
   .icon-thumbs-up {
     padding-left: .12em;
+    padding-top: 1.2em;
     position: absolute;
-    top: -1.2em;
+    top: -2.4em;
     left: 0em;
     @include transition(all .25s ease-out);
   }
   .icon-star { 
     padding-left: .12em;
     position: absolute;
-    top: .9em;
+    top: -.2em;
     left: 0em;
     @include transition(all .25s ease-out);
   }
@@ -149,7 +145,7 @@
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
     }
     .icon-thumbs-up {
-      top: .9em;
+      top: -.2em;
       @include transition(all .25s ease-in);
     }
     .icon-star {

@@ -269,13 +269,36 @@ a[href$='.pdf'] {
   }
 
   // HIRE ME 
-
-.home-call-out {
-  @include homeCallOutBase;
-  width: 33%;
-  float: right;
-  margin: 0 0 1em 1em;
-  @include box-sizing(border-box);
+.entry-content {
+  .home-call-out {
+    @include homeCallOutBase;
+    width: 33%;
+    float: right;
+    padding-bottom: .6em;
+    margin: 0 0 .5em .5em;
+    @include box-sizing(border-box);
+    img {
+      margin: 0;
+      @include box-shadow(none);
+    }
+  }
+  // .home-call-out {
+  //   width: 33%;
+  //   min-width: 10em;
+  //   padding-bottom: 1em;
+  // }
+  .home-call-out-bg {
+    margin: .5em;
+    // padding-top: 10em;
+    // background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2012/09/joeheadshot.png');
+    // background-size: cover;
+    // moz-background-size: cover;  /* Firefox 3.6 */
+    // background-position: center;  /* Internet Explorer 7/8 */
+  }
+  .home-call-out-btn {
+    font-size: 1em;
+    width: 88%;
+  }
 }
 
   // call out btn in buttons.scss

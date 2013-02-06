@@ -5,6 +5,7 @@
 //@codekit-prepend "hide-address-bar.js"
 // @codekit-prepend "matchMedia.js"
 // @codekit-prepend "matchMedia.addListener.js"
+// @codekit-prepend "picturefill.js"
 // @codekit-prepend "ajaxInclude.js"
 // @codekit-prepend "chirp.js"
 // @codekit-append "prism.js" hide-address-bar.js
