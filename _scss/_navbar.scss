@@ -24,7 +24,13 @@
     .logo {
       float: right;
       margin: 0;
+      background: url("http://www.joesnellpdx.com/wp-content/themes/Joe_Snell_PDX/_img/joesnell2.svg") no-repeat;
+      @include background-size();
     }
+    // .logo.svg {
+    //   background: url("http://www.joesnellpdx.com/wp-content/themes/Joe_Snell_PDX/_img/joesnell.png");
+    //   background-color: transparent;
+    // }
   }
   .title,
   .title-secondary {

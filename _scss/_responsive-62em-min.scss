@@ -78,6 +78,7 @@
       padding-bottom: .6em;
     }
     .home-call-out-bg {
+      min-height: 4.6em;
       // margin: 1em;
       // padding-top: 10em;
       // background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2012/09/joeheadshot.png');
@@ -116,6 +117,7 @@
     }
   }
   .icons-responsive {
+    margin: 2em;
     i {
       font-size: 1.5em;
       &:nth-child(2n+1) {

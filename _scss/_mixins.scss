@@ -9,6 +9,7 @@
 // Clearfix
 // --------
 // For clearing floats like a boss h5bp.com/q
+// 
  
 @mixin clearfix {
   *zoom: 1;
@@ -865,62 +866,9 @@
   width: (($gridColumnWidth) * $columns) + ($gridGutterWidth * ($columns - 1)) - 14;
 }
 
-// 
-// RETINA MIXIN
-// 
- @mixin respond-to($media, $retina: true) {
-
-    // Settings
-    $small  : 30em;
-    $medium : 41.25em;
-    $large  : 62em;
-
-    @if $media == 'small' {
-        @if $retina == true {
-            @media
-            only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: #{$small}),
-            only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: #{$small}),
-            only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: #{$small}),
-            only screen and (        min-device-pixel-ratio: 2)      and (min-width: #{$small}),
-            only screen and (                min-resolution: 192dpi) and (min-width: #{$small}),
-            only screen and (                min-resolution: 2dppx)  and (min-width: #{$small}) { @content }
-        } @else {
-            @media only screen and (min-width: #{$small}) { @content }
-        }
-    } @else if $media == 'medium' {
-        @if $retina == true {
-            @media
-            only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: #{$medium}),
-            only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: #{$medium}),
-            only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: #{$medium}),
-            only screen and (        min-device-pixel-ratio: 2)      and (min-width: #{$medium}),
-            only screen and (                min-resolution: 192dpi) and (min-width: #{$medium}),
-            only screen and (                min-resolution: 2dppx)  and (min-width: #{$medium}) { @content }
-        } @else {
-            @media only screen and (min-width: #{$medium}) { @content }
-        }
-    } @else if $media == 'large' {
-        @if $retina == true {
-            @media
-            only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: #{$large}),
-            only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: #{$large}),
-            only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: #{$large}),
-            only screen and (        min-device-pixel-ratio: 2)      and (min-width: #{$large}),
-            only screen and (                min-resolution: 192dpi) and (min-width: #{$large}),
-            only screen and (                min-resolution: 2dppx)  and (min-width: #{$large}) { @content }
-        } @else {
-            @media only screen and (min-width: #{$large}) { @content }
-        }
-    }
-}
-
-
-// 
-// END RETINA
-// 
-
-
 @import "compass/css3";
 $expermintal-support-for-svg: true;
 
 @import "compass/css3/box";
+
+@import "compass/css3/background-size";

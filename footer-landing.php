@@ -37,6 +37,7 @@
 		if (matchMedia('only screen and (min-width: 41.26em)').matches) {
 
 			  $('#content article').load('about #content article', function () {
+			  		picturefill();
 			  		$( this ).hide().fadeIn('slow');
 			  });
 
@@ -52,6 +53,7 @@
 
 						$('#content article').load('about #content article',
 							function () {
+								picturefill();
 								$( this ).hide().fadeIn('slow');
 							});
 
