@@ -7,20 +7,20 @@
 // -------------------------
 
 p {
-  font-size:$baseFontSize;
-  line-height:$baseLineHeight;
   margin: 0 0 $baseLineHeight / 2;
   font-weight:300;
+  font-size:$baseFontSize;
+  line-height:$baseLineHeight;
 }
 .lead {
-  margin-bottom: $baseLineHeight;
-  font-size: 1.25em; // 20px/16px = 1.25em
+  margin-bottom: $baseLineHeight; // 20px/16px = 1.25em
   font-weight: 300;
+  font-size: 1.25em;
   line-height: $baseLineHeight * 1.5;
 }
 .site-footer {
-  font-family:$sansFontFamily;
   font-size: .9em;
+  font-family:$sansFontFamily;
 }
 
 
@@ -49,23 +49,23 @@ cite {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: $headingsFontFamily;
-  font-weight: $headingsFontWeight;
-  line-height: 1;
   color: $headingsColor;
+  font-weight: $headingsFontWeight;
+  font-family: $headingsFontFamily;
+  line-height: 1;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
   small {
+    color: $grayLight;
     font-weight: normal;
     line-height: 1;
-    color: $grayLight;
   }
 }
-h1 { font-size: 2em; margin: 0 0 $baseLineHeight / 4;}
-h2 { font-size: 2em; margin: 0 0 $baseLineHeight / 4;}
-h3 { font-family: $sansFontFamily; font-weight: bold; font-size: 1.2em; margin: 0; line-height: 1.5em;} 
-h4 { font-size: 1.125em; line-height: 1.6em; margin: 0; line-height: 1.5em;}  
-h5 { font-size: 1em;  line-height: 1.4em; margin: 0; line-height: 1.5em;}
-h6 { font-size: .875em; line-height: 1.25em; margin: 0; line-height: 1.5em;} // 14px/16px = .875em | 20px/16px = 1.25em
+h1 { margin: 0 0 $baseLineHeight / 4; font-size: 2em;}
+h2 { margin: 0 0 $baseLineHeight / 4; font-size: 2em;}
+h3 { margin: 0; font-weight: bold; font-size: 1.2em; font-family: $sansFontFamily; line-height: 1.5em;} 
+h4 { margin: 0; font-size: 1.125em; line-height: 1.6em; line-height: 1.5em;}  
+h5 { margin: 0; font-size: 1em;  line-height: 1.4em; line-height: 1.5em;}
+h6 { margin: 0; font-size: .875em; line-height: 1.25em; line-height: 1.5em;} // 14px/16px = .875em | 20px/16px = 1.25em
 
 h1 small { font-size: 1.875em; }
 h2 small { font-size: 1.125em; }
@@ -79,10 +79,10 @@ h4 small { font-size: 1em; }
 .comments-area #respond h3,
 .sd-title,
 .small {
-  font-size:($baseFontSize *.8);
   margin: ($baseLineHeight * .5) 0;
-  font-style:italic;
   color:lighten($textColor, 10%);
+  font-style:italic;
+  font-size:($baseFontSize *.8);
   a {
     color:darken($linkColor,10%);
   }
@@ -103,8 +103,8 @@ pre[class*="language-"] {
 
 // Unordered and Ordered lists
 ul, ol {
-  padding: 0;
-  margin: 0 0 $baseLineHeight / 2 1.56em; 
+  margin: 0 0 $baseLineHeight / 2 1.56em;
+  padding: 0; 
 }
 ul ul,
 ul ol,
@@ -118,50 +118,50 @@ li {
 // add 
 
 .content ul {
-  list-style-type: none;
   margin-left: 2em;
+  list-style-type: none;
   text-indent: -.8em;
 
   li {
-    line-height: $baseLineHeight;
     padding-bottom: .25em;
+    line-height: $baseLineHeight;
     &:before {
-      font-family: FontAwesome;
-      color: $joeorange;
-      font-weight: normal;
-      font-style: normal;
       display: inline-block;
       width: .8em;
-      text-decoration: inherit;
+      color: $joeorange;
       content: "\f054";
+      text-decoration: inherit;
+      font-weight: normal;
+      font-style: normal;
+      font-family: FontAwesome;
     }
   }
 }
 // li {
-//   line-height: $baseLineHeight;
 //   list-style-type: none;
+//   line-height: $baseLineHeight;
 // }
 // li:before {
-//   font-family: FontAwesome;
+//   display: inline-block;content: "\f095";
+//   text-decoration: inherit;
 //   font-weight: normal;
 //   font-style: normal;
-//   display: inline-block;
-//   text-decoration: inherit;content: "\f095";
+//   font-family: FontAwesome;
 // }
 .content .list-bubble {
-  text-indent: 0;
   margin: 0 0 $baseLineHeight / 2 0;
+  text-indent: 0;
   li {
+  @include border-radius($baseFontSize * .4);
+  display:inline-block;
+  margin-bottom:($baseFontSize * .4);
+  padding:($baseFontSize * .2) ($baseFontSize * .4);
+  background-color:$grayDark;
   color:$white;
   text-shadow:none;
-  background-color:$grayDark;
-  padding:($baseFontSize * .2) ($baseFontSize * .4);
-  margin-bottom:($baseFontSize * .4);
-  display:inline-block;
-  @include border-radius($baseFontSize * .4);
   &:before {
-    content: "";
     width: 0;
+    content: "";
     }
   }
 }
@@ -177,12 +177,12 @@ li {
 // .landingbody #content ul {
 //   margin: 0 0 $baseLineHeight / 2 0;
 //   li {
+//   display:inline-block;
+//   margin-bottom:($baseFontSize * .4);
+//   padding:($baseFontSize * .2) ($baseFontSize * .4);
+//   background-color:$grayDark;
 //   color:$white;
 //   text-shadow:none;
-//   background-color:$grayDark;
-//   padding:($baseFontSize * .2) ($baseFontSize * .4);
-//   margin-bottom:($baseFontSize * .4);
-//   display:inline-block;
 //   @include border-radius($baseFontSize * .4);
 //   }
 // }
@@ -209,11 +209,11 @@ dd {
 // Horizontal layout (like forms)
 .dl-horizontal {
   dt {
-    float: left;
-    width: 7.5em;
-    clear: left;
-    text-align: right;
     @include text-overflow();
+    float: left;
+    clear: left;
+    width: 7.5em;
+    text-align: right;
   }
   dd {
     margin-left: 8.125em;
@@ -222,8 +222,8 @@ dd {
 
 ul.chirp,
 ul.content-link-list {
-padding: 0;
 margin: 0;
+padding: 0;
 max-width:100%;
 }
 ul.content-link-list {
@@ -231,86 +231,86 @@ ul.content-link-list {
 }
 ul.chirp li {
   position: relative;
-  list-style: none;
-  border-bottom: 1px solid $grayLight;
-  max-width: 100%;
   display: inline-block;
-  font-size: .8em;
-  vertical-align: middle;
   padding: .625em .625em .625em 3.75em;
   min-height:5em;
+  max-width: 100%;
+  border-bottom: 1px solid $grayLight;
+  list-style: none;
+  vertical-align: middle;
+  font-size: .8em;
   font-family:$sansFontFamily;
 }
 ul.content-link-list li {
   @include navButton;
   position: relative;
-  list-style: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  list-style: none;
+  vertical-align: middle;
+  text-align:left;
   font-size: .8em;
   line-height: $baseLineHeight;
-  text-align:left;
-  vertical-align: middle;
   &:before {
-    font-family: inherit;
     display: inline;
     width: auto;
     content: "";
+    font-family: inherit;
   }
 }
 
 ul.content-link-list li.special-link {
-	@include buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
+  @include buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
 }
 
 ul.content-link-list li {
-	padding: 0px;
-	min-height: 4.37em;
+  padding: 0px;
+  min-height: 4.37em;
 }
 ul.content-link-list li:first-child {
-	@include border-radius(.25em .25em 0px 0px);
+  @include border-radius(.25em .25em 0px 0px);
 }
 ul.content-link-list li:last-child {
-	@include border-radius(0px 0px .25em .25em);
+  @include border-radius(0px 0px .25em .25em);
 }
 ul.chirp li img {
-position: absolute;
-left: 0;
-top: 0;
-width: 2.5em;
-height: 2.5em;
-@include border-radius(.312em);
-border: none;
+  @include border-radius(.312em);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5em;
+  height: 2.5em;
+  border: none;
 }
 
 ul.content-link-list li i {
-	position: absolute;
-	left: .625em;
-	top: 35%;
-	margin-right: .625em;
-	font-size: 2.2em;
-	color: #272727;
-	text-shadow: 1px 1px #555,-1px -1px black;
-	@include transition(color .5s ease);
+  @include transition(color .5s ease);
+  position: absolute;
+  top: 35%;
+  left: .625em;
+  margin-right: .625em;
+  color: #272727;
+  text-shadow: 1px 1px #555,-1px -1px black;
+  font-size: 2.2em;
 }
 ul.content-link-list li:hover i {
-	text-decoration: none;
-	color: $joeorange;
-	@include transition(color .5s ease);
+  @include transition(color .5s ease);
+  color: $joeorange;
+  text-decoration: none;
 }
 
 ul.chirp li a,
 ul.content-link-list a {
-	@include hyphens();
+  @include hyphens();
 }
 ul.content-link-list a {
-	display: block;
-	padding: 1.25em 1.25em 1.25em 1.25em;
-	height: 100%;
+  display: block;
+  padding: 1.25em 1.25em 1.25em 1.25em;
+  height: 100%;
   text-indent: 0;
 }
 ul.content-link-list li.special-link a {
-	color: white;
+  color: white;
 }
 ul.content-link-list a:hover,
 ul.content-link-list li.special-link a:hover {
@@ -338,26 +338,26 @@ hr {
 
 // Abbreviations and acronyms
 abbr[title] {
-  cursor: help;
   border-bottom: 1px dotted $grayLight;
+  cursor: help;
 }
 abbr.initialism {
-  font-size: 90%;
   text-transform: uppercase;
+  font-size: 90%;
 }
 
 // Blockquotes
 blockquote {
-  padding: 0 0 0 .937em;
   margin: 0 0 $baseLineHeight;
+  padding: 0 0 0 .937em;
   //border-left: 5px solid lighten($joeorange, 25%);
   p,
   li,
   ol {
-    margin-bottom: 0;
     @include font-shorthand(.9em,300,$baseLineHeight * .9);
-    font-style:italic;
+    margin-bottom: 0;
     color:$gray;
+    font-style:italic;
   }
   p {
     display: inline;
@@ -365,8 +365,8 @@ blockquote {
   }
   small {
     display: block;
-    line-height: $baseLineHeight;
     color: $gray;
+    line-height: $baseLineHeight;
     &:before {
       content: '\2014 \00A0';
     }
@@ -399,14 +399,14 @@ q:before,
 blockquote:before,
 q:after,
 blockquote:after {
-  font-family: FontAwesome;
+  display: inline;
+  width: .8em;
   color: $joeorange;
+  text-decoration: inherit;
   text-shadow: 0 1px 1px $white;
   font-weight: normal;
   font-style: normal;
-  display: inline;
-  width: .8em;
-  text-decoration: inherit;
+  font-family: FontAwesome;
 }
 q:before,
 blockquote:before {
@@ -417,17 +417,17 @@ blockquote:after {
   content: "\f10e";
 }
 .icons-responsive {
-  text-align: center;
   margin: 2em 0;
+  text-align: center;
   i {
-    color: $grayLight;
     display: inline;
+    color: $grayLight;
     vertical-align: middle;
     &:nth-child(2n+1) {
-      font-size: 2.8em;
+      padding: .15em;
       color: $joeorange;
       text-shadow: 0 1px 1px $white;
-      padding: .15em;
+      font-size: 2.8em;
     }
   }
 }

@@ -4,24 +4,6 @@
 
 
 @media screen and (min-width: 75em) {
-  //
-  // Responsive: scaffolding
-  // --------------------------------------------------
-
-  .site-content {
-    font-size: 1.4em;
-  }
-  .content-loop a {
-    width:23%;
-  }
-  .some-loop article {
-    width: 23%;
-  }
-  .entry-content {
-    .home-call-out-bg {
-      min-height: 4.8em;
-    }
-  }
 
   //
   // Responsive: grid
@@ -53,12 +35,24 @@
 
   // Fixed grid
   @include grid-core($gridColumnWidth1200, $gridGutterWidth1200);
+  //
+  // Responsive: scaffolding
+  // --------------------------------------------------
 
-  // Fluid grid
-  @include grid-fluid($fluidGridColumnWidth1200, $fluidGridGutterWidth1200);
-
-  // Input grid
-  @include grid-input($gridColumnWidth1200, $gridGutterWidth1200);
+  .site-content {
+    font-size: 1.4em;
+  }
+  .content-loop a {
+    width:23%;
+  }
+  .some-loop article {
+    width: 23%;
+  }
+  .entry-content {
+    .home-call-out-bg {
+      min-height: 4.8em;
+    }
+  }
 
   // Thumbnails
   .thumbnails {
@@ -70,6 +64,12 @@
   .row-fluid .thumbnails {
     margin-left: 0;
   }
+
+  // Fluid grid
+  @include grid-fluid($fluidGridColumnWidth1200, $fluidGridGutterWidth1200);
+
+  // Input grid
+  @include grid-input($gridColumnWidth1200, $gridGutterWidth1200);
 
   
 

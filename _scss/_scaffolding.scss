@@ -162,12 +162,12 @@ a[href$='.pdf'] {
 
 .site-content {
   @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
-  @include box-sizing(border-box);
   max-width: 50em;
   background-color: $joeBlueLight;
   .content{
     padding:$gridGutterWidth;
   }
+  @include box-sizing(border-box);
 }
 
 .site-footer {
@@ -266,7 +266,6 @@ a[href$='.pdf'] {
 .entry-content {
   .home-call-out {
     @include homeCallOutBase;
-    @include box-sizing(border-box);
     float: right;
     margin: 0 0 .5em .5em;
     padding-bottom: .6em;
@@ -275,6 +274,7 @@ a[href$='.pdf'] {
       @include box-shadow(none);
       margin: 0;
     }
+    @include box-sizing(border-box);
   }
   // .home-call-out {
   //   padding-bottom: 1em;

@@ -65,10 +65,10 @@
   // Make all grid-sized elements block level again
   [class*="span"],
   .row-fluid [class*="span"] {
-    float: none;
     display: block;
-    width: auto;
+    float: none;
     margin-left: 0;
+    width: auto;
   }
 
   // FORM FIELDS
@@ -96,17 +96,17 @@
   .modal {
     position: fixed;
     top:   1.25em;
-    left:  1.25em;
     right: 1.25em;
-    width: auto;
+    left:  1.25em;
     margin: 0;
+    width: auto;
     &.fade.in { top: auto; }
   }
   @media screen and (min-height: 32.31em) {
     .footer-landing {
       position: fixed;
-      bottom: 0;
       right: 0;
+      bottom: 0;
       left: 0;
     }
   }
@@ -124,9 +124,9 @@
       // margin: 1em;
       // padding-top: 10em;
       // background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2012/09/joeheadshot.png');
+      // background-position: center;  /* Internet Explorer 7/8 */
       // background-size: cover;
       // moz-background-size: cover;  /* Firefox 3.6 */
-      // background-position: center;  /* Internet Explorer 7/8 */
     }
     .home-call-out-btn {
       width: 82%;
@@ -140,27 +140,27 @@
 @media screen and (max-width: 30em) {
 
   // .home-call-out {
-  //   width: 33%;
-  //   min-width: 33%;
   //   padding-bottom: .5em;
+  //   min-width: 33%;
+  //   width: 33%;
   // }
 
   // .home-call-out-bg {
   //   margin: .5em;
   //   padding-top: 7em;
+  //   background-position: center;  /* Internet Explorer 7/8 */
+  //   background-size: cover;
+  //   moz-background-size: cover;  /* Firefox 3.6 */
   //   @include respond-to(small, false) {
   //     background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2013/02/joe-headshot-mobile-first.png');
   //   }
   //   @include respond-to(smal, true) {
   //     background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2013/01/ToggleNavNoJSFeatured.png');
   //   }
-  //   background-size: cover;
-  //   moz-background-size: cover;  /* Firefox 3.6 */
-  //   background-position: center;  /* Internet Explorer 7/8 */
   // }
   // .home-call-out-btn {
-  //   font-size: 1em;
   //   width: 88%;
+  //   font-size: 1em;
   // }
 
   // Smooth out the collapsing/expanding nav
@@ -177,12 +177,12 @@
   // Modals
   .modal {
     top:   .625em;
-    left:  .625em;
     right: .625em;
+    left:  .625em;
   }
   .modal-header .close {
-    padding: .625em;
     margin: -.625em;
+    padding: .625em;
   }
 
   // Carousel

@@ -4,23 +4,27 @@
 
 
 @media screen and (min-width: 62em) {
+
+  //
+  // Responsive: utilities
+  // ----------------;
   //
   // Responsive: scaffolding
   // --------------------------------------------------
 
   .site-content {
-    font-size: 1.2em;
+    margin: 0 11%;
+    padding: 2em;
     min-height:30em;
     max-width: 100%;
-    padding: 2em;
-    margin: 0 11%;
     background-color: $grayLighter;
+    font-size: 1.2em;
     .content
     // ,
     // .widget-area 
     {
-      max-width: 40em;
       margin:$fluidGridGutterWidth auto;
+      max-width: 40em;
       text-shadow: 0 1px 1px white;
     }
   }
@@ -28,30 +32,30 @@
     margin: 0;
   }
   .site-footer {
-    clear: both;
     @include navButtonNoHov;
+    clear: both;
     .footer-widget-wrap-one,
     .footer-widget-wrap-two {
       @include display-box;
-      @include box-orient(horizontal);
       @include box-align(stretch);
       @include box-direction(normal);
-      height: auto;
-      width: 50%;
       float: left;
+      width: 50%;
+      height: auto;
       .widget-area {
-        float: none;
         @include box-flex(1);
+        float: none;
         flex-flow: column;
       }
+      @include box-orient(horizontal);
     }
   }
   // .footer {
-  //   width: auto;
   //   position: static;
   //   margin-left: 0px;
-  //   line-height: 1;
   //   padding: 0 0.5em;
+  //   width: auto;
+  //   line-height: 1;
   //   .container {
   //     margin:0px;
   //   }
@@ -74,17 +78,17 @@
   }
   .entry-content {
     .home-call-out {
-      font-size: 2em;
       padding-bottom: .6em;
+      font-size: 2em;
     }
     .home-call-out-bg {
-      min-height: 4.6em;
       // margin: 1em;
       // padding-top: 10em;
+      min-height: 4.6em;
       // background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2012/09/joeheadshot.png');
+      // background-position: center;  /* Internet Explorer 7/8 */
       // background-size: cover;
       // moz-background-size: cover;  /* Firefox 3.6 */
-      // background-position: center;  /* Internet Explorer 7/8 */
     }
     .home-call-out-btn {
       width: 82%;
@@ -108,12 +112,12 @@
   .content,
   .sidebar {
     h1 {
-      font-size:3em;
       margin-bottom:.5em;
+      font-size:3em;
     }
     h2 {
-      font-size:2.4em;
       margin-bottom:.5em;
+      font-size:2.4em;
     }
   }
   .icons-responsive {
@@ -121,8 +125,8 @@
     i {
       font-size: 1.5em;
       &:nth-child(2n+1) {
-        font-size: 3em;
         padding: .15em;
+        font-size: 3em;
       }
     }
   }
@@ -160,9 +164,5 @@
     margin: 5px 20px 20px 0;
     max-width: 50%;
   }
-
-  //
-  // Responsive: utilities
-  // ----------------
 
 }
