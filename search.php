@@ -26,7 +26,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php Joe_Snell_PDX_content_nav( 'nav-below' ); ?>
+				<?php /*Joe_Snell_PDX_content_nav( 'nav-below' ); */?>
 
 			<?php else : ?>
 

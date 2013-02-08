@@ -95,6 +95,19 @@
     }
   }
 
+  .contact-one,
+  #contact-form-234 {
+    @include box-sizing(border-box);
+    float: left;
+    width: 50%;
+  }
+  .contact-one {
+    padding-right: .75em;
+  }
+  #contact-form-234 {
+    padding-left: .75em;
+  }
+
 
 
   //
