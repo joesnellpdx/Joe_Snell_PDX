@@ -163,7 +163,7 @@ function Joe_Snell_PDX_scripts() {
 		
 		/*wp_enqueue_script( 'chirp', get_template_directory_uri() . '/_js/chirp-ck.js', array( 'jquery' ), '20121218' );*/
 
-		/*wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/_js/modernizr-ck.js', array( 'jquery' ), '20121218' );*/
+		wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/_js/modernizr-ck.js', array( 'jquery' ), '20121218' );
 
 		wp_enqueue_script( 'application-js', get_template_directory_uri() . '/_js/application-ck.js', array( 'jquery' ), '20121218', true  );
 
