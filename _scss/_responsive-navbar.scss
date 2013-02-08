@@ -224,7 +224,7 @@
     z-index: -1;
     @include transition(left .25s ease-out);
   }
-  .cssanimations body:not(:target) #main:target {
+  body:not(:target) #main:target {
     position: absolute;
     right: -12em;
     left: 12em;
@@ -238,7 +238,7 @@
       @include transition(background-color .5s ease-out);
     }
   }
-  .no-cssanimations body:not(:target) #main:target {
+  body.no-js:not(:target) #main:target {
     position: absolute;
     left: 12em;
     right: 0;
