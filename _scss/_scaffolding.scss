@@ -6,14 +6,13 @@
 /* Body reset */
 /* ------------------------- */
 
-html {
-  min-height: 100%;
-}
+
 body {
   color: $textColor;
   font-size: $baseFontSize;
-  font-family: $baseFontFamily;
   line-height: $baseLineHeight;
+  background-color: $grayDarker;
+  background: transparent url(../_img/bg.gif) repeat scroll;
 }
 .loading-div {
   margin: 8em auto;
@@ -34,6 +33,29 @@ body {
     }
   }
 }
+.yarpp-related {
+  .yarpp-ul {
+    margin: 0;
+    text-indent: inherit;
+  }
+  // &li:first-child {
+  //   border-right: 1px solid $grayDark;
+  // }
+  .yarpp-li {
+    @include box-sizing(border-box);
+    float: left;
+    padding: 1em;
+    width: 50%;
+    list-style-type: none;
+    &:before {
+      display: inline;
+      content:"";
+    }
+  }
+  .sharedaddy {
+    display: none;
+  }
+}
 
 /* LINKS */
 /* ------------------------- */
@@ -48,7 +70,6 @@ a:hover {
 }
 
 .quick-links {    // 40px/16px = 2.5em
-  padding-top: .625em;    // 10px/16px = .625em
   width: 100%;
   text-align: center;
   font-size: 1.875em;     // 30px/16px = 1.875em
@@ -162,12 +183,12 @@ a[href$='.pdf'] {
 
 .site-content {
   @include box-shadow (white 0 1px 0, rgba(0, 0, 0, 0.9) 0 1px 3px 0px inset);
-  @include box-sizing(border-box);
   max-width: 50em;
   background-color: $joeBlueLight;
   .content{
     padding:$gridGutterWidth;
   }
+  @include box-sizing(border-box);
 }
 
 .site-footer {
@@ -266,7 +287,6 @@ a[href$='.pdf'] {
 .entry-content {
   .home-call-out {
     @include homeCallOutBase;
-    @include box-sizing(border-box);
     float: right;
     margin: 0 0 .5em .5em;
     padding-bottom: .6em;
@@ -275,6 +295,7 @@ a[href$='.pdf'] {
       @include box-shadow(none);
       margin: 0;
     }
+    @include box-sizing(border-box);
   }
   // .home-call-out {
   //   padding-bottom: 1em;

@@ -33,7 +33,7 @@ $post = $wp_query->post;
 					} 
 					?>
 
-				<?php Joe_Snell_PDX_content_nav( 'nav-below' ); ?>
+				<?php /*Joe_Snell_PDX_content_nav( 'nav-below' ); */?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template

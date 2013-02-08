@@ -3,16 +3,23 @@
    ========================================================================== */
 
 
-@media screen and (min-width: 41.26em) and (max-width: 61.99em) { // 768px/16px = 48em - 979px/16px = 61em
+@media screen and (min-width: 41.26em) and (max-width: 61.99em) {
 
-  // Fixed grid
-  // @include grid-core($gridColumnWidth768, $gridGutterWidth768);
+  //
+  // Responsive: buttons
+  // --------------------------------------------------
 
-  // // Fluid grid
-  // @include grid-fluid($fluidGridColumnWidth768, $fluidGridGutterWidth768);
+  //
+  // Responsive: navbar 
+  // --------------------------------------------------
 
-  // // Input grid
-  // @include grid-input($gridColumnWidth768, $gridGutterWidth768);
+  //
+  // Responsive: thumbnails
+  // --------------------------------------------------
+
+  //
+  // Responsive: utilities
+  // --------------------------------------------------;
 
   // No need to reset .thumbnails here since it's the same $gridGutterWidth
    
@@ -21,10 +28,10 @@
   // --------------------------------------------------
 
   .site-content {
+    @include box-sizing(border-box);
+    float: right;
     margin: $fluidGridGutterWidth $fluidGridGutterWidth 0;
     width: (75% - ($fluidGridGutterWidth * 2));
-    float: right;
-    @include box-sizing(border-box);
   }
   .content {
     min-height: 40em;
@@ -52,20 +59,20 @@
   }
 
   .site-footer {
-    clear: both;
     @include navButtonNoHov;
+    clear: both;
   .footer-widget-wrap-one,
   .footer-widget-wrap-two {
       @include display-box;
-      @include box-orient(horizontal);
       @include box-align(stretch);
       @include box-direction(normal);
       width: 100%;
       .widget-area {
-        float: none;
         @include box-flex(1);
+        float: none;
         flex-flow: column;
       }
+      @include box-orient(horizontal);
     }
   }
   .entry-content {
@@ -73,13 +80,13 @@
       font-size: 2em;
     }
     .home-call-out-bg {
-      min-height: 4.6em;
       // margin: 1em;
       // padding-top: 10em;
+      min-height: 4.6em;
       // background-image: url('http://www.joesnellpdx.com/wp-content/uploads/2012/09/joeheadshot.png');
+      // background-position: center;  /* Internet Explorer 7/8 */
       // background-size: cover;
       // moz-background-size: cover;  /* Firefox 3.6 */
-      // background-position: center;  /* Internet Explorer 7/8 */
     }
     .home-call-out-btn {
       width: 82%;
@@ -104,26 +111,19 @@
     i {
       font-size: 1.5em;
       &:nth-child(2n+1) {
-        font-size: 3em;
         padding: .15em;
+        font-size: 3em;
       }
     }
-  }
+  } // 768px/16px = 48em - 979px/16px = 61em
 
-  //
-  // Responsive: buttons
-  // --------------------------------------------------
+  // Fixed grid
+  // @include grid-core($gridColumnWidth768, $gridGutterWidth768);
 
-  //
-  // Responsive: navbar 
-  // --------------------------------------------------
+  // // Fluid grid
+  // @include grid-fluid($fluidGridColumnWidth768, $fluidGridGutterWidth768);
 
-  //
-  // Responsive: thumbnails
-  // --------------------------------------------------
-
-  //
-  // Responsive: utilities
-  // --------------------------------------------------
+  // // Input grid
+  // @include grid-input($gridColumnWidth768, $gridGutterWidth768);
 
 }
