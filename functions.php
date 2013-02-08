@@ -138,6 +138,15 @@ function Joe_Snell_PDX_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+		register_sidebar( array(
+		'name' => __( 'Hire Me', 'Joe_Snell_PDX' ),
+		'id' => 'hire-me',
+		'description' => __( 'Hire Me', 'Joe_Snell_PDX' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'Joe_Snell_PDX_widgets_init' );
 
@@ -151,16 +160,12 @@ function Joe_Snell_PDX_scripts() {
 		wp_enqueue_style( 'main', get_template_directory_uri() . '/_css/main.css', '20120822' );
 	
 		wp_enqueue_style( 'responsive', get_template_directory_uri() . '/_css/responsive.css', '20120822' );
-
-		wp_enqueue_style( 'prettify', get_template_directory_uri() . '/_js/google-code-prettify/prettify.css', '20120822' );
 		
-		wp_enqueue_script( 'chirp', get_template_directory_uri() . '/_js/chirp-ck.js', array( 'jquery' ), '20121218' );
+		/*wp_enqueue_script( 'chirp', get_template_directory_uri() . '/_js/chirp-ck.js', array( 'jquery' ), '20121218' );*/
 
-		wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/_js/modernizr-ck.js', array( 'jquery' ), '20121218' );
+		/*wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/_js/modernizr-ck.js', array( 'jquery' ), '20121218' );*/
 
 		wp_enqueue_script( 'application-js', get_template_directory_uri() . '/_js/application-ck.js', array( 'jquery' ), '20121218', true  );
-
-		// wp_enqueue_script( 'ajaxinclude-ck.js', get_template_directory_uri() . '/_js/ajaxInclude-ck.js', array( 'jquery' ), '20121218', true  );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

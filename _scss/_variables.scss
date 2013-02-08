@@ -51,8 +51,8 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 
 // Typography
 // -------------------------
-$sansFontFamily:        "droid-sans",sans-serif, Arial, sans-serif !default;
-$serifFontFamily:       "droid-serif", "Georgia", Times, serif !default;
+$sansFontFamily:        "camingodos-web",sans-serif, Arial, sans-serif !default;
+$serifFontFamily:       "ff-meta-serif-web-pro", "Georgia", Times, serif !default;
 $monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          1em !default;
@@ -83,6 +83,9 @@ $btnBorder:                         #bbb !default;
 
 $btnPrimaryBackground:              $blue !default;
 $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
+
+$btnHomeCallOutBackground:              $blue !default;
+$btnHomeCallOutBackgroundHighlight:     adjust-hue($btnHomeCallOutBackground, 20%) !default;
 
 $btnInfoBackground:                 #5bc0de !default;
 $btnInfoBackgroundHighlight:        #2f96b4 !default;
