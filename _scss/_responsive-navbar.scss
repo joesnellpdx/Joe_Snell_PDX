@@ -280,8 +280,8 @@
     @include transition(right .25s ease-out);
     // top: 0;
   }
-  .cssanimations body:not(:target) #main:target,
-  .cssanimations body:not(:target) #wrap:target {
+  body:not(:target) #main:target,
+  body:not(:target) #wrap:target {
     .back-large-screen {
       background-color: rgba(0, 0, 0, .5);
       display: inline;
@@ -301,8 +301,8 @@
       }
     }
   }
-  .no-cssanimations body:not(:target) #main:target,
-  .no-cssanimations body:not(:target) #wrap:target {
+  .no-js body:not(:target) #main:target,
+  .no-js body:not(:target) #wrap:target {
     .back-large-screen {
       background-color: rgba(0, 0, 0, .5);
       display: inline;

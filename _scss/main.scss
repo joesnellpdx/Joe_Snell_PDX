@@ -49,7 +49,17 @@ and Blueprint http://www.blueprintcss.org/
  * 
  * UTILITIES...........Any necessary style overrides
  *
- * == Responsive CSS found in responsive.css ==
+ *
+ * RESPONSIVE UTILITIES. PRELIMINARY RESPONSIVE STYLES
+ *
+ * MEDIA QUERIES:
+ * 
+ * 41.25em-MAX.........
+ * 41.26-61em..........
+ * 62em-MIN............
+ * 75em-MIN............
+ *
+ * RESPONSIVE NAVBAR...
  *
  */
 
@@ -108,3 +118,32 @@ and Blueprint http://www.blueprintcss.org/
 
 // Utility classes
 @import "utilities"; // Has to be last to override when necessary
+
+// RESPONSIVE CLASSES
+// ------------------
+
+@import "responsive-utilities";
+
+
+// MEDIA QUERIES
+// ------------------
+
+
+@import "responsive-42em";
+
+
+@import "responsive-42em-61em";
+
+
+@import "responsive-62em-min";
+
+
+@import "responsive-75em-min";
+
+
+// RESPONSIVE NAVBAR
+// ------------------
+
+// From 979px and below, show a button to toggle navbar contents
+@import "responsive-navbar";
+
