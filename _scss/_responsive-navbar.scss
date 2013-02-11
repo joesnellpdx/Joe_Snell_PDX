@@ -238,7 +238,7 @@
       @include transition(background-color .5s ease-out);
     }
   }
-  body.no-js:not(:target) #main:target {
+  body.lte-ie9:not(:target) #main:target {
     position: absolute;
     left: 12em;
     right: 0;

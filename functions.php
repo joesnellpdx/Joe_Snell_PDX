@@ -167,6 +167,11 @@ function Joe_Snell_PDX_scripts() {
 
 		wp_enqueue_script( 'application-js', get_template_directory_uri() . '/_js/application-ck.js', array( 'jquery' ), '20121218', true  );
 
+	if( is_front_page()  )
+	    {
+	        wp_enqueue_script( 'home-js', get_template_directory_uri() . '/_js/home-ck.js', array( 'jquery' ), '20121218', true  );
+	    }
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

@@ -82,6 +82,8 @@ html {
     font-family: $baseFontFamily; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
+      background-color: $grayDarker !important; 
+  background: transparent url(../_img/bg.gif) repeat scroll !important;
 }
 
 /*

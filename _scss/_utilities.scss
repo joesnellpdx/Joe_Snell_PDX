@@ -44,26 +44,23 @@
   @include input-block-level();
 }
 
-.lt-ie9 {
+html.lt-ie9 {
   #nav-home,
   .main {
-    max-width: 41em;
+    width: 41em;
   }
-  body:not(:target) #nav-page {
+  body #nav-page {
+    position: absolute;
+    width: 41em;
+    margin: 0;
+    top: $navbarBaseHeight;
     li {
-      max-width: 4em;
+      width: 25%;
       height: auto;
       float: left;
       display: inline;
-    }
-    .icon-user::before,
-    .icon-pencil::before,
-    .icon-briefcase::before,
-    .icon-comment::before {
-      display: block;
-      font-size: 1.5em;
-      color:darken(#B3B3B3, 50%);
-      text-shadow:1px 1px $gray, -1px -1px $black;
+      border-right: solid 1px $gray;
+      border-left:solid 1px $grayDark;
     }
     a {
       clear: left;
@@ -72,10 +69,7 @@
       padding-top: 1em;
       height: 4em;
       position: relative;
-      border-right: solid 1px $gray;
-      border-left:solid 1px $grayDark;
       z-index: 1;
-      @include transition(height .25s);
     }
     .back {
       display: none;
@@ -85,6 +79,18 @@
     .site-content,
     .site-content-loop {
       padding-top: 4em;
+    }
+  }
+  body #nav-page,
+  body #nav-home {
+    .icon-user::before,
+    .icon-pencil::before,
+    .icon-briefcase::before,
+    .icon-comment::before {
+      display: block;
+      font-size: 1.5em;
+      color:darken(#B3B3B3, 50%);
+      text-shadow:1px 1px $gray, -1px -1px $black;
     }
   }
 }
